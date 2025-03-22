@@ -1,4 +1,9 @@
-[gd_scene format=3 uid="uid://c61s105841n14"]
+[gd_scene load_steps=3 format=3 uid="uid://c61s105841n14"]
+
+[ext_resource type="PackedScene" uid="uid://dpl5s6xlefiop" path="res://key.tscn" id="1_2e7dh"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_g0t3c"]
+albedo_color = Color(0, 0, 0, 1)
 
 [node name="Node3D" type="Node3D"]
 
@@ -76,3 +81,104 @@ size = Vector3(6.67297, 1, 1)
 [node name="CSGBox3D5" type="CSGBox3D" parent="mur4"]
 transform = Transform3D(1.49318, 0, 0, 0, 6.76945, 0, 0, 0, 1, -5.05703, 9.53674e-07, -24.6689)
 size = Vector3(6.67297, 1, 1)
+
+[node name="porte" type="Node3D" parent="."]
+
+[node name="CSGBox3D" type="CSGBox3D" parent="porte"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.2389, 1.46631, 13.0797)
+size = Vector3(1.49341, 3.93262, 1)
+
+[node name="porte2" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -7.75399)
+
+[node name="CSGBox3D" type="CSGBox3D" parent="porte2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.2389, 1.46631, 12.9015)
+size = Vector3(1.49341, 3.93262, 1)
+
+[node name="porte3" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -14.3552)
+
+[node name="CSGBox3D" type="CSGBox3D" parent="porte3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.2389, 1.46631, 12.9015)
+size = Vector3(1.49341, 3.93262, 1)
+
+[node name="porte4" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -22.4133)
+
+[node name="CSGBox3D" type="CSGBox3D" parent="porte4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.2389, 1.46631, 12.9015)
+size = Vector3(1.49341, 3.93262, 1)
+
+[node name="porte5" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -29.6367)
+
+[node name="CSGBox3D" type="CSGBox3D" parent="porte5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.2389, 1.46631, 12.9015)
+size = Vector3(1.49341, 3.93262, 1)
+
+[node name="porte6" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -37.5365)
+
+[node name="CSGBox3D" type="CSGBox3D" parent="porte6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.2389, 1.46631, 12.9015)
+size = Vector3(1.49341, 3.93262, 1)
+
+[node name="drapeau" type="Node3D" parent="."]
+transform = Transform3D(0.234095, 0, 0, 0, 0.826793, 0, 0, 0, 0.208587, -5.73043, 0.401551, 3.7992)
+
+[node name="CSGBox3D" type="CSGBox3D" parent="drapeau"]
+
+[node name="Key" parent="." instance=ExtResource("1_2e7dh")]
+transform = Transform3D(0.00334296, 0.121252, 1.93213, -4.98827, 0.0244484, 1.12573e-10, -0.0578894, -2.09971, 0.111575, -4.17804, -2.66996, 13.7414)
+
+[node name="débrits" type="Node3D" parent="."]
+transform = Transform3D(0.623393, 0, 0, 0, 0.669189, 0, 0, 0, 0.617455, -5.34283, 1.46796, 3.9011)
+
+[node name="CSGBox3D" type="CSGBox3D" parent="débrits"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.172142, -0.584068, 0)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="débrits"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.741729, -1.60649, 0)
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="débrits"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.31597, -1.60649, 0)
+
+[node name="CSGBox3D4" type="CSGBox3D" parent="débrits"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.8336, -0.597322, 0)
+
+[node name="CSGBox3D5" type="CSGBox3D" parent="débrits"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.944965, 0.399822, -0.00340891)
+size = Vector3(1.34863, 1, 1)
+
+[node name="emplacement drapeau" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00216103, 0.0204325, -0.00615311)
+
+[node name="CSGBox3D" type="CSGBox3D" parent="emplacement drapeau"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.67188, 0, 0)
+
+[node name="signes" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.2654, 0, 11.3849)
+
+[node name="CSGBox3D" type="CSGBox3D" parent="signes"]
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="signes"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.634, 0, -4.06442)
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="signes"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.18596, 1.56361, 0.844252)
+size = Vector3(1, 1, 0.737305)
+
+[node name="CSGBox3D4" type="CSGBox3D" parent="signes"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.2609, 0, -4.06442)
+
+[node name="CSGBox3D5" type="CSGBox3D" parent="signes"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.1787, 0, -0.480734)
+
+[node name="CSGBox3D6" type="CSGBox3D" parent="signes"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.4658, 0, -2.62054)
+
+[node name="Tableau calcul signes" type="Node3D" parent="."]
+transform = Transform3D(4.19734, 0, 0, 0, 1, 0, 0, 0, 0.363727, -3.76853, 1.62766, 5.82154)
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Tableau calcul signes"]
+material = SubResource("StandardMaterial3D_g0t3c")
