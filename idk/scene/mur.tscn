@@ -1,9 +1,9 @@
 [gd_scene load_steps=3 format=3 uid="uid://blvapknkib3gq"]
 
-[ext_resource type="Texture2D" uid="uid://bglecao7nxvjv" path="res://Dungeon_wall2.jpg" id="1_vdt3c"]
+[ext_resource type="Texture2D" uid="uid://bglecao7nxvjv" path="res://texture/Dungeon_wall2.jpg" id="1_phfmn"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_b0ove"]
-albedo_texture = ExtResource("1_vdt3c")
+albedo_texture = ExtResource("1_phfmn")
 albedo_texture_force_srgb = true
 metallic_specular = 0.0
 
