@@ -2,8 +2,8 @@
 
 [ext_resource type="PackedScene" uid="uid://dpl5s6xlefiop" path="res://scene/key.tscn" id="1_2e7dh"]
 [ext_resource type="PackedScene" uid="uid://blvapknkib3gq" path="res://scene/mur.tscn" id="1_55nkg"]
-[ext_resource type="PackedScene" path="res://scene/sol .tscn" id="3_hwpbm"]
-[ext_resource type="PackedScene" path="res://Porte.tscn" id="4_buxpm"]
+[ext_resource type="PackedScene" uid="uid://53cievrl3uqw" path="res://scene/sol .tscn" id="3_hwpbm"]
+[ext_resource type="PackedScene" uid="uid://c18yo6cmr01kb" path="res://Porte_texture.tscn" id="4_buxpm"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_g0t3c"]
 albedo_color = Color(0, 0, 0, 1)
@@ -13,10 +13,6 @@ albedo_color = Color(0, 0, 0, 1)
 [node name="OmniLight3D" type="OmniLight3D" parent="."]
 transform = Transform3D(0.998781, 0, 0, 0, 0.998781, 0, 0, 0, 0.998781, 0, 0, 0)
 omni_range = 1.2023
-
-[node name="CSGBox3D" type="CSGBox3D" parent="."]
-transform = Transform3D(20, 0, 0, 0, 0.1, 0, 0, 0, 50, 0, 0, -2.12097)
-size = Vector3(1, 1, 0.915161)
 
 [node name="mur" type="Node3D" parent="."]
 
@@ -275,23 +271,5 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -41)
 [node name="Sol 50" parent="Sol" instance=ExtResource("3_hwpbm")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 0, -2)
 
-[node name="Porte" parent="." instance=ExtResource("4_buxpm")]
-transform = Transform3D(0.247337, 0, 0, 0, 0.285388, 0, 0, 0, 1.00367, 1.97148, 0, 20.1317)
-
-[node name="Porte2" parent="Porte" instance=ExtResource("4_buxpm")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.718939, 0, -7.51729)
-
-[node name="Porte3" parent="Porte" instance=ExtResource("4_buxpm")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.893621, 0, -15.5407)
-
-[node name="Porte4" parent="Porte" instance=ExtResource("4_buxpm")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.809301, 0, -22.1737)
-
-[node name="Porte5" parent="Porte" instance=ExtResource("4_buxpm")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.809302, 0, -30.0199)
-
-[node name="Porte6" parent="Porte" instance=ExtResource("4_buxpm")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.809302, 0, -37.3544)
-
-[node name="Porte7" parent="Porte" instance=ExtResource("4_buxpm")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.809302, 0, -45.1522)
+[node name="Node3D" parent="." instance=ExtResource("4_buxpm")]
+transform = Transform3D(0.36938, 0, 0, 0, 0.214776, 0, 0, 0, 1, 2.74714, 0, -24.9149)
