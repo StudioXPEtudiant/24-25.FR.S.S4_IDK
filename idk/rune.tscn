@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://bxpya2xsv5765"]
+
+[ext_resource type="Texture2D" uid="uid://bjx0w7suoso7l" path="res://rune/scalable/algiz.svg" id="1_tutpy"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2hpiu"]
+albedo_color = Color(0.462291, 0.462291, 0.462291, 1)
+albedo_texture = ExtResource("1_tutpy")
+metallic = 0.35
+
+[node name="Node3D" type="Node3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.49962e-05, -0.00371563, 0.00207043)
+
+[node name="CSGBox3D" type="CSGBox3D" parent="."]
+transform = Transform3D(-4.37114e-08, 1, -4.37114e-08, 0, -4.37114e-08, -1, -1, -4.37114e-08, 1.91069e-15, 0, 0, 0)
+size = Vector3(0, 0.5, 0.5)
+material = SubResource("StandardMaterial3D_2hpiu")

@@ -1,0 +1,40 @@
+[gd_scene load_steps=4 format=3 uid="uid://c18yo6cmr01kb"]
+
+[ext_resource type="ArrayMesh" uid="uid://blyrgotedb4" path="res://texture/JailGate/gate.obj" id="1_qaax1"]
+[ext_resource type="Material" uid="uid://duq7m1uce4mts" path="res://texture/barreau.tres" id="2_gwwxg"]
+[ext_resource type="Material" uid="uid://emrd74rclhod" path="res://texture/LA_PORTE.tres" id="3_ycd5x"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="Gate" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+mesh = ExtResource("1_qaax1")
+surface_material_override/0 = ExtResource("2_gwwxg")
+surface_material_override/1 = ExtResource("2_gwwxg")
+surface_material_override/2 = ExtResource("2_gwwxg")
+surface_material_override/3 = ExtResource("2_gwwxg")
+surface_material_override/4 = ExtResource("2_gwwxg")
+surface_material_override/5 = ExtResource("2_gwwxg")
+surface_material_override/6 = ExtResource("2_gwwxg")
+surface_material_override/7 = ExtResource("2_gwwxg")
+surface_material_override/8 = ExtResource("2_gwwxg")
+surface_material_override/9 = ExtResource("3_ycd5x")
+surface_material_override/10 = ExtResource("3_ycd5x")
+surface_material_override/11 = ExtResource("3_ycd5x")
+surface_material_override/12 = ExtResource("3_ycd5x")
+surface_material_override/13 = ExtResource("3_ycd5x")
+surface_material_override/14 = ExtResource("3_ycd5x")
+surface_material_override/15 = ExtResource("3_ycd5x")
+surface_material_override/16 = ExtResource("3_ycd5x")
+surface_material_override/17 = ExtResource("3_ycd5x")
+surface_material_override/18 = ExtResource("3_ycd5x")
+surface_material_override/19 = ExtResource("3_ycd5x")
+surface_material_override/20 = ExtResource("3_ycd5x")
+surface_material_override/21 = ExtResource("3_ycd5x")
+surface_material_override/22 = ExtResource("3_ycd5x")
+surface_material_override/23 = ExtResource("3_ycd5x")
+surface_material_override/24 = ExtResource("3_ycd5x")
+surface_material_override/25 = ExtResource("3_ycd5x")
+surface_material_override/26 = ExtResource("3_ycd5x")
+surface_material_override/27 = ExtResource("3_ycd5x")
+surface_material_override/28 = ExtResource("3_ycd5x")
