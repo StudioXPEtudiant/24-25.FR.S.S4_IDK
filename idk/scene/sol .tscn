@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://53cievrl3uqw"]
+
+[ext_resource type="Texture2D" uid="uid://dvykijnsw6iea" path="res://texture/Stone_Floor.png" id="1_54dc2"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_p7ath"]
+albedo_texture = ExtResource("1_54dc2")
+metallic = 1.0
+
+[node name="Node3D" type="Node3D"]
+
+[node name="CSGBox3D" type="CSGBox3D" parent="."]
+size = Vector3(5, 0.1, 5)
+material = SubResource("StandardMaterial3D_p7ath")
