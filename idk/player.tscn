@@ -10,9 +10,11 @@ albedo_color = Color(1, 0.172549, 0.0941176, 1)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_rxxuc"]
 
-[node name="Player" type="Node3D"]
+[node name="Player" type="Node3D" node_paths=PackedStringArray("camera", "Head")]
 script = ExtResource("1_paagl")
 speed = 0.2
+camera = NodePath("CharacterBody3D/Head/Camera3D")
+Head = NodePath("CharacterBody3D/Head")
 
 [node name="CharacterBody3D" type="CharacterBody3D" parent="."]
 
