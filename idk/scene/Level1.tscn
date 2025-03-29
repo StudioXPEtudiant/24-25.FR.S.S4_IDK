@@ -1,8 +1,9 @@
-[gd_scene load_steps=5 format=3 uid="uid://c61s105841n14"]
+[gd_scene load_steps=6 format=3 uid="uid://c61s105841n14"]
 
 [ext_resource type="PackedScene" uid="uid://dpl5s6xlefiop" path="res://scene/key.tscn" id="1_2e7dh"]
 [ext_resource type="PackedScene" uid="uid://blvapknkib3gq" path="res://scene/mur.tscn" id="1_55nkg"]
 [ext_resource type="PackedScene" path="res://scene/sol .tscn" id="3_hwpbm"]
+[ext_resource type="PackedScene" path="res://Porte.tscn" id="4_buxpm"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_g0t3c"]
 albedo_color = Color(0, 0, 0, 1)
@@ -60,47 +61,6 @@ transform = Transform3D(3.72018, 0, 0, 0, 2.67908, 0, 0, 0, 2.45309, -4.83385, 0
 
 [node name="mur18" parent="mur" instance=ExtResource("1_55nkg")]
 transform = Transform3D(3.72018, 0, 0, 0, 2.67908, 0, 0, 0, 2.45309, 9.45248, 0.558519, -23.9948)
-
-[node name="porte" type="Node3D" parent="."]
-
-[node name="CSGBox3D" type="CSGBox3D" parent="porte"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.2389, 1.46631, 13.0797)
-size = Vector3(1.49341, 3.93262, 1)
-
-[node name="porte2" type="Node3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -7.75399)
-
-[node name="CSGBox3D" type="CSGBox3D" parent="porte2"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.2389, 1.46631, 12.9015)
-size = Vector3(1.49341, 3.93262, 1)
-
-[node name="porte3" type="Node3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -14.3552)
-
-[node name="CSGBox3D" type="CSGBox3D" parent="porte3"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.2389, 1.46631, 12.9015)
-size = Vector3(1.49341, 3.93262, 1)
-
-[node name="porte4" type="Node3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -22.4133)
-
-[node name="CSGBox3D" type="CSGBox3D" parent="porte4"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.2389, 1.46631, 12.9015)
-size = Vector3(1.49341, 3.93262, 1)
-
-[node name="porte5" type="Node3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -29.6367)
-
-[node name="CSGBox3D" type="CSGBox3D" parent="porte5"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.2389, 1.46631, 12.9015)
-size = Vector3(1.49341, 3.93262, 1)
-
-[node name="porte6" type="Node3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -37.5365)
-
-[node name="CSGBox3D" type="CSGBox3D" parent="porte6"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.2389, 1.46631, 12.9015)
-size = Vector3(1.49341, 3.93262, 1)
 
 [node name="drapeau" type="Node3D" parent="."]
 transform = Transform3D(0.234095, 0, 0, 0, 0.826793, 0, 0, 0, 0.208587, -5.73043, 0.401551, 3.7992)
@@ -160,7 +120,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.4658, 0, -2.62054)
 transform = Transform3D(4.19734, 0, 0, 0, 1, 0, 0, 0, 0.363727, -3.76853, 1.62766, 5.82154)
 
 [node name="CSGBox3D" type="CSGBox3D" parent="Tableau calcul signes"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 material = SubResource("StandardMaterial3D_g0t3c")
 
 [node name="Sol" parent="." instance=ExtResource("3_hwpbm")]
@@ -315,3 +274,24 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -41)
 
 [node name="Sol 50" parent="Sol" instance=ExtResource("3_hwpbm")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 0, -2)
+
+[node name="Porte" parent="." instance=ExtResource("4_buxpm")]
+transform = Transform3D(0.247337, 0, 0, 0, 0.285388, 0, 0, 0, 1.00367, 1.97148, 0, 20.1317)
+
+[node name="Porte2" parent="Porte" instance=ExtResource("4_buxpm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.718939, 0, -7.51729)
+
+[node name="Porte3" parent="Porte" instance=ExtResource("4_buxpm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.893621, 0, -15.5407)
+
+[node name="Porte4" parent="Porte" instance=ExtResource("4_buxpm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.809301, 0, -22.1737)
+
+[node name="Porte5" parent="Porte" instance=ExtResource("4_buxpm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.809302, 0, -30.0199)
+
+[node name="Porte6" parent="Porte" instance=ExtResource("4_buxpm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.809302, 0, -37.3544)
+
+[node name="Porte7" parent="Porte" instance=ExtResource("4_buxpm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.809302, 0, -45.1522)
