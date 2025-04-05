@@ -13,11 +13,3 @@ metallic_specular = 0.0
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.288464, 0.479004, -0.288121)
 size = Vector3(3.16113, 1.95801, 0.425293)
 material = SubResource("StandardMaterial3D_b0ove")
-
-[node name="OmniLight3D" type="OmniLight3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.248466, 0.338925, 0.0280697)
-light_energy = 2.588
-
-[node name="OmniLight3D2" type="OmniLight3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.248466, 0.338925, -0.567889)
-light_energy = 2.588
