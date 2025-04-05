@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://iucq3qcogaec"]
+
+[ext_resource type="PackedScene" uid="uid://bxkhxas7ew2v0" path="res://Big_stairs/fbxStairs.fbx" id="1_e22ge"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="fbxStairs" parent="." instance=ExtResource("1_e22ge")]
+transform = Transform3D(15.5232, 0, 0, 0, 18.5675, 0, 0, 0, 12.8387, -0.0434523, 0, 2.32166)
