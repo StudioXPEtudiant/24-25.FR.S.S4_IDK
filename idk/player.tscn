@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=3 uid="uid://b5jd64jmxy878"]
+[gd_scene load_steps=7 format=3 uid="uid://b5jd64jmxy878"]
 
 [ext_resource type="Script" path="res://script/MovePlayer.gd" id="1_paagl"]
 [ext_resource type="Script" path="res://camera_Player.gd" id="2_kel5p"]
@@ -9,6 +9,8 @@
 albedo_color = Color(1, 0.172549, 0.0941176, 1)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_rxxuc"]
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_cc1vq"]
 
 [node name="Player" type="Node3D" node_paths=PackedStringArray("camera", "Head")]
 script = ExtResource("1_paagl")
@@ -31,3 +33,12 @@ shape = SubResource("BoxShape3D_rxxuc")
 [node name="Camera3D" type="Camera3D" parent="CharacterBody3D/Head" node_paths=PackedStringArray("Object_to_follow")]
 script = ExtResource("2_kel5p")
 Object_to_follow = NodePath("..")
+
+[node name="Area3D" type="Area3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.0507098)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D"]
+transform = Transform3D(3, 0, 0, 0, 0.2, 0, 0, 0, 3, 0, 0, 0)
+shape = SubResource("CylinderShape3D_cc1vq")
+
+[connection signal="body_entered" from="Area3D" to="." method="_emit"]

@@ -5,8 +5,7 @@ extends Node3D
 @export var direction : Vector3
 @export var camera: Node3D
 @export var Head: Node3D
-var objet: bool
-var accessable: bool
+var emit: bool
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -36,7 +35,6 @@ func _input(event):
 			camera.rotate_x(-event.relative.y * 0.01)
 			camera.rotation.x = clamp(camera.rotation.x, deg_to_rad(-30), deg_to_rad(60))
 
-func _object():
-	if accessable == true and Input.is_action_just_pressed("interact") == true:
-		objet = true
+func _emit():
+	emit == true
 	pass
