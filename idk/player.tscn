@@ -10,35 +10,26 @@ albedo_color = Color(1, 0.172549, 0.0941176, 1)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_rxxuc"]
 
-[sub_resource type="CylinderShape3D" id="CylinderShape3D_cc1vq"]
+[sub_resource type="BoxShape3D" id="BoxShape3D_scq7k"]
 
-[node name="Player" type="Node3D" node_paths=PackedStringArray("camera", "Head")]
+[node name="Player" type="CharacterBody3D"]
+collision_mask = 6
 script = ExtResource("1_paagl")
-speed = 0.2
-camera = NodePath("CharacterBody3D/Head/Camera3D")
-Head = NodePath("CharacterBody3D/Head")
 
-[node name="CharacterBody3D" type="CharacterBody3D" parent="."]
+[node name="Camera3D" type="Camera3D" parent="." node_paths=PackedStringArray("Object_to_follow")]
+current = true
+script = ExtResource("2_kel5p")
+Object_to_follow = NodePath("../Head")
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="CharacterBody3D"]
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
 mesh = SubResource("BoxMesh_h8vnw")
 skeleton = NodePath("")
 surface_material_override/0 = SubResource("StandardMaterial3D_ampjw")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="CharacterBody3D"]
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="."]
 shape = SubResource("BoxShape3D_rxxuc")
 
-[node name="Head" type="Node3D" parent="CharacterBody3D"]
+[node name="Head" type="Node3D" parent="."]
 
-[node name="Camera3D" type="Camera3D" parent="CharacterBody3D/Head" node_paths=PackedStringArray("Object_to_follow")]
-script = ExtResource("2_kel5p")
-Object_to_follow = NodePath("..")
-
-[node name="Area3D" type="Area3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.0507098)
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D"]
-transform = Transform3D(3, 0, 0, 0, 0.2, 0, 0, 0, 3, 0, 0, 0)
-shape = SubResource("CylinderShape3D_cc1vq")
-
-[connection signal="body_entered" from="Area3D" to="." method="_emit"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("BoxShape3D_scq7k")

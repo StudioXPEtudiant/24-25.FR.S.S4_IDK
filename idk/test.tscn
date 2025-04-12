@@ -1,13 +1,13 @@
 [gd_scene load_steps=5 format=3 uid="uid://btedsv4ph4lk3"]
 
 [ext_resource type="PackedScene" uid="uid://b5jd64jmxy878" path="res://player.tscn" id="1_0vh3m"]
-[ext_resource type="PackedScene" uid="uid://bb4mkw2tcv3or" path="res://objet_test.tscn" id="2_8odvw"]
+[ext_resource type="PackedScene" uid="uid://bxpya2xsv5765" path="res://runee/rune.tscn" id="2_5s4da"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_7cn3k"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_8sp3b"]
 
-[node name="Node3D" type="Node3D"]
+[node name="Node3D" type="CharacterBody3D"]
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 0.787699, 0.61606, 0, -0.61606, 0.787699, 0, 8.8725, 9.46061)
@@ -26,5 +26,5 @@ mesh = SubResource("BoxMesh_8sp3b")
 [node name="Player" parent="." instance=ExtResource("1_0vh3m")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.04971, -0.50968, 0.612426)
 
-[node name="Objet test" parent="." instance=ExtResource("2_8odvw")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.63245, -1.2023, 8.14807)
+[node name="Node3D" parent="." instance=ExtResource("2_5s4da")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.01098, -1.56176, -9.20983)
