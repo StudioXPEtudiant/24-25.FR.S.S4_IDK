@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://dni5a83esxysv"]
+
+[ext_resource type="Texture2D" uid="uid://dtwtxb3sv3ge7" path="res://texture/lunarrock_s.png" id="1_enbg7"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_kv7u3"]
+albedo_color = Color(0.295867, 0.295866, 0.295866, 1)
+albedo_texture = ExtResource("1_enbg7")
+
+[node name="Node3D" type="Node3D"]
+
+[node name="CSGCylinder3D" type="CSGCylinder3D" parent="."]
+transform = Transform3D(0.662686, 0, 0, 0, -0.0126408, 0, 0, 0, 0.662686, 0, 0, 0)
+operation = 2
+material = SubResource("StandardMaterial3D_kv7u3")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="CSGCylinder3D"]
+transform = Transform3D(0.436129, 0, 0, 0, 4.78342, 0, 0, 0, 0.163212, 0, 0, 0)
+operation = 2
