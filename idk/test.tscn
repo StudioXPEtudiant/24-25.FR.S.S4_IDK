@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://btedsv4ph4lk3"]
 
 [ext_resource type="PackedScene" uid="uid://b5jd64jmxy878" path="res://player.tscn" id="1_0vh3m"]
-[ext_resource type="PackedScene" uid="uid://bxpya2xsv5765" path="res://runee/rune.tscn" id="2_5s4da"]
+[ext_resource type="PackedScene" uid="uid://bb4mkw2tcv3or" path="res://objet_test.tscn" id="2_oaegl"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_7cn3k"]
 
@@ -24,7 +24,7 @@ transform = Transform3D(5, 0, 0, 0, 1, 0, 0, 0, 5, 0, 0, 0)
 mesh = SubResource("BoxMesh_8sp3b")
 
 [node name="Player" parent="." instance=ExtResource("1_0vh3m")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.04971, -0.50968, 0.612426)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.572143, -0.957441, 0.657475)
 
-[node name="Node3D" parent="." instance=ExtResource("2_5s4da")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.01098, -1.56176, -9.20983)
+[node name="Objet test" parent="." instance=ExtResource("2_oaegl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.25145, -1.4297, -6.33843)

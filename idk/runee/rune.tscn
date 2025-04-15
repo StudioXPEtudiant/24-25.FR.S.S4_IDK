@@ -8,7 +8,7 @@ albedo_color = Color(0.462291, 0.462291, 0.462291, 1)
 albedo_texture = ExtResource("1_tutpy")
 metallic = 0.35
 
-[node name="Node3D" type="Node3D"]
+[node name="Node3D" type="Node3D" groups=["object"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.49962e-05, -0.00371563, 0.00207043)
 script = ExtResource("1_7o7bs")
 

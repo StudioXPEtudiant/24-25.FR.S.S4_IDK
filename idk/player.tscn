@@ -1,35 +1,36 @@
-[gd_scene load_steps=7 format=3 uid="uid://b5jd64jmxy878"]
+[gd_scene load_steps=5 format=3 uid="uid://b5jd64jmxy878"]
 
 [ext_resource type="Script" path="res://script/MovePlayer.gd" id="1_paagl"]
 [ext_resource type="Script" path="res://camera_Player.gd" id="2_kel5p"]
 
-[sub_resource type="BoxMesh" id="BoxMesh_h8vnw"]
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ampjw"]
-albedo_color = Color(1, 0.172549, 0.0941176, 1)
-
 [sub_resource type="BoxShape3D" id="BoxShape3D_rxxuc"]
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_scq7k"]
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_kikv5"]
+height = 0.490283
+radius = 1.2935
 
 [node name="Player" type="CharacterBody3D"]
 collision_mask = 6
 script = ExtResource("1_paagl")
 
 [node name="Camera3D" type="Camera3D" parent="." node_paths=PackedStringArray("Object_to_follow")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.657519, 0)
 current = true
 script = ExtResource("2_kel5p")
-Object_to_follow = NodePath("../Head")
-
-[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
-mesh = SubResource("BoxMesh_h8vnw")
-skeleton = NodePath("")
-surface_material_override/0 = SubResource("StandardMaterial3D_ampjw")
+Object_to_follow = NodePath("../CSGBox3D")
 
 [node name="CollisionShape3D2" type="CollisionShape3D" parent="."]
 shape = SubResource("BoxShape3D_rxxuc")
 
-[node name="Head" type="Node3D" parent="."]
+[node name="Area3D" type="Area3D" parent="."]
+collision_layer = 0
+collision_mask = 2
+monitorable = false
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
-shape = SubResource("BoxShape3D_scq7k")
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00332642, 0.0114917, 0)
+shape = SubResource("CylinderShape3D_kikv5")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="."]
+
+[connection signal="body_entered" from="Area3D" to="." method="_on_area_3d_body_entered"]

@@ -11,5 +11,5 @@ func _process(delta):
 	pass
 
 func collect():
-		collected.emit()
-		queue_free()
+	collected.emit()
+	queue_free()
