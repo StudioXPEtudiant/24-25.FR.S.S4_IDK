@@ -1,0 +1,48 @@
+[gd_scene format=3 uid="uid://cxda0qtcmtfqu"]
+
+[node name="Node3D" type="Node3D"]
+transform = Transform3D(1.00282, 0, 0, 0, 1.00282, 0, 0, 0, 1.00282, 0, 0, 0)
+
+[node name="CSGBox3D" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0312784, 0.210997, 0.00357056)
+size = Vector3(0.35849, 0.420593, 0.332947)
+
+[node name="CSGCylinder3D" type="CSGCylinder3D" parent="CSGBox3D"]
+transform = Transform3D(-4.36694e-08, -0.999039, 0, 0.999039, -4.36694e-08, 0, 0, 0, 0.728775, 0.014504, 0.0911766, 0.00458956)
+operation = 2
+radius = 0.0557711
+height = 0.453914
+sides = 64
+
+[node name="CSGCylinder3D2" type="CSGCylinder3D" parent="CSGBox3D"]
+transform = Transform3D(1.09166, 0, 0, 0, 1, 0, 0, 0, 1.10534, 0, 0, 0)
+operation = 2
+radius = 0.136405
+height = 0.547688
+sides = 64
+
+[node name="CSGPolygon3D" type="CSGPolygon3D" parent="CSGBox3D"]
+transform = Transform3D(0.206627, 0.177891, -0.00544374, -0.155083, 0.23774, 0.00130263, 0.0150467, 0.00746992, 0.0881812, -0.725653, -0.117307, 0.0209913)
+polygon = PackedVector2Array(0.614921, 1.22762, 1.06008, 1.82155, 1.29806, 1.55682, 1.0673, 1.2409)
+
+[node name="CSGPolygon3D2" type="CSGPolygon3D" parent="CSGBox3D/CSGPolygon3D"]
+transform = Transform3D(1, -1.20723e-07, 0, -3.84171e-09, 1, -1.39698e-09, 0, 1.49012e-08, 1, -0.0186722, -0.0447263, 0.0289092)
+polygon = PackedVector2Array(0.611561, 0.656331, 0.64396, 1.2769, 1.08064, 1.2846, 0.959412, 0.74566)
+
+[node name="CSGPolygon3D2" type="CSGPolygon3D" parent="CSGBox3D"]
+transform = Transform3D(-0.202811, -0.184494, -7.72456e-09, -0.160746, 0.232773, 0, 1.77303e-08, 1.6129e-08, -0.0883587, 0.727101, -0.097533, -0.0495306)
+polygon = PackedVector2Array(0.614921, 1.22762, 1.06008, 1.82155, 1.29806, 1.55682, 1.0673, 1.2409)
+
+[node name="CSGPolygon3D2" type="CSGPolygon3D" parent="CSGBox3D/CSGPolygon3D2"]
+transform = Transform3D(1, -1.20723e-07, 0, -3.84171e-09, 1, -1.39698e-09, 0, 1.49012e-08, 1, -0.0186722, -0.0447263, 0.0289092)
+polygon = PackedVector2Array(0.611561, 0.656331, 0.64396, 1.2769, 1.08064, 1.2846, 0.959412, 0.74566)
+
+[node name="CSGPolygon3D3" type="CSGPolygon3D" parent="CSGBox3D"]
+transform = Transform3D(1.08577, 0, 0, 0, 1.06118, 0, 0, 0, 0.999999, 0.00380219, 0, 0.172561)
+operation = 2
+polygon = PackedVector2Array(-0.047661, 0.211189, -0.0388853, 0.158155, -0.0837205, 0.14436, -0.120634, 0.136493, -0.160657, 0.130993, -0.178307, 0.129423, -0.178245, 0.160503, -0.178975, 0.192106, -0.178741, 0.207163, -0.136149, 0.210752, -0.0847912, 0.207599, -0.0595079, 0.20761, -0.0508212, 0.210393)
+
+[node name="CSGPolygon3D4" type="CSGPolygon3D" parent="CSGBox3D"]
+transform = Transform3D(1.14721, 0, 0, 0, -1.06118, 8.74226e-08, 0, -9.27716e-08, -0.999998, 0.249942, 0.371019, -0.50441)
+operation = 2
+polygon = PackedVector2Array(-0.047661, 0.211189, -0.0388853, 0.158155, -0.0837205, 0.14436, -0.120634, 0.136493, -0.160657, 0.130993, -0.178307, 0.129423, -0.178245, 0.160503, -0.178975, 0.192106, -0.178741, 0.207163, -0.136149, 0.210752, -0.0847912, 0.207599, -0.0595079, 0.20761, -0.0508212, 0.210393)
