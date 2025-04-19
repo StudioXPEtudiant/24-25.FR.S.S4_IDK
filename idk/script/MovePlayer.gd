@@ -1,40 +1,66 @@
-extends Node3D
-@export var speed:float
-@export var horizontalAxe : float
-@export var verticalAxe : float
-@export var direction : Vector3
-@export var camera: Node3D
-@export var Head: Node3D
-var emit: bool
+extends CharacterBody3D
 
-# Called when the node enters the scene tree for the first time.
-func _ready():
-	pass # Replace with function body.
+signal hit
 
+# How fast the player moves in meters per second
+@export var speed = 14
+# The downward acceleration while in the air, in meters per second squared.
+@export var fall_acceleration = 75
+# Vertical impulse applied to the character upon jumping in meters per second.
+@export var jump_impulse = 20
+# Vertical impulse applied to the character upon bouncing over a mob
+# in meters per second.
+@export var bounce_impulse = 16
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
-	pass
+var target_velocity = Vector3.ZERO
+
 
 func _physics_process(delta):
-	horizontalAxe = Input.get_axis("Player_Left", "Player_Right")
-	verticalAxe = Input.get_axis("Player_Up", "Player_Down")
-	direction = Vector3(horizontalAxe, 0, verticalAxe).normalized()
-	position += direction * speed
-	pass
-	
-	
-func _input(event):
-	if event is InputEventMouseMotion:
-		Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
-	elif event.is_action_pressed("ui_cancel"):
-		Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
-	if Input.get_mouse_mode() == Input.MOUSE_MODE_CAPTURED:
-		if event is InputEventMouseMotion:
-			Head.rotate_y(-event.relative.x * 0.01)
-			camera.rotate_x(-event.relative.y * 0.01)
-			camera.rotation.x = clamp(camera.rotation.x, deg_to_rad(-30), deg_to_rad(60))
 
-func _emit():
-	emit == true
-	pass
+	var direction = Vector3.ZERO
+
+	# Déplacement
+	if Input.is_action_pressed("Player_Right"):
+		direction.x = direction.x + 1
+	if Input.is_action_pressed("Player_Left"):
+		direction.x = direction.x - 1
+	if Input.is_action_pressed("Player_Down"):
+		direction.z = direction.z + 1
+	if Input.is_action_pressed("Player_Up"):
+		direction.z = direction.z - 1
+
+	# eviter les diagonales
+	if direction != Vector3.ZERO:
+		direction = direction.normalized()
+		#$head.look_at(position + direction, Vector3.UP)
+
+	target_velocity.x = direction.x * speed
+	target_velocity.z = direction.z * speed
+
+	# collision (1 par frame)
+	for index in range(get_slide_collision_count()):
+		var collision = get_slide_collision(index)
+
+		# si la collision est avec le sol
+		if collision.get_collider() == null:
+			continue
+
+		# si la collision est avec un objet
+		if collision.get_collider().is_in_group("object"):
+			var object = collision.get_collider()
+			# collect
+			object.collect()
+			# evite les répétition de l'action
+			break
+
+	# Moving the Character
+	velocity = target_velocity
+	move_and_slide()
+
+# sert a rien mais je le garde au cas où
+func die():
+	hit.emit()
+	queue_free()
+
+func _on_mob_detector_body_entered(body):
+	die()
