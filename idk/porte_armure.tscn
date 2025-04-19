@@ -20,8 +20,8 @@ size = Vector3(0.209229, 0.410995, 0.0610962)
 material = ExtResource("2_p64r0")
 
 [node name="CSGBox3D8" type="CSGBox3D" parent="."]
-transform = Transform3D(0.443927, 0, 0, 0, 1, 0, 0, 0, 1.36867, -0.00400241, 1.1543, 0.0232849)
-size = Vector3(0.209229, 0.218071, 0.0610962)
+transform = Transform3D(0.443927, 0, 0, 0, 1, 0, 0, 0, 1.36867, -0.00400241, 1.18224, 0.0232849)
+size = Vector3(0.209229, 0.273952, 0.0610962)
 material = ExtResource("2_p64r0")
 
 [node name="CSGBox3D6" type="CSGBox3D" parent="."]
