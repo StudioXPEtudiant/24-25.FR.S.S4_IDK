@@ -1,0 +1,45 @@
+[gd_scene load_steps=3 format=3 uid="uid://ckk3f0oukcbys"]
+
+[ext_resource type="Material" uid="uid://cd1axg6p2qb4a" path="res://texture/socle.tres" id="1_rlmug"]
+[ext_resource type="Material" uid="uid://cvs2vux36asxr" path="res://texture/armor_stand.tres" id="2_p64r0"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="CSGBox3D" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -0.1, 0, 0, 0, 1, 0, 0, 0)
+material = ExtResource("1_rlmug")
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="."]
+transform = Transform3D(0.443927, 0, 0, 0, 1, 0, 0, 0, 1.36867, -0.155543, 0.332916, 0.0232849)
+size = Vector3(0.209229, 0.61322, 0.0610962)
+material = ExtResource("2_p64r0")
+
+[node name="CSGBox3D4" type="CSGBox3D" parent="."]
+transform = Transform3D(0.443927, 0, 0, 0, 1, 0, 0, 0, 1.36867, -0.129925, 0.85207, 0.0232849)
+size = Vector3(0.209229, 0.410995, 0.0610962)
+material = ExtResource("2_p64r0")
+
+[node name="CSGBox3D8" type="CSGBox3D" parent="."]
+transform = Transform3D(0.443927, 0, 0, 0, 1, 0, 0, 0, 1.36867, -0.00400241, 1.18224, 0.0232849)
+size = Vector3(0.209229, 0.273952, 0.0610962)
+material = ExtResource("2_p64r0")
+
+[node name="CSGBox3D6" type="CSGBox3D" parent="."]
+transform = Transform3D(0.443927, 0, 0, 0, 1, 0, 0, 0, 1.36867, 0.100278, 0.85207, 0.0232849)
+size = Vector3(0.209229, 0.410995, 0.0610962)
+material = ExtResource("2_p64r0")
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="."]
+transform = Transform3D(0.443927, 0, 0, 0, 1, 0, 0, 0, 1.36867, 0.129215, 0.332916, 0.0296984)
+size = Vector3(0.209229, 0.61322, 0.0610962)
+material = ExtResource("2_p64r0")
+
+[node name="CSGBox3D5" type="CSGBox3D" parent="."]
+transform = Transform3D(-1.94047e-08, -1, 0, 0.443927, -4.37114e-08, 0, 0, 0, 1.36867, -0.0155693, 0.679654, 0.0270232)
+size = Vector3(0.209229, 0.442337, 0.0665588)
+material = ExtResource("2_p64r0")
+
+[node name="CSGBox3D7" type="CSGBox3D" parent="."]
+transform = Transform3D(-1.94047e-08, -1, 0, 0.443927, -4.37114e-08, 0, 0, 0, 1.36867, -0.0155693, 1.08538, 0.0270232)
+size = Vector3(0.209229, 0.442337, 0.0665588)
+material = ExtResource("2_p64r0")

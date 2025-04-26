@@ -3,12 +3,12 @@
 [ext_resource type="PackedScene" uid="uid://dpl5s6xlefiop" path="res://scene/key.tscn" id="1_2e7dh"]
 [ext_resource type="PackedScene" uid="uid://blvapknkib3gq" path="res://scene/mur.tscn" id="1_55nkg"]
 [ext_resource type="PackedScene" uid="uid://53cievrl3uqw" path="res://scene/sol .tscn" id="3_hwpbm"]
-[ext_resource type="PackedScene" path="res://Porte_texture.tscn" id="4_buxpm"]
+[ext_resource type="PackedScene" uid="uid://c18yo6cmr01kb" path="res://Porte_texture.tscn" id="4_buxpm"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_g0t3c"]
 albedo_color = Color(0, 0, 0, 1)
 
-[node name="Node3D2" type="Node3D"]
+[node name="Node3D" type="Node3D"]
 
 [node name="OmniLight3D" type="OmniLight3D" parent="."]
 omni_range = 1.2023
