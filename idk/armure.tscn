@@ -4,8 +4,8 @@
 transform = Transform3D(1.00282, 0, 0, 0, 1.00282, 0, 0, 0, 1.00282, 0, 0, 0)
 
 [node name="CSGBox3D" type="CSGBox3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0312784, 0.210997, 0.00357056)
-size = Vector3(0.35849, 0.420593, 0.332947)
+transform = Transform3D(1.08465, 0, 0, 0, 0.999996, 0, 0, 0, 1.10739, 0.0629076, 1.00826, 0.110081)
+size = Vector3(0.35849, 0.473846, 0.332947)
 
 [node name="CSGCylinder3D" type="CSGCylinder3D" parent="CSGBox3D"]
 transform = Transform3D(-4.36694e-08, -0.999039, 0, 0.999039, -4.36694e-08, 0, 0, 0, 0.728775, 0.014504, 0.0911766, 0.00458956)
