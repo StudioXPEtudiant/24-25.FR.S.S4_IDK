@@ -1,7 +1,8 @@
-[gd_scene load_steps=14 format=3 uid="uid://c61s105841n14"]
+[gd_scene load_steps=15 format=3 uid="uid://c61s105841n14"]
 
 [ext_resource type="PackedScene" uid="uid://dpl5s6xlefiop" path="res://scene/key.tscn" id="1_2e7dh"]
 [ext_resource type="PackedScene" uid="uid://blvapknkib3gq" path="res://scene/mur.tscn" id="1_55nkg"]
+[ext_resource type="PackedScene" path="res://drapeau.tscn" id="2_l31n4"]
 [ext_resource type="PackedScene" uid="uid://53cievrl3uqw" path="res://scene/sol .tscn" id="3_hwpbm"]
 [ext_resource type="PackedScene" uid="uid://c18yo6cmr01kb" path="res://Porte_texture.tscn" id="4_buxpm"]
 [ext_resource type="PackedScene" uid="uid://brusr7vnnjp84" path="res://runee/rune 4.tscn" id="5_ad0wq"]
@@ -74,27 +75,20 @@ transform = Transform3D(3.72018, 0, 0, 0, 2.67908, 0, 0, 0, 2.45309, -4.87018, 7
 [node name="drapeau" type="Node3D" parent="."]
 transform = Transform3D(0.234095, 0, 0, 0, 0.826793, 0, 0, 0, 0.208587, -5.73043, 0.401551, 3.7992)
 
-[node name="CSGBox3D" type="CSGBox3D" parent="drapeau"]
+[node name="drapeau2" parent="drapeau" instance=ExtResource("2_l31n4")]
+transform = Transform3D(4.27177, 0, 0, 0, 1.20949, 0, 0, 0, 4.79416, 21.855, -0.485673, 50.2385)
 
-[node name="drapeau2" type="Node3D" parent="drapeau"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.2437, 0, 12.8292)
+[node name="drapeau3" parent="drapeau" instance=ExtResource("2_l31n4")]
+transform = Transform3D(4.27177, 0, 0, 0, 1.20949, 0, 0, 0, 4.79416, 21.8165, -0.485673, 13.1848)
 
-[node name="CSGBox3D" type="CSGBox3D" parent="drapeau/drapeau2"]
+[node name="drapeau4" parent="drapeau" instance=ExtResource("2_l31n4")]
+transform = Transform3D(4.27177, 0, 0, 0, 1.20949, 0, 0, 0, 4.79416, 22.7879, 8.61445, -115.528)
 
-[node name="drapeau3" type="Node3D" parent="drapeau"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.2437, 0, 49.1661)
+[node name="drapeau5" parent="drapeau" instance=ExtResource("2_l31n4")]
+transform = Transform3D(4.27177, 0, 0, 0, 1.20949, 0, 0, 0, 4.79416, 22.7879, 8.61445, -150.499)
 
-[node name="CSGBox3D" type="CSGBox3D" parent="drapeau/drapeau3"]
-
-[node name="drapeau4" type="Node3D" parent="drapeau"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22.2255, 8.55573, -116.128)
-
-[node name="CSGBox3D" type="CSGBox3D" parent="drapeau/drapeau4"]
-
-[node name="drapeau5" type="Node3D" parent="drapeau"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22.2255, 8.55573, -151.164)
-
-[node name="CSGBox3D" type="CSGBox3D" parent="drapeau/drapeau5"]
+[node name="drapeau6" parent="drapeau" instance=ExtResource("2_l31n4")]
+transform = Transform3D(-2.18717, 0, 4.19119e-07, 0, 0.93449, 0, -1.91208e-07, 0, -4.79416, -0.192884, -0.485673, -1.13633)
 
 [node name="Key" parent="." instance=ExtResource("1_2e7dh")]
 transform = Transform3D(0.00334296, 0.121252, 1.93213, -4.98827, 0.0244484, 1.12573e-10, -0.0578894, -2.09971, 0.111575, -4.17804, -2.66996, 13.7414)
