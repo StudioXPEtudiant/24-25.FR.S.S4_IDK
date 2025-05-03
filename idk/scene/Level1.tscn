@@ -1,10 +1,11 @@
-[gd_scene load_steps=9 format=3 uid="uid://c61s105841n14"]
+[gd_scene load_steps=10 format=3 uid="uid://c61s105841n14"]
 
 [ext_resource type="PackedScene" uid="uid://dpl5s6xlefiop" path="res://scene/key.tscn" id="1_2e7dh"]
 [ext_resource type="PackedScene" uid="uid://blvapknkib3gq" path="res://scene/mur.tscn" id="1_55nkg"]
 [ext_resource type="PackedScene" uid="uid://53cievrl3uqw" path="res://scene/sol .tscn" id="3_hwpbm"]
 [ext_resource type="PackedScene" uid="uid://c18yo6cmr01kb" path="res://Porte_texture.tscn" id="4_buxpm"]
 [ext_resource type="PackedScene" uid="uid://brusr7vnnjp84" path="res://runee/rune 4.tscn" id="5_ad0wq"]
+[ext_resource type="PackedScene" uid="uid://dni5a83esxysv" path="res://socle.tscn" id="5_m8lpt"]
 [ext_resource type="PackedScene" uid="uid://bfnemh07rnarn" path="res://runee/rune 3.tscn" id="6_8ynsx"]
 [ext_resource type="PackedScene" uid="uid://cbr0idr681rxn" path="res://runee/rune 2.tscn" id="7_4geo5"]
 
@@ -383,23 +384,23 @@ transform = Transform3D(1, 0, 4.19095e-09, 0, 1, 0, 0, 0, 1, 7.6814, 0.942918, 1
 [node name="Socles" type="Node3D" parent="L\'armurerie"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.53024, -0.298435, -11.9747)
 
-[node name="CSGBox3D" type="CSGBox3D" parent="L\'armurerie/Socles"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 7, -12)
+[node name="socles" parent="L\'armurerie/Socles" instance=ExtResource("5_m8lpt")]
+transform = Transform3D(1.7, 0, 0, 0, 1, 0, 0, 0, 1.8, -13.4025, 7.3895, -14.5105)
 
-[node name="CSGBox3D2" type="CSGBox3D" parent="L\'armurerie/Socles"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.21116, 7, -12)
+[node name="socles2" parent="L\'armurerie/Socles" instance=ExtResource("5_m8lpt")]
+transform = Transform3D(1.7, 0, 0, 0, 1, 0, 0, 0, 1.8, -15.4342, 7.3895, -14.5105)
 
-[node name="CSGBox3D3" type="CSGBox3D" parent="L\'armurerie/Socles"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.4884, 7, -12)
+[node name="socles3" parent="L\'armurerie/Socles" instance=ExtResource("5_m8lpt")]
+transform = Transform3D(1.7, 0, 0, 0, 1, 0, 0, 0, 1.8, -11.2727, 7.3895, -14.5105)
 
-[node name="CSGBox3D4" type="CSGBox3D" parent="L\'armurerie/Socles"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15.3784, 7, -14.4581)
+[node name="socles4" parent="L\'armurerie/Socles" instance=ExtResource("5_m8lpt")]
+transform = Transform3D(1.7, 0, 0, 0, 1, 0, 0, 0, 1.8, -0.0182853, 7.4275, -11.9963)
 
-[node name="CSGBox3D5" type="CSGBox3D" parent="L\'armurerie/Socles"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.3898, 7, -14.4351)
+[node name="socles5" parent="L\'armurerie/Socles" instance=ExtResource("5_m8lpt")]
+transform = Transform3D(1.7, 0, 0, 0, 1, 0, 0, 0, 1.8, 2.22528, 7.4275, -11.9963)
 
-[node name="CSGBox3D6" type="CSGBox3D" parent="L\'armurerie/Socles"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.2738, 7, -14.4573)
+[node name="socles6" parent="L\'armurerie/Socles" instance=ExtResource("5_m8lpt")]
+transform = Transform3D(1.7, 0, 0, 0, 1, 0, 0, 0, 1.8, 4.48899, 7.4275, -11.9963)
 
 [node name="Epées" type="Node3D" parent="L\'armurerie"]
 
