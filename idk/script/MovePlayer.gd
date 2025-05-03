@@ -26,19 +26,16 @@ func _process(delta):
 func _physics_process(delta):
 	var direction = Vector3.ZERO
 
-	# We check for each move input and update the direction accordingly
-	if Input.is_action_pressed("move_right"):
+	if Input.is_action_pressed("Player_Right"):
 		direction.x = direction.x + 1
-	if Input.is_action_pressed("move_left"):
+	if Input.is_action_pressed("Player_Left"):
 		direction.x = direction.x - 1
-	if Input.is_action_pressed("move_back"):
-		# Notice how we are working with the vector's x and z axes.
-		# In 3D, the XZ plane is the ground plane.
+	if Input.is_action_pressed("Player_Down"):
 		direction.z = direction.z + 1
-	if Input.is_action_pressed("move_forward"):
+	if Input.is_action_pressed("Player_Up"):
 		direction.z = direction.z - 1
 
-	# Prevent diagonal moving fast af
+	# Eviter les diagonales
 	if direction != Vector3.ZERO:
 		direction = direction.normalized()
 		$Pivot.look_at(position + direction, Vector3.UP)
@@ -47,8 +44,7 @@ func _physics_process(delta):
 	target_velocity.x = direction.x * speed
 	target_velocity.z = direction.z * speed
 
-	# Iterate through all collisions that occurred this frame
-	# in C this would be for(int i = 0; i < collisions.Count; i++)
+	
 	for index in range(get_slide_collision_count()):
 		# We get one of the collisions with the player
 		var collision = get_slide_collision(index)
@@ -58,7 +54,7 @@ func _physics_process(delta):
 			continue
 
 		# If the collider is with a mob
-		if collision.get_collider().is_in_group("mob"):
+		if collision.get_collider().is_in_group("object"):
 			var mob = collision.get_collider()
 			# we check that we are hitting it from above.
 			if Vector3.UP.dot(collision.get_normal()) > 0.1:
