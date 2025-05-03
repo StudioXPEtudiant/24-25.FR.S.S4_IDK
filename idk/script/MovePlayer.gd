@@ -10,13 +10,13 @@ var accessable: bool
 var est_accroupi = false
 @export var animation : AnimationPlayer
 @export_range (1, 10, 0.1) var s_accroupir_vitesse : float = 3.0
-@export var shapecast_s_accroupir : Node3D
+@export var shapecast_s_accroupir : ShapeCast3D
 @export var saccroupir : bool = false
 var target_velocity = Vector3.ZERO
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	shapecast_s_accroupir.add_exception($CharacterBody3D)
+	shapecast_s_accroupir.add_exception(self)
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -38,7 +38,7 @@ func _physics_process(delta):
 	# Eviter les diagonales
 	if direction != Vector3.ZERO:
 		direction = direction.normalized()
-		$Pivot.look_at(position + direction, Vector3.UP)
+		Head.look_at(position + direction, Vector3.UP)
 
 	# Ground Velocity
 	target_velocity.x = direction.x * speed
