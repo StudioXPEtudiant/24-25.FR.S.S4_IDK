@@ -1,8 +1,11 @@
-[gd_scene load_steps=2 format=3 uid="uid://c4fiqvwxjjtmo"]
+[gd_scene load_steps=3 format=3 uid="uid://c4fiqvwxjjtmo"]
+
+[ext_resource type="Script" path="res://script/reponse_calcul.gd" id="1_mkfob"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_x8y2q"]
 
 [node name="cube de calcul" type="StaticBody3D" groups=["object"]]
+script = ExtResource("1_mkfob")
 
 [node name="CSGBox3D" type="CSGBox3D" parent="."]
 
