@@ -1,7 +1,7 @@
 [gd_scene load_steps=10 format=3 uid="uid://b5jd64jmxy878"]
 
 [ext_resource type="Script" path="res://script/MovePlayer.gd" id="1_paagl"]
-[ext_resource type="Script" path="res://camera_Player.gd" id="2_kel5p"]
+[ext_resource type="Script" path="res://script/camera_Player.gd" id="2_kel5p"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_rxxuc"]
 
