@@ -1,0 +1,16 @@
+[gd_scene load_steps=2 format=3 uid="uid://cv0v3w4pkr2pg"]
+
+[ext_resource type="PackedScene" path="res://porte_armure.tscn" id="1_p100b"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="CSGBox3D" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.53941, 0.49355, 0.667319)
+size = Vector3(0.132736, 0.275024, 0.116264)
+
+[node name="CSGCylinder3D" type="CSGCylinder3D" parent="CSGBox3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.48811, 0, 0)
+sides = 64
+
+[node name="Node3D" parent="." instance=ExtResource("1_p100b")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.38006, 0, 0.644043)
