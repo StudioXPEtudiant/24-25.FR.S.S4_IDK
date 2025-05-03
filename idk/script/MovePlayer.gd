@@ -1,4 +1,4 @@
-extends Node3D
+extends CharacterBody3D
 @export var speed:float
 @export var horizontalAxe : float
 @export var verticalAxe : float
@@ -12,6 +12,7 @@ var est_accroupi = false
 @export_range (1, 10, 0.1) var s_accroupir_vitesse : float = 3.0
 @export var shapecast_s_accroupir : Node3D
 @export var saccroupir : bool = false
+var target_velocity = Vector3.ZERO
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -23,11 +24,52 @@ func _process(delta):
 	pass
 
 func _physics_process(delta):
-	horizontalAxe = Input.get_axis("Player_Left", "Player_Right")
-	verticalAxe = Input.get_axis("Player_Up", "Player_Down")
-	direction = Vector3(horizontalAxe, 0, verticalAxe).normalized()
-	position += direction * speed
-	pass
+	var direction = Vector3.ZERO
+
+	# We check for each move input and update the direction accordingly
+	if Input.is_action_pressed("move_right"):
+		direction.x = direction.x + 1
+	if Input.is_action_pressed("move_left"):
+		direction.x = direction.x - 1
+	if Input.is_action_pressed("move_back"):
+		# Notice how we are working with the vector's x and z axes.
+		# In 3D, the XZ plane is the ground plane.
+		direction.z = direction.z + 1
+	if Input.is_action_pressed("move_forward"):
+		direction.z = direction.z - 1
+
+	# Prevent diagonal moving fast af
+	if direction != Vector3.ZERO:
+		direction = direction.normalized()
+		$Pivot.look_at(position + direction, Vector3.UP)
+
+	# Ground Velocity
+	target_velocity.x = direction.x * speed
+	target_velocity.z = direction.z * speed
+
+	# Iterate through all collisions that occurred this frame
+	# in C this would be for(int i = 0; i < collisions.Count; i++)
+	for index in range(get_slide_collision_count()):
+		# We get one of the collisions with the player
+		var collision = get_slide_collision(index)
+
+		# If the collision is with ground
+		if collision.get_collider() == null:
+			continue
+
+		# If the collider is with a mob
+		if collision.get_collider().is_in_group("mob"):
+			var mob = collision.get_collider()
+			# we check that we are hitting it from above.
+			if Vector3.UP.dot(collision.get_normal()) > 0.1:
+				# If so, we squash it and bounce.
+				mob.squash()
+				# Prevent further duplicate calls.
+				break
+
+	# Moving the Character
+	velocity = target_velocity
+	move_and_slide()
 	
 	
 func _input(event):
@@ -50,10 +92,6 @@ func _input(event):
 		#elif shapecast_s_accroupir.is_colliding() == true:
 			#verification_collision_accroupi()
 
-func _object():
-	if accessable == true and Input.is_action_just_pressed("interact") == true:
-		objet = true
-	pass
 	
 func s_accroupir():
 	if est_accroupi == false:
