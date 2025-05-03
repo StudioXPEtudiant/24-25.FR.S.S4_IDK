@@ -98,7 +98,7 @@ albedo_color = Color(1, 0.172549, 0.0941176, 1)
 
 [node name="Player" type="CharacterBody3D" node_paths=PackedStringArray("camera", "Head", "animation", "shapecast_s_accroupir")]
 script = ExtResource("1_paagl")
-speed = 0.4
+speed = 3.0
 camera = NodePath("Head/Camera3D")
 Head = NodePath("Head")
 animation = NodePath("AnimationPlayer")

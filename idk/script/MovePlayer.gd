@@ -27,13 +27,13 @@ func _physics_process(delta):
 	var direction = Vector3.ZERO
 
 	if Input.is_action_pressed("Player_Right"):
-		direction.x = direction.x + 1
+		direction.x = direction.x + 1 * speed
 	if Input.is_action_pressed("Player_Left"):
-		direction.x = direction.x - 1
+		direction.x = direction.x - 1 * speed
 	if Input.is_action_pressed("Player_Down"):
-		direction.z = direction.z + 1
+		direction.z = direction.z + 1 * speed
 	if Input.is_action_pressed("Player_Up"):
-		direction.z = direction.z - 1
+		direction.z = direction.z - 1 * speed
 
 	# Eviter les diagonales
 	if direction != Vector3.ZERO:
