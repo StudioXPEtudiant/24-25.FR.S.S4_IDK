@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://bfnemh07rnarn"]
 
-[ext_resource type="Script" path="res://runee/rune.gd" id="1_ue26t"]
+[ext_resource type="Script" path="res://script/rune.gd" id="1_ue26t"]
 [ext_resource type="Texture2D" uid="uid://brdxatxw7byec" path="res://rune/scalable/mannaz.svg" id="1_xbu1x"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xpiqp"]
