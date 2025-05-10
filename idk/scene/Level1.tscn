@@ -1,21 +1,25 @@
-[gd_scene load_steps=15 format=3 uid="uid://c61s105841n14"]
+[gd_scene load_steps=17 format=3 uid="uid://c61s105841n14"]
 
 [ext_resource type="PackedScene" uid="uid://dpl5s6xlefiop" path="res://scene/key.tscn" id="1_2e7dh"]
 [ext_resource type="PackedScene" uid="uid://blvapknkib3gq" path="res://scene/mur.tscn" id="1_55nkg"]
-[ext_resource type="PackedScene" uid="uid://c87p4dt5rg8s4" path="res://drapeau.tscn" id="2_l31n4"]
+[ext_resource type="PackedScene" path="res://drapeau.tscn" id="2_l31n4"]
 [ext_resource type="PackedScene" uid="uid://53cievrl3uqw" path="res://scene/sol .tscn" id="3_hwpbm"]
 [ext_resource type="PackedScene" uid="uid://c18yo6cmr01kb" path="res://Porte_texture.tscn" id="4_buxpm"]
 [ext_resource type="PackedScene" uid="uid://brusr7vnnjp84" path="res://runee/rune 4.tscn" id="5_ad0wq"]
-[ext_resource type="PackedScene" uid="uid://dni5a83esxysv" path="res://socle.tscn" id="5_m8lpt"]
-[ext_resource type="PackedScene" path="res://armure.tscn" id="5_ml06f"]
+[ext_resource type="PackedScene" path="res://socle.tscn" id="5_m8lpt"]
+[ext_resource type="PackedScene" uid="uid://cxda0qtcmtfqu" path="res://armure.tscn" id="5_ml06f"]
 [ext_resource type="PackedScene" uid="uid://cv0v3w4pkr2pg" path="res://jambiere.tscn" id="6_7ilt8"]
 [ext_resource type="PackedScene" uid="uid://bfnemh07rnarn" path="res://runee/rune 3.tscn" id="6_8ynsx"]
 [ext_resource type="PackedScene" uid="uid://cbr0idr681rxn" path="res://runee/rune 2.tscn" id="7_4geo5"]
-[ext_resource type="PackedScene" uid="uid://b3tc2gc6mb1rs" path="res://casque.tscn" id="7_msimg"]
-[ext_resource type="PackedScene" uid="uid://ckk3f0oukcbys" path="res://porte_armure.tscn" id="8_tfbdg"]
+[ext_resource type="PackedScene" path="res://casque.tscn" id="7_msimg"]
+[ext_resource type="PackedScene" path="res://porte_armure.tscn" id="8_tfbdg"]
+[ext_resource type="PackedScene" uid="uid://b5jd64jmxy878" path="res://player.tscn" id="14_bi6un"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_g0t3c"]
 albedo_color = Color(0, 0, 0, 1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_snwj3"]
+size = Vector3(24.2432, 1, 25.5789)
 
 [node name="Node3D2" type="Node3D"]
 
@@ -550,3 +554,12 @@ transform = Transform3D(1.00619, 0, 0, 0, 0.982661, 0.00421633, 0, -0.0164296, 1
 
 [node name="Rune6" parent="Rune" instance=ExtResource("5_ad0wq")]
 transform = Transform3D(-1.00009, 0.00257871, 0, -2.39308e-05, -0.00865389, -0.510004, -0.005339, -1.9307, 0.00933656, 1.40925, -1.57212, 1.10905)
+
+[node name="Player" parent="." instance=ExtResource("14_bi6un")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.994658, 0.5932, 20.5191)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.36581, 0, 10.6593)
+shape = SubResource("BoxShape3D_snwj3")
