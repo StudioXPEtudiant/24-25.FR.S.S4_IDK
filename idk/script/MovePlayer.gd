@@ -55,12 +55,9 @@ func _physics_process(delta):
 
 		# If the collider is with a mob
 		if collision.get_collider().is_in_group("object"):
-			var mob = collision.get_collider()
-			# we check that we are hitting it from above.
+			var object = collision.get_collider()
 			if Vector3.UP.dot(collision.get_normal()) > 0.1:
-				# If so, we squash it and bounce.
-				mob.squash()
-				# Prevent further duplicate calls.
+				object.collected()
 				break
 
 	# Moving the Character
