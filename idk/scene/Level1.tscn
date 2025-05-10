@@ -561,7 +561,7 @@ transform = Transform3D(-1.00009, 0.00257871, 0, -2.39308e-05, -0.00865389, -0.5
 [node name="Player" parent="." instance=ExtResource("14_bi6un")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.995, 0.276911, 20.519)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Player"]
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Player"]
 shape = SubResource("BoxShape3D_4f14t")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="."]
