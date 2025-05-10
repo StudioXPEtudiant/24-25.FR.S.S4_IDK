@@ -1,18 +1,19 @@
-[gd_scene load_steps=19 format=3 uid="uid://c61s105841n14"]
+[gd_scene load_steps=20 format=3 uid="uid://c61s105841n14"]
 
 [ext_resource type="PackedScene" uid="uid://dpl5s6xlefiop" path="res://scene/key.tscn" id="1_2e7dh"]
 [ext_resource type="PackedScene" uid="uid://blvapknkib3gq" path="res://scene/mur.tscn" id="1_55nkg"]
-[ext_resource type="PackedScene" path="res://drapeau.tscn" id="2_l31n4"]
+[ext_resource type="PackedScene" uid="uid://c87p4dt5rg8s4" path="res://drapeau.tscn" id="2_l31n4"]
 [ext_resource type="PackedScene" uid="uid://53cievrl3uqw" path="res://scene/sol .tscn" id="3_hwpbm"]
 [ext_resource type="PackedScene" uid="uid://c18yo6cmr01kb" path="res://Porte_texture.tscn" id="4_buxpm"]
 [ext_resource type="PackedScene" uid="uid://brusr7vnnjp84" path="res://runee/rune 4.tscn" id="5_ad0wq"]
-[ext_resource type="PackedScene" path="res://socle.tscn" id="5_m8lpt"]
-[ext_resource type="PackedScene" uid="uid://cxda0qtcmtfqu" path="res://armure.tscn" id="5_ml06f"]
+[ext_resource type="PackedScene" uid="uid://dni5a83esxysv" path="res://socle.tscn" id="5_m8lpt"]
+[ext_resource type="PackedScene" path="res://armure.tscn" id="5_ml06f"]
 [ext_resource type="PackedScene" uid="uid://cv0v3w4pkr2pg" path="res://jambiere.tscn" id="6_7ilt8"]
 [ext_resource type="PackedScene" uid="uid://bfnemh07rnarn" path="res://runee/rune 3.tscn" id="6_8ynsx"]
 [ext_resource type="PackedScene" uid="uid://cbr0idr681rxn" path="res://runee/rune 2.tscn" id="7_4geo5"]
-[ext_resource type="PackedScene" path="res://casque.tscn" id="7_msimg"]
-[ext_resource type="PackedScene" path="res://porte_armure.tscn" id="8_tfbdg"]
+[ext_resource type="PackedScene" uid="uid://b3tc2gc6mb1rs" path="res://casque.tscn" id="7_msimg"]
+[ext_resource type="PackedScene" uid="uid://ckk3f0oukcbys" path="res://porte_armure.tscn" id="8_tfbdg"]
+[ext_resource type="PackedScene" path="res://sword.tscn" id="11_fhx73"]
 [ext_resource type="PackedScene" uid="uid://b5jd64jmxy878" path="res://player.tscn" id="14_bi6un"]
 [ext_resource type="PackedScene" uid="uid://c4fiqvwxjjtmo" path="res://objet_Test/cube_de_calcul.tscn" id="15_pevmx"]
 
@@ -24,7 +25,7 @@ albedo_color = Color(0, 0, 0, 1)
 [sub_resource type="BoxShape3D" id="BoxShape3D_snwj3"]
 size = Vector3(24.2432, 1, 25.5789)
 
-[node name="Node3D2" type="Node3D"]
+[node name="Node3D3" type="Node3D"]
 
 [node name="OmniLight3D" type="OmniLight3D" parent="."]
 omni_range = 1.2023
@@ -458,18 +459,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.4658, 7.00001, -14.6205)
 [node name="Statues2" type="Node3D" parent="L\'armurerie/Statues"]
 transform = Transform3D(0.00263543, 0, 1.05009, 0, 1, 0, -0.952289, 0, 0.00263543, 0, 0, -6.84586)
 
-[node name="CSGBox3D" type="CSGBox3D" parent="L\'armurerie/Statues/Statues2"]
-transform = Transform3D(1, 0, 4.42378e-09, 0, 1, 0, 0, 0, 1, 12.5601, 0.942918, -0.0315218)
-
-[node name="CSGBox3D2" type="CSGBox3D" parent="L\'armurerie/Statues/Statues2"]
-transform = Transform3D(1, 0, 4.42378e-09, 0, 1, 0, 0, 0, 1, 12.5699, 0.942918, 1.89137)
-
-[node name="CSGBox3D3" type="CSGBox3D" parent="L\'armurerie/Statues/Statues2"]
-transform = Transform3D(1, 0, 4.42378e-09, 0, 1, 0, 0, 0, 1, 12.5766, 0.942918, 3.85622)
-
-[node name="CSGBox3D4" type="CSGBox3D" parent="L\'armurerie/Statues/Statues2"]
-transform = Transform3D(1, 0, 4.42378e-09, 0, 1, 0, 0, 0, 1, 7.66955, 0.942918, 14.6279)
-
 [node name="Porte armure11" parent="L\'armurerie/Statues/Statues2" instance=ExtResource("8_tfbdg")]
 transform = Transform3D(0.0342303, 0, 0.779836, 0, 0.233323, 0, -1.48985, 0, 0.0204348, 7.36819, 0.95136, 18.925)
 
@@ -494,6 +483,54 @@ transform = Transform3D(-0.0585945, 0, -1.02719, 0, 0.247184, 0, 1.42269, 0, -0.
 [node name="casque12" parent="L\'armurerie/Statues/Statues2" instance=ExtResource("7_msimg")]
 transform = Transform3D(-0.0111192, 0, 2.37824, 0, 0.580672, 0, -4.01797, 0, -0.00596851, 7.44144, 1.30132, 16.7269)
 
+[node name="Porte armure13" parent="L\'armurerie/Statues/Statues2" instance=ExtResource("8_tfbdg")]
+transform = Transform3D(0.0342303, 0, 0.779836, 0, 0.233323, 0, -1.48985, 0, 0.0204348, 7.35623, 0.95136, 14.6019)
+
+[node name="armure haut13" parent="L\'armurerie/Statues/Statues2" instance=ExtResource("5_ml06f")]
+transform = Transform3D(-0.00425537, 0, 1.05306, 0, 0.342546, 0, -1.53781, 0, -0.00264263, 7.30899, 0.837504, 14.7558)
+
+[node name="jambières13" parent="L\'armurerie/Statues/Statues2" instance=ExtResource("6_7ilt8")]
+transform = Transform3D(-0.0585945, 0, -1.02719, 0, 0.247184, 0, 1.42269, 0, -0.0310944, 7.99428, 0.945108, 16.6199)
+
+[node name="casque13" parent="L\'armurerie/Statues/Statues2" instance=ExtResource("7_msimg")]
+transform = Transform3D(-0.0111192, 0, 2.37824, 0, 0.580672, 0, -4.01797, 0, -0.00596851, 7.43572, 1.30132, 14.66)
+
+[node name="Porte armure14" parent="L\'armurerie/Statues/Statues2" instance=ExtResource("8_tfbdg")]
+transform = Transform3D(-0.0342304, 0, -0.779836, 0, 0.233323, 0, 1.48985, 0, -0.0204349, 12.6479, 0.95136, 0.0218353)
+
+[node name="Porte armure15" parent="L\'armurerie/Statues/Statues2" instance=ExtResource("8_tfbdg")]
+transform = Transform3D(-0.0342304, 0, -0.779836, 0, 0.233323, 0, 1.48985, 0, -0.0204349, 12.6531, 0.95136, 1.89353)
+
+[node name="armure haut14" parent="L\'armurerie/Statues/Statues2" instance=ExtResource("5_ml06f")]
+transform = Transform3D(0.00425523, 0, -1.05306, 0, 0.342546, 0, 1.53781, 0, 0.00264253, 12.6952, 0.837504, -0.131968)
+
+[node name="jambières14" parent="L\'armurerie/Statues/Statues2" instance=ExtResource("6_7ilt8")]
+transform = Transform3D(0.0585945, 0, 1.02719, 0, 0.247184, 0, -1.42269, 0, 0.0310945, 12.0099, 0.945108, -1.99607)
+
+[node name="casque14" parent="L\'armurerie/Statues/Statues2" instance=ExtResource("7_msimg")]
+transform = Transform3D(0.0111188, 0, -2.37824, 0, 0.580672, 0, 4.01796, 0, 0.00596829, 12.5684, 1.30132, -0.03617)
+
+[node name="armure haut15" parent="L\'armurerie/Statues/Statues2" instance=ExtResource("5_ml06f")]
+transform = Transform3D(0.00425523, 0, -1.05306, 0, 0.342546, 0, 1.53781, 0, 0.00264253, 12.7004, 0.837504, 1.73963)
+
+[node name="jambières15" parent="L\'armurerie/Statues/Statues2" instance=ExtResource("6_7ilt8")]
+transform = Transform3D(0.0585945, 0, 1.02719, 0, 0.247184, 0, -1.42269, 0, 0.0310945, 12.0151, 0.945108, -0.124368)
+
+[node name="casque15" parent="L\'armurerie/Statues/Statues2" instance=ExtResource("7_msimg")]
+transform = Transform3D(0.0111188, 0, -2.37824, 0, 0.580672, 0, 4.01796, 0, 0.00596829, 12.5736, 1.30132, 1.83553)
+
+[node name="Porte armure16" parent="L\'armurerie/Statues/Statues2" instance=ExtResource("8_tfbdg")]
+transform = Transform3D(-0.0342304, 0, -0.779835, 0, 0.233323, 0, 1.48985, 0, -0.0204348, 12.6588, 0.95136, 3.93251)
+
+[node name="armure haut16" parent="L\'armurerie/Statues/Statues2" instance=ExtResource("5_ml06f")]
+transform = Transform3D(0.00425523, 0, -1.05306, 0, 0.342546, 0, 1.53781, 0, 0.00264253, 12.706, 0.837504, 3.77862)
+
+[node name="jambières16" parent="L\'armurerie/Statues/Statues2" instance=ExtResource("6_7ilt8")]
+transform = Transform3D(0.0585945, 0, 1.02719, 0, 0.247184, 0, -1.42269, 0, 0.0310945, 12.0207, 0.945108, 1.91462)
+
+[node name="casque16" parent="L\'armurerie/Statues/Statues2" instance=ExtResource("7_msimg")]
+transform = Transform3D(0.0111188, 0, -2.37824, 0, 0.580672, 0, 4.01796, 0, 0.00596829, 12.5793, 1.30132, 3.87452)
+
 [node name="Socles" type="Node3D" parent="L\'armurerie"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.53024, -0.298435, -11.9747)
 
@@ -517,23 +554,23 @@ transform = Transform3D(1.7, 0, 0, 0, 1, 0, 0, 0, 1.8, 4.48899, 7.4275, -11.9963
 
 [node name="Epées" type="Node3D" parent="L\'armurerie"]
 
-[node name="CSGBox3D" type="CSGBox3D" parent="L\'armurerie/Epées"]
-transform = Transform3D(0.154832, 0, 0, 0, 3.92698, 0, 0, 0, 0.166273, -4.76146, 7, -26.4862)
+[node name="Epée" parent="L\'armurerie/Epées" instance=ExtResource("11_fhx73")]
+transform = Transform3D(0.432559, 0, 0, 0, 0.697292, 0, 0, 0, 0.515505, 10.9794, 7.23457, -23.9714)
 
-[node name="CSGBox3D2" type="CSGBox3D" parent="L\'armurerie/Epées"]
-transform = Transform3D(0.154832, 0, 0, 0, 3.92698, 0, 0, 0, 0.166273, -6.8855, 7, -26.4862)
+[node name="Epée2" parent="L\'armurerie/Epées" instance=ExtResource("11_fhx73")]
+transform = Transform3D(0.432559, 0, 0, 0, 0.697292, 0, 0, 0, 0.515505, 8.74368, 7.23457, -23.9714)
 
-[node name="CSGBox3D3" type="CSGBox3D" parent="L\'armurerie/Epées"]
-transform = Transform3D(0.154832, 0, 0, 0, 3.92698, 0, 0, 0, 0.166273, -8.86666, 7, -26.4862)
+[node name="Epée3" parent="L\'armurerie/Epées" instance=ExtResource("11_fhx73")]
+transform = Transform3D(0.432559, 0, 0, 0, 0.697292, 0, 0, 0, 0.515505, 6.48431, 7.23457, -23.9714)
 
-[node name="CSGBox3D4" type="CSGBox3D" parent="L\'armurerie/Epées"]
-transform = Transform3D(0.154832, 0, 0, 0, 3.92698, 0, 0, 0, 0.166273, 6.51245, 7, -23.9608)
+[node name="Epée4" parent="L\'armurerie/Epées" instance=ExtResource("11_fhx73")]
+transform = Transform3D(0.432559, 0, 0, 0, 0.697292, 0, 0, 0, 0.515505, -4.77768, 7.23457, -26.4867)
 
-[node name="CSGBox3D5" type="CSGBox3D" parent="L\'armurerie/Epées"]
-transform = Transform3D(0.154832, 0, 0, 0, 3.92698, 0, 0, 0, 0.166273, 8.74878, 7, -23.9608)
+[node name="Epée5" parent="L\'armurerie/Epées" instance=ExtResource("11_fhx73")]
+transform = Transform3D(0.432559, 0, 0, 0, 0.697292, 0, 0, 0, 0.515505, -6.88944, 7.23457, -26.4867)
 
-[node name="CSGBox3D6" type="CSGBox3D" parent="L\'armurerie/Epées"]
-transform = Transform3D(0.154832, 0, 0, 0, 3.92698, 0, 0, 0, 0.166273, 10.9977, 7, -23.9608)
+[node name="Epée6" parent="L\'armurerie/Epées" instance=ExtResource("11_fhx73")]
+transform = Transform3D(0.432559, 0, 0, 0, 0.697292, 0, 0, 0, 0.515505, -8.8717, 7.23457, -26.4867)
 
 [node name="escalier" type="Node3D" parent="."]
 
@@ -571,5 +608,5 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.36581, 0, 10.6593)
 shape = SubResource("BoxShape3D_snwj3")
 
 [node name="cube de calcul" parent="." node_paths=PackedStringArray("joueur") instance=ExtResource("15_pevmx")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.583286, 0.426261, 17.4643)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.583286, 0.426261, 7.4643)
 joueur = NodePath("../Player")
