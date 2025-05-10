@@ -9,14 +9,7 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	var collision = get_slide_collision(index)
-	
-	if collision.get_collider().is_in_group("object"):
-			var object = collision.get_collider()
-			# we check that we are hitting it from above.
-			if Vector3.UP.dot(collision.get_normal()) > 0.1:
-				object.collected()
-				# Prevent further duplicate calls.
+
 
 	pass
 
