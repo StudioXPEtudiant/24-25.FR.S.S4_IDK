@@ -1,53 +1,41 @@
-[gd_scene load_steps=5 format=3 uid="uid://bmxs1vv8bf1tc"]
+[gd_scene load_steps=3 format=3 uid="uid://bmxs1vv8bf1tc"]
 
 [ext_resource type="Material" uid="uid://dft4egqmo53xl" path="res://texture/violet.tres" id="1_5vkex"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_52h1t"]
 metallic = 1.0
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_mvk07"]
-metallic = 1.0
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ndiwl"]
-albedo_color = Color(0.763277, 0.437807, 1.92523e-06, 1)
-metallic = 1.0
-
 [node name="Node3D" type="Node3D"]
+transform = Transform3D(46.1365, 0, 0, 0, 57.7259, 0, 0, 0, 68.1494, 0, 0, 0)
 
 [node name="CSGBox3D" type="CSGBox3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00205994, 0.029789, 0.00546807)
-size = Vector3(0.0071106, 0.0347481, 0.001)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 0.999874, 0.0211907, 0.592947, 0.0183505)
+size = Vector3(0.483223, 1.18296, 0.246538)
 material = SubResource("StandardMaterial3D_52h1t")
 
-[node name="CSGBox3D2" type="CSGBox3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00203803, 0.00775274, 0.00514937)
-size = Vector3(0.007, 0.0096875, 0.001)
-material = SubResource("StandardMaterial3D_mvk07")
-
-[node name="CSGBox3D" type="CSGBox3D" parent="CSGBox3D2"]
-transform = Transform3D(0.72416, -0.689632, 0, 0.689632, 0.72416, 0, 0, 0, 1, 0.00558898, -0.00564453, 0)
-operation = 2
-size = Vector3(0.007, 0.01, 0.01)
-
-[node name="CSGBox3D2" type="CSGBox3D" parent="CSGBox3D2"]
-transform = Transform3D(-0.510948, -0.859612, 0, 0.859612, -0.510948, 0, 0, 0, 1, -0.00562434, -0.00564453, 0)
-operation = 2
-size = Vector3(0.007, 0.01, 0.01)
-
-[node name="CSGBox3D3" type="CSGBox3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00163147, 0.048696, 0.00569624)
-size = Vector3(0.0192417, 0.00476074, 0.00147656)
-material = ExtResource("1_5vkex")
-
 [node name="CSGCylinder3D" type="CSGCylinder3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00204665, 0.0613547, 0.00438361)
-radius = 0.00188099
-height = 0.0253366
+transform = Transform3D(1.24084, 0, 0, 0, 1, 0, 0, 0, 0.635299, 0.0179175, 1.70276, 0.0314869)
+radius = 0.169733
+height = 1.35967
 sides = 64
 material = ExtResource("1_5vkex")
 
 [node name="CSGSphere3D" type="CSGSphere3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00219252, 0.0745697, 0.004535)
-radius = 0.00268441
+transform = Transform3D(1.78018, 0, 0, 0, 1.18075, 0, 0, 0, 1.18076, 0.0222067, 2.3936, 0.0164105)
+radius = 0.163522
 rings = 100
-material = SubResource("StandardMaterial3D_ndiwl")
+material = ExtResource("1_5vkex")
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 0.999986, 0.0223436, -0.173894, 0.0182332)
+size = Vector3(0.477051, 0.391113, 0.246582)
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="CSGBox3D2"]
+transform = Transform3D(0.707107, 0.707107, 0, -0.707106, 0.707107, 0, 0, 0, 1.00001, 0, 0.362427, 0)
+operation = 1
+size = Vector3(0.758057, 0.769531, 0.994141)
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 0.999891, 0.0217254, 1.29637, 0.0364566)
+size = Vector3(1.03358, 0.255699, 0.247803)
+material = ExtResource("1_5vkex")
