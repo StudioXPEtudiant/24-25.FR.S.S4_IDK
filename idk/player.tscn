@@ -1,7 +1,8 @@
-[gd_scene load_steps=10 format=3 uid="uid://b5jd64jmxy878"]
+[gd_scene load_steps=11 format=3 uid="uid://b5jd64jmxy878"]
 
 [ext_resource type="Script" path="res://script/MovePlayer.gd" id="1_paagl"]
 [ext_resource type="Script" path="res://script/camera_Player.gd" id="2_kel5p"]
+[ext_resource type="Script" path="res://script/PorteScripts/raycast.gd" id="3_jvcsj"]
 
 [sub_resource type="Animation" id="Animation_stir7"]
 length = 0.001
@@ -132,5 +133,8 @@ shape = SubResource("BoxShape3D_rxxuc")
 mesh = SubResource("BoxMesh_h8vnw")
 skeleton = NodePath("")
 surface_material_override/0 = SubResource("StandardMaterial3D_ampjw")
+
+[node name="RayCast3D" type="RayCast3D" parent="."]
+script = ExtResource("3_jvcsj")
 
 [connection signal="animation_started" from="AnimationPlayer" to="." method="_on_animation_player_animation_started"]

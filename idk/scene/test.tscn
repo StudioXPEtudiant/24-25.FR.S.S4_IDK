@@ -1,6 +1,7 @@
-[gd_scene load_steps=4 format=3 uid="uid://c2nx6bv3wipt1"]
+[gd_scene load_steps=5 format=3 uid="uid://c2nx6bv3wipt1"]
 
 [ext_resource type="PackedScene" uid="uid://b5jd64jmxy878" path="res://player.tscn" id="1_f5lcx"]
+[ext_resource type="PackedScene" uid="uid://cdyrnitn7ncwb" path="res://Porte.tscn" id="2_mo527"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_7cn3k"]
 
@@ -41,11 +42,11 @@ shape = SubResource("BoxShape3D_7cn3k")
 transform = Transform3D(5, 0, 0, 0, 1, 0, 0, 0, 5, 0, 0, 0)
 mesh = SubResource("BoxMesh_8sp3b")
 
-[node name="Camera3D" type="Camera3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 0.544141, 0.838994, 0, -0.838994, 0.544141, 0, 7.29641, 5.82437)
-
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 0.787699, 0.61606, 0, -0.61606, 0.787699, 0, 8.8725, 9.46061)
 
 [node name="Player" parent="." instance=ExtResource("1_f5lcx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1, 0)
+
+[node name="Porte" parent="." instance=ExtResource("2_mo527")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.5, -5)

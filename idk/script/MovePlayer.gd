@@ -13,6 +13,7 @@ var est_accroupi = false
 @export var shapecast_s_accroupir : ShapeCast3D
 @export var saccroupir : bool = false
 var target_velocity = Vector3.ZERO
+@export var view_speed = 0.0075
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -38,7 +39,7 @@ func _physics_process(delta):
 	# Eviter les diagonales
 	if direction != Vector3.ZERO:
 		direction = direction.normalized()
-		Head.look_at(position + direction, Vector3.UP)
+		#Head.look_at(position + direction, Vector3.UP)
 
 	# Ground Velocity
 	target_velocity.x = direction.x * speed
@@ -68,9 +69,9 @@ func _physics_process(delta):
 func _input(event):
 	if event is InputEventMouseMotion:
 		Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
+		Head.rotation.y -= event.velocity.x * get_process_delta_time() * view_speed
 	elif event.is_action_pressed("ui_cancel"):
 		Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
-	
 	if event.is_action_pressed("s'accroupir") and saccroupir == true:
 		s_accroupir()
 	if event.is_action_pressed("s'accroupir") and est_accroupi == false and saccroupir == false:
