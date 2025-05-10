@@ -9,5 +9,5 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	position = Object_to_follow.position
+	global_position = Object_to_follow.global_position 
 	pass

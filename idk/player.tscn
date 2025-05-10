@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" path="res://script/MovePlayer.gd" id="1_paagl"]
 [ext_resource type="Script" path="res://script/camera_Player.gd" id="2_kel5p"]
+[ext_resource type="Script" path="res://script/PorteScripts/raycast.gd" id="3_jvcsj"]
 
 [sub_resource type="Animation" id="Animation_stir7"]
 length = 0.001
@@ -137,5 +138,7 @@ shape = SubResource("BoxShape3D_io37g")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 shape = SubResource("BoxShape3D_rxxuc")
+[node name="RayCast3D" type="RayCast3D" parent="."]
+script = ExtResource("3_jvcsj")
 
 [connection signal="animation_started" from="AnimationPlayer" to="." method="_on_animation_player_animation_started"]
