@@ -72,6 +72,8 @@ func _input(event):
 		Head.rotation.y -= event.velocity.x * get_process_delta_time() * view_speed
 	elif event.is_action_pressed("ui_cancel"):
 		Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
+	
+	
 	if event.is_action_pressed("s'accroupir") and saccroupir == true:
 		s_accroupir()
 	if event.is_action_pressed("s'accroupir") and est_accroupi == false and saccroupir == false:
