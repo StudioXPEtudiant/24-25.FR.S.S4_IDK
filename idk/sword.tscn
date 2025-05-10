@@ -1,0 +1,53 @@
+[gd_scene load_steps=5 format=3 uid="uid://bmxs1vv8bf1tc"]
+
+[ext_resource type="Material" uid="uid://dft4egqmo53xl" path="res://texture/violet.tres" id="1_5vkex"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_52h1t"]
+metallic = 1.0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_mvk07"]
+metallic = 1.0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ndiwl"]
+albedo_color = Color(0.763277, 0.437807, 1.92523e-06, 1)
+metallic = 1.0
+
+[node name="Node3D" type="Node3D"]
+
+[node name="CSGBox3D" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00205994, 0.029789, 0.00546807)
+size = Vector3(0.0071106, 0.0347481, 0.001)
+material = SubResource("StandardMaterial3D_52h1t")
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00203803, 0.00775274, 0.00514937)
+size = Vector3(0.007, 0.0096875, 0.001)
+material = SubResource("StandardMaterial3D_mvk07")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="CSGBox3D2"]
+transform = Transform3D(0.72416, -0.689632, 0, 0.689632, 0.72416, 0, 0, 0, 1, 0.00558898, -0.00564453, 0)
+operation = 2
+size = Vector3(0.007, 0.01, 0.01)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="CSGBox3D2"]
+transform = Transform3D(-0.510948, -0.859612, 0, 0.859612, -0.510948, 0, 0, 0, 1, -0.00562434, -0.00564453, 0)
+operation = 2
+size = Vector3(0.007, 0.01, 0.01)
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00163147, 0.048696, 0.00569624)
+size = Vector3(0.0192417, 0.00476074, 0.00147656)
+material = ExtResource("1_5vkex")
+
+[node name="CSGCylinder3D" type="CSGCylinder3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00204665, 0.0613547, 0.00438361)
+radius = 0.00188099
+height = 0.0253366
+sides = 64
+material = ExtResource("1_5vkex")
+
+[node name="CSGSphere3D" type="CSGSphere3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00219252, 0.0745697, 0.004535)
+radius = 0.00268441
+rings = 100
+material = SubResource("StandardMaterial3D_ndiwl")
