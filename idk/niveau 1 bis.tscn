@@ -1,8 +1,10 @@
-[gd_scene load_steps=4 format=3 uid="uid://siqcaioabdgh"]
+[gd_scene load_steps=6 format=3 uid="uid://siqcaioabdgh"]
 
 [ext_resource type="PackedScene" uid="uid://53cievrl3uqw" path="res://scene/sol .tscn" id="1_u5tqy"]
 [ext_resource type="PackedScene" uid="uid://blvapknkib3gq" path="res://scene/mur.tscn" id="2_gh8o7"]
 [ext_resource type="PackedScene" uid="uid://c18yo6cmr01kb" path="res://Porte_texture.tscn" id="3_vxwmw"]
+[ext_resource type="PackedScene" uid="uid://c4fiqvwxjjtmo" path="res://objet_Test/cube_de_calcul.tscn" id="4_3xqhp"]
+[ext_resource type="PackedScene" uid="uid://b5jd64jmxy878" path="res://player.tscn" id="5_2o68j"]
 
 [node name="Node3D" type="Node3D"]
 
@@ -353,3 +355,9 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 7, -53)
 
 [node name="Sol 49" parent="Sol P2" instance=ExtResource("1_u5tqy")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 7, -53)
+
+[node name="cube de calcul" parent="." instance=ExtResource("4_3xqhp")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.581198, 3.46466)
+
+[node name="Player" parent="." instance=ExtResource("5_2o68j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.60012, 11.6706)
