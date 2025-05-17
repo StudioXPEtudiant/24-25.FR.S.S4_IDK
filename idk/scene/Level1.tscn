@@ -6,13 +6,15 @@
 [ext_resource type="PackedScene" uid="uid://53cievrl3uqw" path="res://scene/sol .tscn" id="3_hwpbm"]
 [ext_resource type="PackedScene" uid="uid://c18yo6cmr01kb" path="res://Porte_texture.tscn" id="4_buxpm"]
 [ext_resource type="PackedScene" uid="uid://brusr7vnnjp84" path="res://runee/rune 4.tscn" id="5_ad0wq"]
-[ext_resource type="PackedScene" uid="uid://dni5a83esxysv" path="res://socle.tscn" id="5_m8lpt"]
-[ext_resource type="PackedScene" path="res://armure.tscn" id="5_ml06f"]
+[ext_resource type="PackedScene" path="res://socle.tscn" id="5_m8lpt"]
+[ext_resource type="PackedScene" uid="uid://cxda0qtcmtfqu" path="res://armure.tscn" id="5_ml06f"]
 [ext_resource type="PackedScene" uid="uid://cv0v3w4pkr2pg" path="res://jambiere.tscn" id="6_7ilt8"]
 [ext_resource type="PackedScene" uid="uid://bfnemh07rnarn" path="res://runee/rune 3.tscn" id="6_8ynsx"]
 [ext_resource type="PackedScene" uid="uid://cbr0idr681rxn" path="res://runee/rune 2.tscn" id="7_4geo5"]
 [ext_resource type="PackedScene" uid="uid://b3tc2gc6mb1rs" path="res://casque.tscn" id="7_msimg"]
 [ext_resource type="PackedScene" uid="uid://ckk3f0oukcbys" path="res://porte_armure.tscn" id="8_tfbdg"]
+[ext_resource type="PackedScene" path="res://casque.tscn" id="7_msimg"]
+[ext_resource type="PackedScene" path="res://porte_armure.tscn" id="8_tfbdg"]
 [ext_resource type="PackedScene" uid="uid://bmxs1vv8bf1tc" path="res://sword.tscn" id="11_fhx73"]
 [ext_resource type="PackedScene" uid="uid://b5jd64jmxy878" path="res://player.tscn" id="14_bi6un"]
 [ext_resource type="PackedScene" uid="uid://c4fiqvwxjjtmo" path="res://objet_Test/cube_de_calcul.tscn" id="15_pevmx"]
@@ -596,7 +598,7 @@ transform = Transform3D(1.00619, 0, 0, 0, 0.982661, 0.00421633, 0, -0.0164296, 1
 transform = Transform3D(-1.00009, 0.00257871, 0, -2.39308e-05, -0.00865389, -0.510004, -0.005339, -1.9307, 0.00933656, 1.40925, -1.57212, 1.10905)
 
 [node name="Player" parent="." instance=ExtResource("14_bi6un")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.995, 0.276911, 20.519)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.995, 2.05473, 20.519)
 
 [node name="CollisionShape3D2" type="CollisionShape3D" parent="Player"]
 shape = SubResource("BoxShape3D_4f14t")
