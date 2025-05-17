@@ -9,8 +9,8 @@ metallic = 1.0
 transform = Transform3D(46.1365, 0, 0, 0, 57.7259, 0, 0, 0, 68.1494, 0, 0, 0)
 
 [node name="CSGBox3D" type="CSGBox3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 0.999874, 0.0211907, 0.592947, 0.0183505)
-size = Vector3(0.483223, 1.18296, 0.246538)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 0.999873, 0.0211907, 0.592947, 0.0131214)
+size = Vector3(0.483223, 1.18296, 0.178933)
 material = SubResource("StandardMaterial3D_52h1t")
 
 [node name="CSGCylinder3D" type="CSGCylinder3D" parent="."]
@@ -27,8 +27,8 @@ rings = 100
 material = ExtResource("1_5vkex")
 
 [node name="CSGBox3D2" type="CSGBox3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 0.999986, 0.0223436, -0.173894, 0.0182332)
-size = Vector3(0.477051, 0.391113, 0.246582)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 0.999986, 0.0223436, -0.173894, 0.0145101)
+size = Vector3(0.477051, 0.391113, 0.173218)
 
 [node name="CSGBox3D3" type="CSGBox3D" parent="CSGBox3D2"]
 transform = Transform3D(0.707107, 0.707107, 0, -0.707106, 0.707107, 0, 0, 0, 1.00001, 0, 0.362427, 0)
