@@ -1,0 +1,52 @@
+[gd_scene load_steps=9 format=3 uid="uid://dc5tnclfuqiov"]
+
+[ext_resource type="Script" path="res://reponse_level_1.gd" id="1_i3hmj"]
+[ext_resource type="Texture2D" uid="uid://cyyshsgcaw34b" path="res://texture/brume_texture.jpg" id="2_yr8jk"]
+[ext_resource type="Texture2D" uid="uid://cuoabwc8juh7h" path="res://texture/feu_texture.jpg" id="3_o4f17"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_phmqa"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_r2fab"]
+albedo_color = Color(0.239216, 1, 1, 1)
+albedo_texture = ExtResource("2_yr8jk")
+backlight_enabled = true
+backlight = Color(0.172549, 0.929412, 1, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qdo70"]
+albedo_texture = ExtResource("3_o4f17")
+backlight_enabled = true
+backlight = Color(1, 0, 0.6, 1)
+
+[sub_resource type="TextMesh" id="TextMesh_jb36s"]
+material = SubResource("StandardMaterial3D_qdo70")
+text = "369"
+font_size = 40
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_r2pdw"]
+albedo_texture = ExtResource("3_o4f17")
+
+[node name="Node3D" type="StaticBody3D"]
+script = ExtResource("1_i3hmj")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("BoxShape3D_phmqa")
+
+[node name="CSGBox3D" type="CSGSphere3D" parent="."]
+transform = Transform3D(0.0811183, 0, -1.4978, 0, 1.5, 0, 1.4978, 0, 0.0811183, 0, 0, 0)
+material = SubResource("StandardMaterial3D_r2fab")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.111483, 0.719984)
+mesh = SubResource("TextMesh_jb36s")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.391394, 0)
+light_color = Color(0.0784314, 0.784314, 1, 1)
+
+[node name="CSGCylinder3D" type="CSGCylinder3D" parent="."]
+transform = Transform3D(1.8, 0, 0, 0, 0.4, 0, 0, 0, 1.8, 0, -0.379, 0.0745835)
+material = SubResource("StandardMaterial3D_r2pdw")
+
+[node name="CSGCylinder3D2" type="CSGCylinder3D" parent="CSGCylinder3D"]
+transform = Transform3D(0.944445, 0, 0, 0, 1, 0, 0, 0, 0.944445, 0, 0, 0)
+operation = 2
