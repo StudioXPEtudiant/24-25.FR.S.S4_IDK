@@ -1,13 +1,27 @@
-[gd_scene load_steps=3 format=3 uid="uid://c4fiqvwxjjtmo"]
+[gd_scene load_steps=4 format=3 uid="uid://c4fiqvwxjjtmo"]
 
 [ext_resource type="Script" path="res://script/reponse_calcul.gd" id="1_mkfob"]
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_pp1ba"]
+albedo_color = Color(0.0784314, 0.380392, 1, 1)
+
 [sub_resource type="BoxShape3D" id="BoxShape3D_x8y2q"]
 
-[node name="cube de calcul" type="StaticBody3D" groups=["object"]]
+[node name="cube de calcul" type="RigidBody3D" groups=["object"]]
+collision_layer = 64
+collision_mask = 64
+axis_lock_linear_x = true
+axis_lock_linear_y = true
+axis_lock_linear_z = true
+axis_lock_angular_x = true
+axis_lock_angular_y = true
+axis_lock_angular_z = true
 script = ExtResource("1_mkfob")
 
 [node name="CSGBox3D" type="CSGBox3D" parent="."]
+material = SubResource("StandardMaterial3D_pp1ba")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 shape = SubResource("BoxShape3D_x8y2q")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
