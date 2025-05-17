@@ -23,6 +23,8 @@ text = "369"
 font_size = 40
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_r2pdw"]
+transparency = 1
+blend_mode = 1
 albedo_texture = ExtResource("3_o4f17")
 
 [node name="Node3D" type="StaticBody3D"]
