@@ -13,7 +13,7 @@
 [ext_resource type="PackedScene" uid="uid://cbr0idr681rxn" path="res://runee/rune 2.tscn" id="7_4geo5"]
 [ext_resource type="PackedScene" uid="uid://b3tc2gc6mb1rs" path="res://casque.tscn" id="7_msimg"]
 [ext_resource type="PackedScene" uid="uid://ckk3f0oukcbys" path="res://porte_armure.tscn" id="8_tfbdg"]
-[ext_resource type="PackedScene" path="res://sword.tscn" id="11_fhx73"]
+[ext_resource type="PackedScene" uid="uid://bmxs1vv8bf1tc" path="res://sword.tscn" id="11_fhx73"]
 [ext_resource type="PackedScene" uid="uid://b5jd64jmxy878" path="res://player.tscn" id="14_bi6un"]
 [ext_resource type="PackedScene" uid="uid://c4fiqvwxjjtmo" path="res://objet_Test/cube_de_calcul.tscn" id="15_pevmx"]
 
@@ -444,7 +444,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 7.00001, -12)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.634, 7.00001, -16.0644)
 
 [node name="CSGBox3D3" type="CSGBox3D" parent="L\'armurerie/Statues/signes (armurerie)"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.1633, 8.56362, -11.4335)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.1633, 8.56362, -12.1751)
 size = Vector3(1, 1, 0.737305)
 
 [node name="CSGBox3D4" type="CSGBox3D" parent="L\'armurerie/Statues/signes (armurerie)"]
