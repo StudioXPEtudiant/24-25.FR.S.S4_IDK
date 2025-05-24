@@ -16,3 +16,7 @@ func _process(delta):
 		global_position -= move
 		i = i+1
 	pass
+
+
+func _on_body_entered(body):
+	pass # Replace with function body.
