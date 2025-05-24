@@ -1,0 +1,32 @@
+[gd_scene load_steps=3 format=3 uid="uid://bne5xxxaqtp25"]
+
+[ext_resource type="PackedScene" uid="uid://ckk3f0oukcbys" path="res://porte armure/porte_armure.tscn" id="1_47e4p"]
+[ext_resource type="PackedScene" uid="uid://cv0v3w4pkr2pg" path="res://armure/jambiere.tscn" id="2_os8pg"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="Node3D" parent="." instance=ExtResource("1_47e4p")]
+transform = Transform3D(9.326, 0, 0, 0, 11.63, 0, 0, 0, 14.593, 0.0578889, 0, 0.0478458)
+
+[node name="Node3D2" parent="." instance=ExtResource("2_os8pg")]
+transform = Transform3D(10.1354, 0, 0, 0, 11.8753, 0, 0, 0, 17.7205, 0, 0, 0)
+
+[node name="CSGCylinder3D" parent="Node3D2" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.14126, 0.326531, 0.0228583)
+
+[node name="CSGBox3D" parent="Node3D2" index="1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.140118, 0.49355, 0.0233816)
+
+[node name="CSGBox3D3" parent="Node3D2" index="2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.140118, 0.173383, 0.0233816)
+
+[node name="CSGBox3D4" parent="Node3D2" index="3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.143497, 0.173383, 0)
+
+[node name="CSGCylinder3D2" parent="Node3D2" index="4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.143497, 0.327998, 0)
+
+[node name="CSGBox3D2" parent="Node3D2" index="5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.143497, 0.49355, 0)
+
+[editable path="Node3D2"]

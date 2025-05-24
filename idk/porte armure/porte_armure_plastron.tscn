@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://dat8ey337qulc"]
+
+[ext_resource type="PackedScene" uid="uid://ckk3f0oukcbys" path="res://porte armure/porte_armure.tscn" id="1_vlnda"]
+[ext_resource type="PackedScene" uid="uid://cxda0qtcmtfqu" path="res://armure/armure.tscn" id="2_he53m"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="Node3D" parent="." instance=ExtResource("1_vlnda")]
+transform = Transform3D(9.32552, 0, 0, 0, 11.6296, 0, 0, 0, 14.593, 0.0220282, 0, -0.0567474)
+
+[node name="Node3D2" parent="." instance=ExtResource("2_he53m")]
+transform = Transform3D(15.4996, 0, 0, 0, 17.9712, 0, 0, 0, 9.74142, -1.12685, -7.47204, -0.730934)

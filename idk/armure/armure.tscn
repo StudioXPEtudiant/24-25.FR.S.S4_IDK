@@ -3,7 +3,7 @@
 [ext_resource type="Material" uid="uid://ba83gdlh3tj0a" path="res://metal.tres" id="1_l5gmc"]
 
 [node name="Node3D" type="Node3D"]
-transform = Transform3D(1.00282, 0, 0, 0, 1.00282, 0, 0, 0, 1.00282, 0, 0, 0)
+transform = Transform3D(6.48489, 0, 0, 0, 9.36909, 0, 0, 0, 6.48149, 0, 0, 0)
 
 [node name="CSGBox3D" type="CSGBox3D" parent="."]
 transform = Transform3D(1.08465, 0, 0, 0, 0.999996, 0, 0, 0, 1.10739, 0.0629076, 1.00826, 0.110081)
