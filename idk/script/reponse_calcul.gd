@@ -15,7 +15,6 @@ func _process(delta):
 
 
 func _on_body_entered(body):
-	print("reponççe")
 	collected.emit()
 	joueur.queue_free()
 	queue_free()

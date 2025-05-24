@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://b5jd64jmxy878"]
+[gd_scene load_steps=11 format=3 uid="uid://b5jd64jmxy878"]
 
 [ext_resource type="Script" path="res://script/MovePlayer.gd" id="1_paagl"]
 [ext_resource type="Script" path="res://script/camera_Player.gd" id="2_kel5p"]
@@ -91,9 +91,13 @@ _data = {
 [sub_resource type="SphereShape3D" id="SphereShape3D_h7u74"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_rxxuc"]
+size = Vector3(1, 1, 0.996704)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_lhyqm"]
 albedo_color = Color(1, 0.117647, 0.027451, 1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_xsguo"]
+size = Vector3(1.11877, 1, 1.2196)
 
 [node name="Player" type="CharacterBody3D" node_paths=PackedStringArray("camera", "Head", "animation", "shapecast_s_accroupir")]
 collision_layer = 65
@@ -125,6 +129,7 @@ target_position = Vector3(0, 0, 0)
 debug_shape_custom_color = Color(0, 1, 0, 1)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.00164795)
 shape = SubResource("BoxShape3D_rxxuc")
 
 [node name="RayCast3D" type="RayCast3D" parent="."]
@@ -133,4 +138,13 @@ script = ExtResource("3_jvcsj")
 [node name="CSGBox3D" type="CSGBox3D" parent="."]
 material = SubResource("StandardMaterial3D_lhyqm")
 
+[node name="Area3D" type="Area3D" parent="."]
+collision_layer = 64
+collision_mask = 64
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000671387, 0, -0.0444946)
+shape = SubResource("BoxShape3D_xsguo")
+
 [connection signal="animation_started" from="AnimationPlayer" to="." method="_on_animation_player_animation_started"]
+[connection signal="body_entered" from="Area3D" to="." method="_on_area_3d_body_entered"]

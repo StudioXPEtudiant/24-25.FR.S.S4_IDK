@@ -14,6 +14,7 @@ var est_accroupi = false
 @export var saccroupir : bool = false
 var target_velocity = Vector3.ZERO
 @export var view_speed = 0.0075
+signal collected
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -111,3 +112,10 @@ func verification_collision_accroupi():
 	if shapecast_s_accroupir.is_colliding() == true:
 		await get_tree().create_timer(0.1).timeout
 		verification_collision_accroupi()
+
+
+func _on_area_3d_body_entered(body):
+	collected.emit()
+	body.queue_free()
+	queue_free()
+	pass # Replace with function body.

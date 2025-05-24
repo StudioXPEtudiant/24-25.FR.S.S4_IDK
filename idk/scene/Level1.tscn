@@ -11,9 +11,7 @@
 [ext_resource type="PackedScene" uid="uid://cv0v3w4pkr2pg" path="res://jambiere.tscn" id="6_7ilt8"]
 [ext_resource type="PackedScene" uid="uid://bfnemh07rnarn" path="res://runee/rune 3.tscn" id="6_8ynsx"]
 [ext_resource type="PackedScene" uid="uid://cbr0idr681rxn" path="res://runee/rune 2.tscn" id="7_4geo5"]
-[ext_resource type="PackedScene" uid="uid://b3tc2gc6mb1rs" path="res://casque.tscn" id="7_msimg"]
-[ext_resource type="PackedScene" uid="uid://ckk3f0oukcbys" path="res://porte_armure.tscn" id="8_tfbdg"]
-[ext_resource type="PackedScene" path="res://casque.tscn" id="7_msimg"]
+[ext_resource type="PackedScene" uid="uid://1nyleojjrkyq" path="res://casque.tscn" id="7_msimg"]
 [ext_resource type="PackedScene" path="res://porte_armure.tscn" id="8_tfbdg"]
 [ext_resource type="PackedScene" uid="uid://bmxs1vv8bf1tc" path="res://sword.tscn" id="11_fhx73"]
 [ext_resource type="PackedScene" uid="uid://b5jd64jmxy878" path="res://player.tscn" id="14_bi6un"]
@@ -597,6 +595,8 @@ transform = Transform3D(-1.00009, 0.00257871, 0, -2.39308e-05, -0.00865389, -0.5
 
 [node name="Player" parent="." instance=ExtResource("14_bi6un")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.995, 2.05473, 20.519)
+collision_layer = 1
+collision_mask = 1
 
 [node name="StaticBody3D" type="StaticBody3D" parent="."]
 
@@ -605,7 +605,8 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.36581, 0, 10.6593)
 shape = SubResource("BoxShape3D_snwj3")
 
 [node name="cube de calcul" parent="." node_paths=PackedStringArray("joueur") instance=ExtResource("15_pevmx")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.583, 2.025, 7.464)
-joueur = NodePath("../Player")
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.583286, 0.426261, 7.4643)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.583286, 2.20782, 7.4643)
+continuous_cd = true
+contact_monitor = true
+max_contacts_reported = 2
 joueur = NodePath("../Player")
