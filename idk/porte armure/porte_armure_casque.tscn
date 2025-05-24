@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://loqqhtpcjv56"]
 
-[ext_resource type="PackedScene" path="res://porte_armure.tscn" id="1_w6foh"]
-[ext_resource type="PackedScene" uid="uid://1nyleojjrkyq" path="res://casque.tscn" id="2_dxay7"]
+[ext_resource type="PackedScene" uid="uid://ckk3f0oukcbys" path="res://porte armure/porte_armure.tscn" id="1_w6foh"]
+[ext_resource type="PackedScene" uid="uid://1nyleojjrkyq" path="res://armure/casque.tscn" id="2_dxay7"]
 
 [node name="Node3D" type="Node3D"]
 

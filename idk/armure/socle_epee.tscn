@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://ch0o75vldwqg0"]
 
-[ext_resource type="PackedScene" path="res://socle.tscn" id="1_2r5ea"]
-[ext_resource type="PackedScene" uid="uid://bmxs1vv8bf1tc" path="res://sword.tscn" id="2_6x065"]
+[ext_resource type="PackedScene" uid="uid://dni5a83esxysv" path="res://armure/socle.tscn" id="1_2r5ea"]
+[ext_resource type="PackedScene" uid="uid://bmxs1vv8bf1tc" path="res://armure/sword.tscn" id="2_6x065"]
 
 [node name="Node3D" type="Node3D"]
 

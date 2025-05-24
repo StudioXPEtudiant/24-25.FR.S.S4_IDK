@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://bne5xxxaqtp25"]
 
-[ext_resource type="PackedScene" path="res://porte_armure.tscn" id="1_47e4p"]
-[ext_resource type="PackedScene" uid="uid://cv0v3w4pkr2pg" path="res://jambiere.tscn" id="2_os8pg"]
+[ext_resource type="PackedScene" uid="uid://ckk3f0oukcbys" path="res://porte armure/porte_armure.tscn" id="1_47e4p"]
+[ext_resource type="PackedScene" uid="uid://cv0v3w4pkr2pg" path="res://armure/jambiere.tscn" id="2_os8pg"]
 
 [node name="Node3D" type="Node3D"]
 
