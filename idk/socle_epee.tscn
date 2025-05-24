@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://ch0o75vldwqg0"]
+
+[ext_resource type="PackedScene" path="res://socle.tscn" id="1_2r5ea"]
+[ext_resource type="PackedScene" uid="uid://bmxs1vv8bf1tc" path="res://sword.tscn" id="2_6x065"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="Node3D" parent="." instance=ExtResource("1_2r5ea")]
+transform = Transform3D(79.31, 0, 0, 0, 1029.92, 0, 0, 0, 120.427, 1.32663, -10.432, -2.55035)
+
+[node name="Node3D2" parent="." instance=ExtResource("2_6x065")]
+transform = Transform3D(46.1365, 0, 0, 0, 57.7259, 0, 0, 0, 68.1494, -0.048148, 0, -5.23883)
