@@ -1,4 +1,4 @@
-[gd_scene load_steps=3 format=3 uid="uid://blvapknkib3gq"]
+[gd_scene load_steps=4 format=3 uid="uid://blvapknkib3gq"]
 
 [ext_resource type="Texture2D" uid="uid://bglecao7nxvjv" path="res://texture/Dungeon_wall2.jpg" id="1_phfmn"]
 
@@ -7,9 +7,16 @@ albedo_texture = ExtResource("1_phfmn")
 albedo_texture_force_srgb = true
 metallic_specular = 0.0
 
-[node name="mur" type="Node3D"]
+[sub_resource type="BoxShape3D" id="BoxShape3D_8e2co"]
+size = Vector3(3.16724, 1.96387, 0.42627)
+
+[node name="mur" type="StaticBody3D"]
 
 [node name="CSGBox3D" type="CSGBox3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.288464, 0.479004, -0.288121)
 size = Vector3(3.16113, 1.95801, 0.425293)
 material = SubResource("StandardMaterial3D_b0ove")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.281372, 0.481934, -0.286865)
+shape = SubResource("BoxShape3D_8e2co")
