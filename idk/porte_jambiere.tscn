@@ -1,0 +1,25 @@
+[gd_scene load_steps=2 format=3 uid="uid://lf1dhxlikrlm"]
+
+[ext_resource type="PackedScene" uid="uid://ckk3f0oukcbys" path="res://porte armure/porte_armure.tscn" id="1_kxvqh"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="Node3D" parent="." instance=ExtResource("1_kxvqh")]
+transform = Transform3D(9.326, 0, 0, 0, 11.63, 0, 0, 0, 14.593, 0.0774505, 0, 0.0371592)
+
+[node name="CSGBox3D" parent="Node3D" index="0"]
+visible = false
+
+[node name="CSGBox3D4" parent="Node3D" index="2"]
+visible = false
+
+[node name="CSGBox3D8" parent="Node3D" index="3"]
+visible = false
+
+[node name="CSGBox3D6" parent="Node3D" index="4"]
+visible = false
+
+[node name="CSGBox3D7" parent="Node3D" index="7"]
+visible = false
+
+[editable path="Node3D"]
