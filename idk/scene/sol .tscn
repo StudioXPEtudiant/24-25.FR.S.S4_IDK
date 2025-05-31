@@ -7,7 +7,9 @@ albedo_texture = ExtResource("1_54dc2")
 metallic = 1.0
 
 [node name="Node3D" type="Node3D"]
+transform = Transform3D(25.9649, 0, 0, 0, 1, 0, 0, 0, 25.9159, 0, 0, 0)
 
 [node name="CSGBox3D" type="CSGBox3D" parent="."]
+transform = Transform3D(1.9882, 0, 0, 0, 1, 0, 0, 0, 1.96787, 0, 0, 0)
 size = Vector3(5, 0.1, 5)
 material = SubResource("StandardMaterial3D_p7ath")

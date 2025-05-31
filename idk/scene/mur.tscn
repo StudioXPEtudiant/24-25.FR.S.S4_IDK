@@ -13,10 +13,10 @@ size = Vector3(3.16724, 1.96387, 0.42627)
 [node name="mur" type="StaticBody3D"]
 
 [node name="CSGBox3D" type="CSGBox3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.288464, 0.479004, -0.288121)
+transform = Transform3D(39.2121, 0, 0, 0, 36.3411, 0, 0, 0, 28.7626, 0, 0, 0)
 size = Vector3(3.16113, 1.95801, 0.425293)
 material = SubResource("StandardMaterial3D_b0ove")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.281372, 0.481934, -0.286865)
+transform = Transform3D(39.2121, 0, 0, 0, 36.3411, 0, 0, 0, 28.7626, 0, 0, 0)
 shape = SubResource("BoxShape3D_8e2co")

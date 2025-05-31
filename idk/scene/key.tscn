@@ -14,14 +14,14 @@ albedo_color = Color(0.440504, 0.285539, 4.81308e-08, 1)
 transform = Transform3D(0.1624, 0, 0, 0, 0.0596881, 0, 0, 0, 0.101677, -1.43051e-06, -9.05115e-05, 1.46031e-05)
 
 [node name="CSGCylinder3D" type="CSGCylinder3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.800017, 0, -7.89928e-05)
+transform = Transform3D(50.2004, 0, 0, 0, 37.0317, 0, 0, 0, 27.9123, 0.938389, 0.588801, 0.00781181)
 radius = 0.0471272
 height = 0.067465
 sides = 64
 material = SubResource("StandardMaterial3D_ftgqe")
 
 [node name="CSGSphere3D" type="CSGSphere3D" parent="."]
-transform = Transform3D(0.188017, 0, 0, 0, 0.442815, 0, 0, 0, 0.407514, -0.863903, 0, 0)
+transform = Transform3D(9.43853, 0, 0, 0, 16.3982, 0, 0, 0, 11.3746, -2.26871, 0.588801, 0.0100167)
 radius = 0.164185
 radial_segments = 100
 rings = 100
@@ -33,6 +33,6 @@ operation = 2
 radius = 0.0835024
 
 [node name="CSGBox3D" type="CSGBox3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 0.999957, 0, 0, 0, 1, -0.789502, -0.0490236, -0.0010376)
+transform = Transform3D(50.2004, 0, 0, 0, 37.0301, 0, 0, 0, 27.9123, 1.46624, -1.22662, -0.0189451)
 size = Vector3(0.0522461, 0.0736084, 0.0401611)
 material = SubResource("StandardMaterial3D_tqrrl")
