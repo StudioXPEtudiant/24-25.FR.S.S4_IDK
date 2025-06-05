@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=3 uid="uid://c61s105841n14"]
+[gd_scene load_steps=20 format=3 uid="uid://c61s105841n14"]
 
 [ext_resource type="PackedScene" uid="uid://dpl5s6xlefiop" path="res://scene/key.tscn" id="1_2e7dh"]
 [ext_resource type="PackedScene" uid="uid://blvapknkib3gq" path="res://scene/mur.tscn" id="1_55nkg"]
@@ -16,6 +16,7 @@
 [ext_resource type="PackedScene" uid="uid://bmxs1vv8bf1tc" path="res://armure/sword.tscn" id="11_fhx73"]
 [ext_resource type="PackedScene" uid="uid://b5jd64jmxy878" path="res://player.tscn" id="14_bi6un"]
 [ext_resource type="PackedScene" uid="uid://c4fiqvwxjjtmo" path="res://objet_Test/cube_de_calcul.tscn" id="15_pevmx"]
+[ext_resource type="PackedScene" uid="uid://3nfqtk2pj8oa" path="res://scene/reponse_juste.tscn" id="16_p56a8"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_g0t3c"]
 albedo_color = Color(0, 0, 0, 1)
@@ -603,6 +604,9 @@ collision_mask = 1
 [node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.36581, 0, 10.6593)
 shape = SubResource("BoxShape3D_snwj3")
+
+[node name="cube de calcul2" parent="." instance=ExtResource("16_p56a8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.34268, 2.5, 7.46)
 
 [node name="cube de calcul" parent="." node_paths=PackedStringArray("joueur") instance=ExtResource("15_pevmx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.583286, 2.50518, 7.4643)

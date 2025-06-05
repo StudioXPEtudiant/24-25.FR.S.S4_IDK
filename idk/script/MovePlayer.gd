@@ -117,5 +117,8 @@ func verification_collision_accroupi():
 func _on_area_3d_body_entered(body):
 	collected.emit()
 	body.queue_free()
-	queue_free()
+	if body is RigidBody3D:
+		queue_free()
+	if body is StaticBody3D:
+		print("gfrdd")
 	pass # Replace with function body.

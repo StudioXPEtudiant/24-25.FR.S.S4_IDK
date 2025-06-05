@@ -20,6 +20,8 @@ func _process(delta):
 	pass
 
 	
+
+
 func _on_body_entered(body):
 	collected.emit()
 	joueur.queue_free()
