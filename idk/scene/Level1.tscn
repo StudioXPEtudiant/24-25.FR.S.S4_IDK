@@ -16,7 +16,7 @@
 [ext_resource type="PackedScene" uid="uid://bmxs1vv8bf1tc" path="res://armure/sword.tscn" id="11_fhx73"]
 [ext_resource type="PackedScene" uid="uid://b5jd64jmxy878" path="res://player.tscn" id="14_bi6un"]
 [ext_resource type="PackedScene" uid="uid://c4fiqvwxjjtmo" path="res://objet_Test/cube_de_calcul.tscn" id="15_pevmx"]
-[ext_resource type="PackedScene" uid="uid://3nfqtk2pj8oa" path="res://scene/reponse_juste.tscn" id="16_p56a8"]
+[ext_resource type="PackedScene" path="res://scene/reponse_juste.tscn" id="16_p56a8"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_g0t3c"]
 albedo_color = Color(0, 0, 0, 1)
@@ -32,52 +32,52 @@ omni_range = 1.2023
 [node name="mur" type="Node3D" parent="."]
 
 [node name="mur6" parent="mur" instance=ExtResource("1_55nkg")]
-transform = Transform3D(3.72018, 0, 0, 0, 2.67908, 0, 0, 0, 1.78855, 9.05153, 0.558519, 20.8166)
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 9.05153, 0.558519, 20.8166)
 
 [node name="mur5" parent="mur" instance=ExtResource("1_55nkg")]
-transform = Transform3D(3.72018, 0, 0, 0, 2.67908, 0, 0, 0, 1.78855, -5.04759, 0.558519, 20.8166)
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -5.04759, 0.558519, 20.8166)
 
 [node name="mur7" parent="mur" instance=ExtResource("1_55nkg")]
-transform = Transform3D(3.72018, 0, 0, 0, 2.67908, 0, 0, 0, 2.45309, 9.35579, 0.558519, 13.7921)
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 9.35579, 0.558519, 13.7921)
 
 [node name="mur8" parent="mur" instance=ExtResource("1_55nkg")]
-transform = Transform3D(3.72018, 0, 0, 0, 2.67908, 0, 0, 0, 2.45309, -4.84184, 0.558519, 13.7921)
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -4.84184, 0.558519, 13.7921)
 
 [node name="mur9" parent="mur" instance=ExtResource("1_55nkg")]
-transform = Transform3D(3.72018, 0, 0, 0, 2.67908, 0, 0, 0, 2.45309, -4.84184, 0.558519, 5.8056)
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -4.84184, 0.558519, 5.8056)
 
 [node name="mur10" parent="mur" instance=ExtResource("1_55nkg")]
-transform = Transform3D(3.72018, 0, 0, 0, 2.67908, 0, 0, 0, 2.45309, 9.442, 0.558519, 5.8056)
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 9.442, 0.558519, 5.8056)
 
 [node name="mur11" parent="mur" instance=ExtResource("1_55nkg")]
-transform = Transform3D(3.72018, 0, 0, 0, 2.67908, 0, 0, 0, 2.45309, 9.442, 0.558519, -0.966404)
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 9.442, 0.558519, -0.966404)
 
 [node name="mur12" parent="mur" instance=ExtResource("1_55nkg")]
-transform = Transform3D(3.72018, 0, 0, 0, 2.67908, 0, 0, 0, 2.45309, -4.87018, 0.558519, -0.966404)
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -4.87018, 0.558519, -0.966404)
 
 [node name="mur13" parent="mur" instance=ExtResource("1_55nkg")]
-transform = Transform3D(3.72018, 0, 0, 0, 2.67908, 0, 0, 0, 2.45309, -4.87018, 7.55852, -20.8078)
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -4.87018, 7.55852, -20.8078)
 
 [node name="mur14" parent="mur" instance=ExtResource("1_55nkg")]
-transform = Transform3D(3.72018, 0, 0, 0, 2.67908, 0, 0, 0, 2.45309, 9.44546, 7.55852, -20.8078)
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 9.44546, 7.55852, -20.8078)
 
 [node name="mur15" parent="mur" instance=ExtResource("1_55nkg")]
-transform = Transform3D(3.72018, 0, 0, 0, 2.67908, 0, 0, 0, 2.45309, 9.44546, 7.55852, -28.1334)
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 9.44546, 7.55852, -28.1334)
 
 [node name="mur16" parent="mur" instance=ExtResource("1_55nkg")]
-transform = Transform3D(3.72018, 0, 0, 0, 2.67908, 0, 0, 0, 2.45309, -4.83385, 7.55852, -28.1334)
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -4.83385, 7.55852, -28.1334)
 
 [node name="mur17" parent="mur" instance=ExtResource("1_55nkg")]
-transform = Transform3D(3.72018, 0, 0, 0, 2.67908, 0, 0, 0, 2.45309, -4.83385, 7.55852, -35.9948)
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -4.83385, 7.55852, -35.9948)
 
 [node name="mur18" parent="mur" instance=ExtResource("1_55nkg")]
-transform = Transform3D(3.72018, 0, 0, 0, 2.67908, 0, 0, 0, 2.45309, 9.45248, 7.55852, -35.9948)
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 9.45248, 7.55852, -35.9948)
 
 [node name="mur19" parent="mur" instance=ExtResource("1_55nkg")]
-transform = Transform3D(3.72018, 0, 0, 0, 2.67908, 0, 0, 0, 2.45309, 9.442, 7.55852, -13.9664)
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 9.442, 7.55852, -13.9664)
 
 [node name="mur20" parent="mur" instance=ExtResource("1_55nkg")]
-transform = Transform3D(3.72018, 0, 0, 0, 2.67908, 0, 0, 0, 2.45309, -4.87018, 7.55852, -13.9664)
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -4.87018, 7.55852, -13.9664)
 
 [node name="drapeau" type="Node3D" parent="."]
 transform = Transform3D(0.234095, 0, 0, 0, 0.826793, 0, 0, 0, 0.208587, -5.73043, 0.401551, 3.7992)

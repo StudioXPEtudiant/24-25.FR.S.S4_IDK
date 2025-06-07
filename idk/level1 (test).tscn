@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://ibbr6rsyfn4w"]
+[gd_scene load_steps=6 format=3 uid="uid://ibbr6rsyfn4w"]
 
 [ext_resource type="PackedScene" uid="uid://53cievrl3uqw" path="res://scene/sol .tscn" id="1_2uxcp"]
 [ext_resource type="PackedScene" uid="uid://blvapknkib3gq" path="res://scene/mur.tscn" id="2_qqmvt"]
 [ext_resource type="PackedScene" uid="uid://dpl5s6xlefiop" path="res://scene/key.tscn" id="3_ddb1s"]
 [ext_resource type="PackedScene" uid="uid://c18yo6cmr01kb" path="res://Porte_texture.tscn" id="4_40012"]
+[ext_resource type="PackedScene" uid="uid://b5jd64jmxy878" path="res://player.tscn" id="5_1cxhb"]
 
 [node name="Node3D" type="Node3D"]
 
@@ -165,9 +166,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 177, 35, -245)
 [node name="mur9" parent="cellule" instance=ExtResource("2_qqmvt")]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 242, 35, -182)
 
-[node name="mur5" parent="cellule" instance=ExtResource("2_qqmvt")]
-transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -123, 35, -189)
-
 [node name="mur6" parent="cellule" instance=ExtResource("2_qqmvt")]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -123, 35, -317)
 
@@ -281,3 +279,6 @@ light_size = 0.993
 light_specular = 16.0
 omni_range = 182.0
 omni_attenuation = 1.415
+
+[node name="Player" parent="." instance=ExtResource("5_1cxhb")]
+transform = Transform3D(20, 0, 0, 0, 20, 0, 0, 0, 20, 195, 12, -320)
