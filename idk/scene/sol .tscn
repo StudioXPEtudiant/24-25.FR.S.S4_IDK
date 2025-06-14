@@ -1,4 +1,4 @@
-[gd_scene load_steps=3 format=3 uid="uid://53cievrl3uqw"]
+[gd_scene load_steps=4 format=3 uid="uid://53cievrl3uqw"]
 
 [ext_resource type="Texture2D" uid="uid://dvykijnsw6iea" path="res://texture/Stone_Floor.png" id="1_54dc2"]
 
@@ -6,10 +6,16 @@
 albedo_texture = ExtResource("1_54dc2")
 metallic = 1.0
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_5lyg5"]
+
 [node name="Node3D" type="Node3D"]
 transform = Transform3D(25.9649, 0, 0, 0, 1, 0, 0, 0, 25.9159, 0, 0, 0)
 
 [node name="CSGBox3D" type="CSGBox3D" parent="."]
-transform = Transform3D(1.9882, 0, 0, 0, 1, 0, 0, 0, 1.96787, 0, 0, 0)
+transform = Transform3D(1.75, 0, 0, 0, 1.75, 0, 0, 0, 1.75, 0, 0, 0)
 size = Vector3(5, 0.1, 5)
 material = SubResource("StandardMaterial3D_p7ath")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="CSGBox3D"]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 0, 0, 0)
+shape = SubResource("BoxShape3D_5lyg5")

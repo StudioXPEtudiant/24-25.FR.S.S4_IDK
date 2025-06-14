@@ -16,7 +16,7 @@
 [ext_resource type="PackedScene" uid="uid://bmxs1vv8bf1tc" path="res://armure/sword.tscn" id="11_fhx73"]
 [ext_resource type="PackedScene" uid="uid://b5jd64jmxy878" path="res://player.tscn" id="14_bi6un"]
 [ext_resource type="PackedScene" uid="uid://c4fiqvwxjjtmo" path="res://objet_Test/cube_de_calcul.tscn" id="15_pevmx"]
-[ext_resource type="PackedScene" path="res://scene/reponse_juste.tscn" id="16_p56a8"]
+[ext_resource type="PackedScene" uid="uid://3nfqtk2pj8oa" path="res://scene/reponse_juste.tscn" id="16_p56a8"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_g0t3c"]
 albedo_color = Color(0, 0, 0, 1)
