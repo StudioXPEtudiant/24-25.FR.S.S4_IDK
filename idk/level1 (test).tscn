@@ -285,6 +285,4 @@ omni_range = 182.0
 omni_attenuation = 1.415
 
 [node name="Player" parent="." instance=ExtResource("5_1cxhb")]
-transform = Transform3D(-8.74228e-07, 0, -20, 0, 20, 0, 20, 0, -8.74228e-07, 193, 43, -321)
-
-[editable path="Player"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 290.009, 36.4232, -39.589)
