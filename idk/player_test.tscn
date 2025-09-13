@@ -1,0 +1,37 @@
+[gd_scene load_steps=6 format=3 uid="uid://b7xuoun7064o0"]
+
+[ext_resource type="Script" path="res://player_test.gd" id="1_7hnxt"]
+[ext_resource type="Script" path="res://script/camera_Player.gd" id="2_lf6oo"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_0wxnf"]
+size = Vector3(1, 1, 0.996704)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_u1bku"]
+albedo_color = Color(1, 0.117647, 0.027451, 1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_pthwu"]
+size = Vector3(1.11877, 1, 1.2196)
+
+[node name="Node3D" type="CharacterBody3D"]
+script = ExtResource("1_7hnxt")
+
+[node name="Head" type="Node3D" parent="."]
+
+[node name="Camera3D" type="Camera3D" parent="Head" node_paths=PackedStringArray("Object_to_follow")]
+script = ExtResource("2_lf6oo")
+Object_to_follow = NodePath("..")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.00164795)
+shape = SubResource("BoxShape3D_0wxnf")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="."]
+material = SubResource("StandardMaterial3D_u1bku")
+
+[node name="Area3D" type="Area3D" parent="."]
+collision_layer = 64
+collision_mask = 64
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000671387, 0, -0.0444946)
+shape = SubResource("BoxShape3D_pthwu")

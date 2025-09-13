@@ -1,7 +1,6 @@
-[gd_scene load_steps=11 format=3 uid="uid://b5jd64jmxy878"]
+[gd_scene load_steps=10 format=3 uid="uid://b5jd64jmxy878"]
 
 [ext_resource type="Script" path="res://script/MovePlayer.gd" id="1_paagl"]
-[ext_resource type="Script" path="res://script/camera_Player.gd" id="2_kel5p"]
 [ext_resource type="Script" path="res://script/PorteScripts/raycast.gd" id="3_jvcsj"]
 
 [sub_resource type="Animation" id="Animation_stir7"]
@@ -104,17 +103,12 @@ collision_layer = 65
 collision_mask = 65
 script = ExtResource("1_paagl")
 speed = 3.0
-camera = NodePath("Head/Camera3D")
+camera = NodePath("")
 Head = NodePath("Head")
 animation = NodePath("AnimationPlayer")
 shapecast_s_accroupir = NodePath("ShapeCast3D")
 
 [node name="Head" type="Node3D" parent="."]
-
-[node name="Camera3D" type="Camera3D" parent="Head" node_paths=PackedStringArray("Object_to_follow")]
-current = true
-script = ExtResource("2_kel5p")
-Object_to_follow = NodePath("../..")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 root_node = NodePath("")

@@ -4,7 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://blvapknkib3gq" path="res://scene/mur.tscn" id="2_qqmvt"]
 [ext_resource type="PackedScene" uid="uid://dpl5s6xlefiop" path="res://scene/key.tscn" id="3_ddb1s"]
 [ext_resource type="PackedScene" uid="uid://c18yo6cmr01kb" path="res://Porte_texture.tscn" id="4_40012"]
-[ext_resource type="PackedScene" uid="uid://b5jd64jmxy878" path="res://player.tscn" id="5_1cxhb"]
+[ext_resource type="PackedScene" uid="uid://b7xuoun7064o0" path="res://player_test.tscn" id="5_jbmrr"]
 
 [node name="Node3D" type="Node3D"]
 
@@ -162,12 +162,6 @@ transform = Transform3D(0.28014, 0.351502, -0.220137, 0.0650069, 0.175751, 0.457
 [node name="Key2" parent="." instance=ExtResource("3_ddb1s")]
 transform = Transform3D(0.28014, 0.351502, -0.220137, 0.0650069, 0.175751, 0.457302, 1.08303, -0.10147, 0.0294928, -1, 0.999908, 344)
 
-[node name="Player" parent="." instance=ExtResource("5_1cxhb")]
-transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 290.009, 36.4232, -39.589)
-
-[node name="Camera3D" parent="Player/Head" index="0"]
-current = false
-
 [node name="cellule2" type="Node3D" parent="."]
 
 [node name="mur3" parent="cellule2" instance=ExtResource("2_qqmvt")]
@@ -290,8 +284,5 @@ light_specular = 16.0
 omni_range = 182.0
 omni_attenuation = 1.415
 
-[node name="Camera3D" type="Camera3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 0.739584, 0.673064, 0, -0.673064, 0.739584, 0, 298.091, 0)
-current = true
-
-[editable path="Player"]
+[node name="Node3D" parent="." instance=ExtResource("5_jbmrr")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 202.177, 42.7907, 0)
