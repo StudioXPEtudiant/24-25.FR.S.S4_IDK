@@ -77,9 +77,8 @@ func _input(event):
 			#camera.rotate_x(-event.relative.y * 0.01)
 			#camera.rotation.x = clamp(camera.rotation.x, deg_to_rad(-30), deg_to_rad(60))
 func _on_area_3d_body_entered(body):
-	collected.emit()
-	body.queue_free()
 	if body is RigidBody3D:
+		collected.emit()
 		queue_free()
 	if body is StaticBody3D:
 		print("gfrdd")

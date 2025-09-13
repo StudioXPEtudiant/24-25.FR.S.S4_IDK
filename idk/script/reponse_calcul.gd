@@ -11,12 +11,6 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	for i in range (3):
-		global_position += move
-		i = i+1
-	for i in range (3):
-		global_position -= move
-		i = i+1
 	pass
 
 	
