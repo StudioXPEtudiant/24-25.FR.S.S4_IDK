@@ -2,9 +2,9 @@
 
 [ext_resource type="PackedScene" uid="uid://53cievrl3uqw" path="res://scene/sol .tscn" id="1_u5tqy"]
 [ext_resource type="PackedScene" uid="uid://blvapknkib3gq" path="res://scene/mur.tscn" id="2_gh8o7"]
-[ext_resource type="PackedScene" uid="uid://c18yo6cmr01kb" path="res://Porte_texture.tscn" id="3_vxwmw"]
+[ext_resource type="PackedScene" uid="uid://c18yo6cmr01kb" path="res://scene/Porte_texture.tscn" id="3_vxwmw"]
 [ext_resource type="PackedScene" uid="uid://c4fiqvwxjjtmo" path="res://objet_Test/cube_de_calcul.tscn" id="4_3xqhp"]
-[ext_resource type="PackedScene" uid="uid://b5jd64jmxy878" path="res://player.tscn" id="5_2o68j"]
+[ext_resource type="PackedScene" uid="uid://b5jd64jmxy878" path="res://scene/player.tscn" id="5_2o68j"]
 
 [node name="Node3D" type="Node3D"]
 

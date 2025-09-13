@@ -1,19 +1,19 @@
 [gd_scene load_steps=9 format=3 uid="uid://dc5tnclfuqiov"]
 
-[ext_resource type="Script" path="res://script/reponse_calcul.gd" id="1_m1r7u"]
-[ext_resource type="Texture2D" uid="uid://cyyshsgcaw34b" path="res://texture/brume_texture.jpg" id="2_yr8jk"]
-[ext_resource type="Texture2D" uid="uid://cuoabwc8juh7h" path="res://texture/feu_texture.jpg" id="3_o4f17"]
+[ext_resource type="Script" path="res://script/reponse_calcul.gd" id="1_ks8vq"]
+[ext_resource type="Texture2D" uid="uid://cyyshsgcaw34b" path="res://texture/brume_texture.jpg" id="2_bime8"]
+[ext_resource type="Texture2D" uid="uid://cuoabwc8juh7h" path="res://texture/feu_texture.jpg" id="3_5xji0"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_x8y2q"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6xp6x"]
 albedo_color = Color(0.239216, 1, 1, 1)
-albedo_texture = ExtResource("2_yr8jk")
+albedo_texture = ExtResource("2_bime8")
 backlight_enabled = true
 backlight = Color(0.172549, 0.929412, 1, 1)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qdo70"]
-albedo_texture = ExtResource("3_o4f17")
+albedo_texture = ExtResource("3_5xji0")
 backlight_enabled = true
 backlight = Color(1, 0, 0.6, 1)
 
@@ -25,7 +25,7 @@ font_size = 40
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1yoqw"]
 transparency = 1
 blend_mode = 1
-albedo_texture = ExtResource("3_o4f17")
+albedo_texture = ExtResource("3_5xji0")
 
 [node name="cube de calcul" type="RigidBody3D" groups=["object"]]
 collision_layer = 64
@@ -36,7 +36,7 @@ axis_lock_linear_z = true
 axis_lock_angular_x = true
 axis_lock_angular_y = true
 axis_lock_angular_z = true
-script = ExtResource("1_m1r7u")
+script = ExtResource("1_ks8vq")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 shape = SubResource("BoxShape3D_x8y2q")
