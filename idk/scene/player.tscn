@@ -98,12 +98,11 @@ albedo_color = Color(1, 0.117647, 0.027451, 1)
 [sub_resource type="BoxShape3D" id="BoxShape3D_xsguo"]
 size = Vector3(1.11877, 1, 1.2196)
 
-[node name="Player" type="CharacterBody3D" node_paths=PackedStringArray("camera", "Head", "animation", "shapecast_s_accroupir")]
+[node name="Player" type="CharacterBody3D" node_paths=PackedStringArray("Head", "animation", "shapecast_s_accroupir")]
 collision_layer = 65
 collision_mask = 65
 script = ExtResource("1_paagl")
 speed = 3.0
-camera = NodePath("")
 Head = NodePath("Head")
 animation = NodePath("AnimationPlayer")
 shapecast_s_accroupir = NodePath("ShapeCast3D")

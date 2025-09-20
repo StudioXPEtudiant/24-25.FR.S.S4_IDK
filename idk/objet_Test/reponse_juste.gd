@@ -1,6 +1,6 @@
 extends Node3D
 signal collected
-@export var joueur:CharacterBody3D
+@export var joueur:RigidBody3D
 var move : Vector3
 
 # Called when the node enters the scene tree for the first time.
@@ -11,17 +11,9 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	for i in range (3):
-		global_position += move
-		i = i+1
-	for i in range (3):
-		global_position -= move
-		i = i+1
 	pass
 
 	
-
-
 func _on_body_entered(body):
 	collected.emit()
 	joueur.queue_free()

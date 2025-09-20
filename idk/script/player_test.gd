@@ -7,13 +7,9 @@ extends CharacterBody3D
 @export var Head: Node3D
 var objet: bool
 var accessable: bool
-var est_accroupi = false
-@export var animation : AnimationPlayer
-@export_range (1, 10, 0.1) var s_accroupir_vitesse : float = 3.0
-@export var shapecast_s_accroupir : ShapeCast3D
-@export var saccroupir : bool = false
 var target_velocity = Vector3.ZERO
 @export var view_speed = 0.0075
+@export var porte : RigidBody3D
 signal collected
 
 # Called when the node enters the scene tree for the first time.
@@ -80,6 +76,13 @@ func _on_area_3d_body_entered(body):
 	if body is RigidBody3D:
 		collected.emit()
 		queue_free()
+		porte.queue_free()
 	if body is StaticBody3D:
-		print("gfrdd")
+		collected.emit()
+		porte.queue_free()
+	pass # Replace with function body.
+
+
+func _on_cube_de_calcul_2_collected():
+	collected.emit()
 	pass # Replace with function body.
