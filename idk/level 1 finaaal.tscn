@@ -1,0 +1,112 @@
+[gd_scene load_steps=2 format=3 uid="uid://dswq7a487kdsg"]
+
+[ext_resource type="PackedScene" uid="uid://53cievrl3uqw" path="res://scene/sol .tscn" id="1_jfppt"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="sol" type="Node3D" parent="."]
+
+[node name="Node3D" parent="sol" instance=ExtResource("1_jfppt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.151979, 0, -0.0443281)
+
+[node name="Node3D2" parent="sol" instance=ExtResource("1_jfppt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.151979, 0, 8.78004)
+
+[node name="Node3D3" parent="sol" instance=ExtResource("1_jfppt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.151979, 0, 17.5705)
+
+[node name="Node3D4" parent="sol" instance=ExtResource("1_jfppt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.151979, 0, 26.0971)
+
+[node name="Node3D5" parent="sol" instance=ExtResource("1_jfppt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.151979, 0, 34.8671)
+
+[node name="Node3D6" parent="sol" instance=ExtResource("1_jfppt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.151979, 0, 43.6256)
+
+[node name="Node3D7" parent="sol" instance=ExtResource("1_jfppt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.151979, 0, 52.2744)
+
+[node name="Node3D8" parent="sol" instance=ExtResource("1_jfppt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.71421, 0, -0.0443281)
+
+[node name="Node3D9" parent="sol" instance=ExtResource("1_jfppt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.71421, 0, 8.78004)
+
+[node name="Node3D10" parent="sol" instance=ExtResource("1_jfppt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.71421, 0, 17.5705)
+
+[node name="Node3D11" parent="sol" instance=ExtResource("1_jfppt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.71421, 0, 26.0971)
+
+[node name="Node3D12" parent="sol" instance=ExtResource("1_jfppt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.71421, 0, 34.8671)
+
+[node name="Node3D13" parent="sol" instance=ExtResource("1_jfppt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.71421, 0, 43.6256)
+
+[node name="Node3D14" parent="sol" instance=ExtResource("1_jfppt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.71421, 0, 52.2744)
+
+[node name="Node3D15" parent="sol" instance=ExtResource("1_jfppt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -17.127, 0, -0.0443281)
+
+[node name="Node3D16" parent="sol" instance=ExtResource("1_jfppt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -17.127, 0, 8.78004)
+
+[node name="Node3D17" parent="sol" instance=ExtResource("1_jfppt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -17.127, 0, 17.5705)
+
+[node name="Node3D18" parent="sol" instance=ExtResource("1_jfppt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -17.127, 0, 26.0971)
+
+[node name="Node3D19" parent="sol" instance=ExtResource("1_jfppt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -17.127, 0, 34.8671)
+
+[node name="Node3D20" parent="sol" instance=ExtResource("1_jfppt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -17.127, 0, 43.6256)
+
+[node name="Node3D21" parent="sol" instance=ExtResource("1_jfppt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -17.127, 0, 52.2744)
+
+[node name="Node3D22" parent="sol" instance=ExtResource("1_jfppt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -25.7725, 0, -0.0443281)
+
+[node name="Node3D23" parent="sol" instance=ExtResource("1_jfppt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -25.7725, 0, 8.78004)
+
+[node name="Node3D24" parent="sol" instance=ExtResource("1_jfppt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -25.7725, 0, 17.5705)
+
+[node name="Node3D25" parent="sol" instance=ExtResource("1_jfppt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -25.7725, 0, 26.0971)
+
+[node name="Node3D26" parent="sol" instance=ExtResource("1_jfppt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -25.7725, 0, 34.8671)
+
+[node name="Node3D27" parent="sol" instance=ExtResource("1_jfppt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -25.7725, 0, 43.6256)
+
+[node name="Node3D28" parent="sol" instance=ExtResource("1_jfppt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -25.7725, 0, 52.2744)
+
+[node name="Node3D29" parent="sol" instance=ExtResource("1_jfppt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.5135, 0, -0.0443281)
+
+[node name="Node3D30" parent="sol" instance=ExtResource("1_jfppt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.5135, 0, 8.78004)
+
+[node name="Node3D31" parent="sol" instance=ExtResource("1_jfppt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.5135, 0, 17.5705)
+
+[node name="Node3D32" parent="sol" instance=ExtResource("1_jfppt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.5135, 0, 26.0971)
+
+[node name="Node3D33" parent="sol" instance=ExtResource("1_jfppt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.5135, 0, 34.8671)
+
+[node name="Node3D34" parent="sol" instance=ExtResource("1_jfppt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.5135, 0, 43.6256)
+
+[node name="Node3D35" parent="sol" instance=ExtResource("1_jfppt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.5135, 0, 52.2744)
