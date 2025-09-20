@@ -1,10 +1,11 @@
-[gd_scene load_steps=9 format=3 uid="uid://ibbr6rsyfn4w"]
+[gd_scene load_steps=10 format=3 uid="uid://ibbr6rsyfn4w"]
 
 [ext_resource type="PackedScene" uid="uid://53cievrl3uqw" path="res://scene/sol .tscn" id="1_2uxcp"]
 [ext_resource type="PackedScene" uid="uid://blvapknkib3gq" path="res://scene/mur.tscn" id="2_qqmvt"]
 [ext_resource type="PackedScene" uid="uid://dpl5s6xlefiop" path="res://scene/key.tscn" id="3_ddb1s"]
 [ext_resource type="PackedScene" uid="uid://c18yo6cmr01kb" path="res://scene/Porte_texture.tscn" id="4_40012"]
 [ext_resource type="PackedScene" uid="uid://b7xuoun7064o0" path="res://scene/player_test.tscn" id="5_jbmrr"]
+[ext_resource type="Script" path="res://script/camera_Player.gd" id="6_3g71t"]
 [ext_resource type="PackedScene" uid="uid://c4fiqvwxjjtmo" path="res://objet_Test/cube_de_calcul.tscn" id="6_i8whs"]
 [ext_resource type="PackedScene" uid="uid://3nfqtk2pj8oa" path="res://scene/reponse_juste.tscn" id="7_nin1l"]
 [ext_resource type="Script" path="res://objet_Test/reponse_juste.gd" id="8_qe2d5"]
@@ -288,15 +289,17 @@ omni_range = 182.0
 omni_attenuation = 1.415
 
 [node name="Node3D" parent="." node_paths=PackedStringArray("porte") instance=ExtResource("5_jbmrr")]
-transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 297.225, 5.68251, -7.299)
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 295, 5.683, -7.299)
 collision_layer = 65
 collision_mask = 65
 speed = 15.0
 porte = NodePath("../cube de calcul")
 
-[node name="Camera3D" type="Camera3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, -0.989318, 0.145772, 0, -0.145772, -0.989318, 305.868, 22.198, -95.4685)
+[node name="Camera3D" type="Camera3D" parent="." node_paths=PackedStringArray("Object_to_follow")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 295, 22.198, 54.459)
 current = true
+script = ExtResource("6_3g71t")
+Object_to_follow = NodePath("../Node3D")
 
 [node name="cube de calcul" parent="." node_paths=PackedStringArray("joueur") instance=ExtResource("6_i8whs")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 253.482, 10.5323, -8.706)
