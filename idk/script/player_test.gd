@@ -4,16 +4,17 @@ extends CharacterBody3D
 @export var verticalAxe : float
 @export var direction : Vector3
 @export var camera: Node3D
-@export var Head: Node3D
 var objet: bool
 var accessable: bool
 var target_velocity = Vector3.ZERO
 @export var view_speed = 0.0075
 @export var porte : RigidBody3D
+var life : int
 signal collected
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	life = 1
 	pass
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -75,7 +76,9 @@ func _input(event):
 func _on_area_3d_body_entered(body):
 	if body is RigidBody3D:
 		collected.emit()
-		queue_free()
+		life -= 1
+		if life == 0:
+			queue_free()
 		porte.queue_free()
 	if body is StaticBody3D:
 		collected.emit()
