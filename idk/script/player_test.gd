@@ -9,8 +9,13 @@ var accessable: bool
 var target_velocity = Vector3.ZERO
 @export var view_speed = 0.0075
 @export var porte : RigidBody3D
+@export var timer : Node
 var life : int
 signal collected
+
+
+func wait(seconds: float) -> void:
+	await get_tree().create_timer(1.0).timeout
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -32,6 +37,9 @@ func _physics_process(delta):
 		direction.z = direction.z + 1 * speed
 	if Input.is_action_pressed("Player_Up"):
 		direction.z = direction.z - 1 * speed
+	if Input.is_action_just_pressed("Dash"):
+		timer.start()
+		speed += 35
 
 	# Eviter les diagonales
 	if direction != Vector3.ZERO:
@@ -88,4 +96,9 @@ func _on_area_3d_body_entered(body):
 
 func _on_cube_de_calcul_2_collected():
 	collected.emit()
+	pass # Replace with function body.
+
+
+func _on_timer_timeout():
+	speed -=35
 	pass # Replace with function body.
