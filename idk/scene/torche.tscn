@@ -1,0 +1,24 @@
+[gd_scene load_steps=3 format=3 uid="uid://kx427xsa6ja1"]
+
+[ext_resource type="Script" path="res://torche.gd" id="1_h5wt1"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_pnxsh"]
+size = Vector3(0.255646, 1, 0.267334)
+
+[node name="torche" type="Node3D"]
+script = ExtResource("1_h5wt1")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0138855, 0, 0.0559082)
+size = Vector3(0.1745, 1, 0.165527)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.015851, 0.565873, 0.0616509)
+light_energy = 5.671
+light_size = 0.316
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0319061, 0, 0.0462646)
+shape = SubResource("BoxShape3D_pnxsh")
+
+[node name="Area3D" type="Area3D" parent="."]
