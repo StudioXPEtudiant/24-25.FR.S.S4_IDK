@@ -1,4 +1,4 @@
-[gd_scene load_steps=3 format=3 uid="uid://c0ryqsytf8cup"]
+[gd_scene load_steps=3 format=3 uid="uid://clm7ln1vj1hwm"]
 
 [ext_resource type="PackedScene" uid="uid://53cievrl3uqw" path="res://scene/sol .tscn" id="1_sj6si"]
 [ext_resource type="PackedScene" uid="uid://blvapknkib3gq" path="res://scene/mur.tscn" id="2_3ybbe"]
@@ -137,6 +137,12 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.7261, 1.11847, -20.8424)
 
 [node name="mur15" parent="muuuuur" instance=ExtResource("2_3ybbe")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.8473, 1.11847, -20.8424)
+
+[node name="mur16" parent="muuuuur" instance=ExtResource("2_3ybbe")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.999, 1.11847, -20.8424)
+
+[node name="mur65" parent="muuuuur" instance=ExtResource("2_3ybbe")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.1487, 1.11847, -20.8424)
 
 [node name="mur17" parent="muuuuur" instance=ExtResource("2_3ybbe")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 20.9283, 1.11847, -19.0608)
@@ -283,25 +289,25 @@ transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -29.36
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -29.3684, 1.12358, -18.8773)
 
 [node name="mur7" parent="muuuuur" instance=ExtResource("2_3ybbe")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.94233, 1.11847, -20.8424)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -27.9116, 1.11847, -20.8424)
 
 [node name="mur" parent="muuuuur" instance=ExtResource("2_3ybbe")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.90931, 1.11847, -20.8424)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21.5565, 1.11847, -20.8424)
 
 [node name="mur2" parent="muuuuur" instance=ExtResource("2_3ybbe")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.74952, 1.11847, -20.8424)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18.4836, 1.11847, -20.8424)
 
 [node name="mur3" parent="muuuuur" instance=ExtResource("2_3ybbe")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.59366, 1.11847, -20.8424)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15.3655, 1.11847, -20.8424)
 
 [node name="mur4" parent="muuuuur" instance=ExtResource("2_3ybbe")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.43514, 1.11847, -20.8424)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24.6667, 1.11847, -20.8424)
 
 [node name="mur5" parent="muuuuur" instance=ExtResource("2_3ybbe")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.28013, 1.11847, -20.8424)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.2087, 1.11847, -20.8424)
 
 [node name="mur6" parent="muuuuur" instance=ExtResource("2_3ybbe")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.12424, 1.11847, -20.8424)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.79208, 1.11847, -20.8424)
 
 [node name="mur8" parent="muuuuur" instance=ExtResource("2_3ybbe")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.81309, 1.11847, -20.8424)
