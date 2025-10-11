@@ -1,4 +1,4 @@
-[gd_scene load_steps=3 format=3 uid="uid://clm7ln1vj1hwm"]
+[gd_scene load_steps=3 format=3 uid="uid://c0ryqsytf8cup"]
 
 [ext_resource type="PackedScene" uid="uid://53cievrl3uqw" path="res://scene/sol .tscn" id="1_sj6si"]
 [ext_resource type="PackedScene" uid="uid://blvapknkib3gq" path="res://scene/mur.tscn" id="2_3ybbe"]
@@ -305,6 +305,3 @@ transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -29.36
 
 [node name="mur64" parent="muuuuur" instance=ExtResource("2_3ybbe")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -29.3684, 1.12358, -18.8773)
-
-[node name="mur16" parent="muuuuur" instance=ExtResource("2_3ybbe")]
-transform = Transform3D(1.96185, 0, 0, 0, 1, 0, 0, 0, 1, 17.9918, 1.11847, -20.8424)
