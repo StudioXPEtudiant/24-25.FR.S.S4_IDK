@@ -3,6 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://dvykijnsw6iea" path="res://texture/Stone_Floor.png" id="1_54dc2"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_5lyg5"]
+size = Vector3(8.7049, 0.181702, 8.65387)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_p7ath"]
 albedo_texture = ExtResource("1_54dc2")
@@ -11,7 +12,7 @@ metallic = 1.0
 [node name="Node3D" type="StaticBody3D"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
-transform = Transform3D(8.75, 0, 0, 0, 8.75, 0, 0, 0, 8.75, 0, 0, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0141296, 0.00668335, 0.0345154)
 shape = SubResource("BoxShape3D_5lyg5")
 
 [node name="CSGBox3D" type="CSGBox3D" parent="."]
