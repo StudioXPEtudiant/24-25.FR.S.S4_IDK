@@ -1,19 +1,25 @@
-[gd_scene load_steps=3 format=3 uid="uid://kx427xsa6ja1"]
+[gd_scene load_steps=4 format=3 uid="uid://kx427xsa6ja1"]
 
 [ext_resource type="Script" path="res://torche.gd" id="1_h5wt1"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_a1b7a"]
+albedo_color = Color(0.490196, 0.341176, 0.0235294, 1)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_pnxsh"]
 size = Vector3(0.255646, 1, 0.267334)
 
-[node name="torche" type="Node3D"]
+[node name="torche" type="Node3D" node_paths=PackedStringArray("timer")]
 script = ExtResource("1_h5wt1")
+timer = NodePath("Timer")
 
 [node name="CSGBox3D" type="CSGBox3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0138855, 0, 0.0559082)
+material_override = SubResource("StandardMaterial3D_a1b7a")
 size = Vector3(0.1745, 1, 0.165527)
 
 [node name="OmniLight3D" type="OmniLight3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.015851, 0.565873, 0.0616509)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.015851, 0.725642, 0.0616509)
+light_color = Color(0.780392, 0.462745, 0.117647, 1)
 light_energy = 5.671
 light_size = 0.316
 
@@ -24,6 +30,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0319061, 0, 0.0462646)
 shape = SubResource("BoxShape3D_pnxsh")
 
 [node name="Timer" type="Timer" parent="."]
+wait_time = 50.0
 one_shot = true
 
 [connection signal="body_entered" from="Area3D" to="." method="_on_area_3d_body_entered"]
