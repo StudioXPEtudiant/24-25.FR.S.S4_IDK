@@ -11,3 +11,15 @@ script = ExtResource("1_fxngj")
 shape = SubResource("BoxShape3D_pmbq5")
 
 [node name="CSGBox3D" type="CSGBox3D" parent="."]
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.505389, 0.405045, 0.357094)
+size = Vector3(0.0267944, 0.73341, 0.0292969)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.527649, 0.794008, 0.361987)
+light_color = Color(1, 0.498039, 0, 1)
+light_energy = 2.394
+light_indirect_energy = 2.328
+light_size = 0.1
+omni_range = 3.0
