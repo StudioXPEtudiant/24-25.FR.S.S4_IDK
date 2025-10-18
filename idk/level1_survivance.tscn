@@ -12,6 +12,9 @@
 [node name="Node3D" parent="sol" instance=ExtResource("1_sj6si")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.276596, 0, -0.0383402)
 
+[node name="CollisionShape3D" parent="sol/Node3D" index="0"]
+transform = Transform3D(8.75, 0, 0, 0, 8.75, 0, 0, 0, 8.75, 0, -1.93542, 0)
+
 [node name="Node3D2" parent="sol" instance=ExtResource("1_sj6si")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.276596, 0, 8.72)
 
@@ -315,7 +318,10 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.79208, 1.11847, -20.8424)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.81309, 1.11847, -20.8424)
 
 [node name="Node3D" parent="." node_paths=PackedStringArray("camera") instance=ExtResource("3_eb6hx")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.10625, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.31226, 0)
+speed = 20.0
+horizontalAxe = 1.0
+verticalAxe = 1.0
 camera = NodePath("../Node3D2")
 
 [node name="Node3D2" parent="." node_paths=PackedStringArray("Object_to_follow") instance=ExtResource("4_en04m")]

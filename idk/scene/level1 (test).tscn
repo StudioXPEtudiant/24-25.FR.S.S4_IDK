@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://ibbr6rsyfn4w"]
+[gd_scene load_steps=11 format=3 uid="uid://ibbr6rsyfn4w"]
 
 [ext_resource type="PackedScene" uid="uid://53cievrl3uqw" path="res://scene/sol .tscn" id="1_2uxcp"]
 [ext_resource type="PackedScene" uid="uid://blvapknkib3gq" path="res://scene/mur.tscn" id="2_qqmvt"]
@@ -9,6 +9,7 @@
 [ext_resource type="PackedScene" uid="uid://c4fiqvwxjjtmo" path="res://objet_Test/cube_de_calcul.tscn" id="6_i8whs"]
 [ext_resource type="PackedScene" uid="uid://3nfqtk2pj8oa" path="res://scene/reponse_juste.tscn" id="7_nin1l"]
 [ext_resource type="Script" path="res://objet_Test/reponse_juste.gd" id="8_qe2d5"]
+[ext_resource type="PackedScene" uid="uid://c54k1xteb66ph" path="res://ennemy_test.tscn" id="10_8u4d5"]
 
 [node name="Node3D" type="Node3D"]
 
@@ -325,9 +326,19 @@ transform = Transform3D(15, 0, 0, 0, 15, 0, 0, 0, 15, 0, 0, 0)
 [node name="CollisionShape3D" parent="cube de calcul2" index="1"]
 transform = Transform3D(15, 0, 0, 0, 15, 0, 0, 0, 15, 0, 0, 0)
 
+[node name="ennemy_test" parent="." instance=ExtResource("10_8u4d5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 269.445, 12.1643, 85.8281)
+
+[node name="CollisionShape3D" parent="ennemy_test" index="0"]
+transform = Transform3D(20, 0, 0, 0, 20, 0, 0, 0, 20, 0, 0, 0)
+
+[node name="CSGBox3D" parent="ennemy_test" index="1"]
+transform = Transform3D(20, 0, 0, 0, 20, 0, 0, 0, 20, 0, 0, 0)
+
 [connection signal="collected" from="cube de calcul" to="Node3D" method="_on_cube_de_calcul_collected"]
 [connection signal="collected" from="cube de calcul2" to="Node3D" method="_on_cube_de_calcul_2_collected"]
 
 [editable path="Node3D"]
 [editable path="cube de calcul"]
 [editable path="cube de calcul2"]
+[editable path="ennemy_test"]

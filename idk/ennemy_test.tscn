@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://c54k1xteb66ph"]
+
+[ext_resource type="Script" path="res://ennemy_test.gd" id="1_fxngj"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_pmbq5"]
+
+[node name="ennemy_test" type="CharacterBody3D"]
+script = ExtResource("1_fxngj")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("BoxShape3D_pmbq5")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="."]
