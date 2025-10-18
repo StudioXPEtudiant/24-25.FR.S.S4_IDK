@@ -328,6 +328,7 @@ transform = Transform3D(15, 0, 0, 0, 15, 0, 0, 0, 15, 0, 0, 0)
 
 [node name="ennemy_test" parent="." instance=ExtResource("10_8u4d5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 269.445, 12.1643, 85.8281)
+Speed = 20
 
 [node name="CollisionShape3D" parent="ennemy_test" index="0"]
 transform = Transform3D(20, 0, 0, 0, 20, 0, 0, 0, 20, 0, 0, 0)
