@@ -7,7 +7,9 @@
 [sub_resource type="CylinderShape3D" id="CylinderShape3D_ep6jk"]
 height = 0.636857
 
-[node name="ennemy_test" type="CharacterBody3D"]
+[node name="vigile_test" type="StaticBody3D"]
+collision_layer = 3
+collision_mask = 3
 script = ExtResource("1_ryj4f")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
@@ -29,8 +31,6 @@ omni_range = 3.0
 
 [node name="Area3D" type="Area3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2.53637)
-collision_layer = 2
-collision_mask = 65
 
 [node name="CollisionShape3D2" type="CollisionShape3D" parent="Area3D"]
 transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -0.0152422, -0.179374, 0.0616379)
