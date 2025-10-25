@@ -1,11 +1,14 @@
-[gd_scene load_steps=3 format=3 uid="uid://c54k1xteb66ph"]
+[gd_scene load_steps=4 format=3 uid="uid://dcwjyd26ceon7"]
 
-[ext_resource type="Script" path="res://script/ennemy_test.gd" id="1_fxngj"]
+[ext_resource type="Script" path="res://script/vigil_test.gd" id="1_ryj4f"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_pmbq5"]
 
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_ep6jk"]
+height = 0.636857
+
 [node name="ennemy_test" type="CharacterBody3D"]
-script = ExtResource("1_fxngj")
+script = ExtResource("1_ryj4f")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 shape = SubResource("BoxShape3D_pmbq5")
@@ -23,3 +26,12 @@ light_energy = 2.394
 light_indirect_energy = 2.328
 light_size = 0.1
 omni_range = 3.0
+
+[node name="Area3D" type="Area3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2.53637)
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Area3D"]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -0.0152422, -0.179374, 0.0616379)
+shape = SubResource("CylinderShape3D_ep6jk")
+
+[connection signal="body_entered" from="Area3D" to="." method="_on_area_3d_body_entered"]

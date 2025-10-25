@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://kx427xsa6ja1"]
 
-[ext_resource type="Script" path="res://torche.gd" id="1_h5wt1"]
+[ext_resource type="Script" path="res://script/torche.gd" id="1_h5wt1"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_a1b7a"]
 albedo_color = Color(0.490196, 0.341176, 0.0235294, 1)
