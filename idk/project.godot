@@ -55,4 +55,5 @@ Dash={
 [layer_names]
 
 3d_physics/layer_1="Player"
+3d_physics/layer_2="ennemy"
 3d_physics/layer_7="cube de réponse"
