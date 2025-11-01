@@ -297,6 +297,18 @@ speed = 20.0
 camera = NodePath("../Camera3D")
 porte = NodePath("../cube de calcul")
 
+[node name="king" parent="Node3D" index="3"]
+_import_path = NodePath("")
+unique_name_in_owner = false
+process_mode = 0
+process_priority = 0
+process_physics_priority = 0
+process_thread_group = 0
+physics_interpolation_mode = 0
+auto_translate_mode = 0
+editor_description = ""
+script = null
+
 [node name="Camera3D" type="Camera3D" parent="." node_paths=PackedStringArray("Object_to_follow")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 295, 22.198, 54.459)
 current = true

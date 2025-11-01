@@ -1,0 +1,8 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://gm3vdwsdqpl3"]
+
+[ext_resource type="Texture2D" uid="uid://bglecao7nxvjv" path="res://texture/Dungeon_wall2.jpg" id="1_o72n1"]
+
+[resource]
+albedo_texture = ExtResource("1_o72n1")
+albedo_texture_force_srgb = true
+metallic_specular = 0.0
