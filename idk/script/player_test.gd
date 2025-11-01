@@ -40,6 +40,8 @@ func _physics_process(delta):
 	if Input.is_action_just_pressed("Dash"):
 		timer.start()
 		speed += 35
+	if Input.is_action_pressed("Jump"):
+		direction.y = direction.y + 50
 
 	# Eviter les diagonales
 	if direction != Vector3.ZERO:
@@ -59,12 +61,7 @@ func _physics_process(delta):
 		if collision.get_collider() == null:
 			continue
 
-		# If the collider is with a mob
-		if collision.get_collider().is_in_group("object"):
-			var object = collision.get_collider()
-			if Vector3.UP.dot(collision.get_normal()) > 0.1:
-				object.collected()
-				break
+		
 
 	# Moving the Character
 	velocity = target_velocity
