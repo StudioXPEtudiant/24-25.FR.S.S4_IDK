@@ -1,0 +1,28 @@
+[gd_scene load_steps=5 format=3 uid="uid://h6oq4nd4fxra"]
+
+[ext_resource type="Script" path="res://fake_wall.gd" id="1_mmbf5"]
+[ext_resource type="Material" path="res://texture/mur.tres" id="3_ert5i"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_0edxl"]
+size = Vector3(3.16724, 1.96387, 0.42627)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_athnw"]
+size = Vector3(3.15189, 1.75684, 0.732971)
+
+[node name="fake_wall" type="StaticBody3D"]
+script = ExtResource("1_mmbf5")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("BoxShape3D_0edxl")
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="."]
+size = Vector3(3.16113, 1.95801, 0.425293)
+material = ExtResource("3_ert5i")
+
+[node name="Area3D" type="Area3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00160217, -0.0288086, 0.0184021)
+shape = SubResource("BoxShape3D_athnw")
+
+[connection signal="body_entered" from="Area3D" to="." method="_on_area_3d_body_entered"]

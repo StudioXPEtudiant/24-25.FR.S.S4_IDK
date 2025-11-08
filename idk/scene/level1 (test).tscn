@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://ibbr6rsyfn4w"]
+[gd_scene load_steps=12 format=3 uid="uid://ibbr6rsyfn4w"]
 
 [ext_resource type="PackedScene" uid="uid://53cievrl3uqw" path="res://scene/sol .tscn" id="1_2uxcp"]
 [ext_resource type="PackedScene" uid="uid://blvapknkib3gq" path="res://scene/mur.tscn" id="2_qqmvt"]
@@ -10,6 +10,7 @@
 [ext_resource type="PackedScene" uid="uid://3nfqtk2pj8oa" path="res://scene/reponse_juste.tscn" id="7_nin1l"]
 [ext_resource type="Script" path="res://objet_Test/reponse_juste.gd" id="8_qe2d5"]
 [ext_resource type="PackedScene" uid="uid://dcwjyd26ceon7" path="res://vigil_test.tscn" id="10_l7cbj"]
+[ext_resource type="PackedScene" uid="uid://h6oq4nd4fxra" path="res://objet_Test/fake_wall.tscn" id="11_hu0fu"]
 
 [node name="Node3D" type="Node3D"]
 
@@ -297,18 +298,6 @@ speed = 20.0
 camera = NodePath("../Camera3D")
 porte = NodePath("../cube de calcul")
 
-[node name="king" parent="Node3D" index="3"]
-_import_path = NodePath("")
-unique_name_in_owner = false
-process_mode = 0
-process_priority = 0
-process_physics_priority = 0
-process_thread_group = 0
-physics_interpolation_mode = 0
-auto_translate_mode = 0
-editor_description = ""
-script = null
-
 [node name="Camera3D" type="Camera3D" parent="." node_paths=PackedStringArray("Object_to_follow")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 295, 22.198, 54.459)
 current = true
@@ -341,6 +330,9 @@ transform = Transform3D(15, 0, 0, 0, 15, 0, 0, 0, 15, 0, 0, 0)
 [node name="ennemy_test" parent="." node_paths=PackedStringArray("joueur") instance=ExtResource("10_l7cbj")]
 transform = Transform3D(-1.10359, 0, 9.93892, 0, 10, 0, -9.93892, 0, -1.10359, 284, 7.23132, 31.2633)
 joueur = NodePath("../Node3D")
+
+[node name="fake_wall" parent="." instance=ExtResource("11_hu0fu")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 335.049, 11.0275, 1.0814)
 
 [connection signal="collected" from="cube de calcul" to="Node3D" method="_on_cube_de_calcul_collected"]
 [connection signal="collected" from="cube de calcul2" to="Node3D" method="_on_cube_de_calcul_2_collected"]
