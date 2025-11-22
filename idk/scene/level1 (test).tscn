@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://ibbr6rsyfn4w"]
+[gd_scene load_steps=12 format=3 uid="uid://ibbr6rsyfn4w"]
 
 [ext_resource type="PackedScene" uid="uid://53cievrl3uqw" path="res://scene/sol .tscn" id="1_2uxcp"]
 [ext_resource type="PackedScene" uid="uid://blvapknkib3gq" path="res://scene/mur.tscn" id="2_qqmvt"]
@@ -7,8 +7,9 @@
 [ext_resource type="PackedScene" uid="uid://b7xuoun7064o0" path="res://scene/player_test.tscn" id="5_jbmrr"]
 [ext_resource type="PackedScene" uid="uid://c4fiqvwxjjtmo" path="res://objet_Test/cube_de_calcul.tscn" id="6_i8whs"]
 [ext_resource type="PackedScene" uid="uid://3nfqtk2pj8oa" path="res://scene/reponse_juste.tscn" id="7_nin1l"]
-[ext_resource type="Script" path="res://objet_Test/reponse_juste.gd" id="8_qe2d5"]
-[ext_resource type="PackedScene" uid="uid://dcwjyd26ceon7" path="res://vigil_test.tscn" id="10_l7cbj"]
+[ext_resource type="Script" path="res://script/reponse_juste.gd" id="8_qe2d5"]
+[ext_resource type="PackedScene" uid="uid://dcwjyd26ceon7" path="res://objet_Test/vigil_test.tscn" id="10_l7cbj"]
+[ext_resource type="PackedScene" uid="uid://dcj7by5q0xlw5" path="res://objet_Test/feu_follet.tscn" id="11_4ct23"]
 [ext_resource type="PackedScene" uid="uid://h6oq4nd4fxra" path="res://objet_Test/fake_wall.tscn" id="11_hu0fu"]
 
 [node name="Node3D" type="Node3D"]
@@ -330,9 +331,14 @@ joueur = NodePath("../Node3D")
 [node name="fake_wall" parent="." instance=ExtResource("11_hu0fu")]
 transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 335.049, 11.0275, 1.0814)
 
+[node name="feu_follet" parent="." node_paths=PackedStringArray("timer") instance=ExtResource("11_4ct23")]
+transform = Transform3D(15, 0, 0, 0, 15, 0, 0, 0, 15, 327.126, 28.997, -23.6205)
+timer = NodePath("Timer")
+
 [connection signal="collected" from="cube de calcul" to="Node3D" method="_on_cube_de_calcul_collected"]
 [connection signal="collected" from="cube de calcul2" to="Node3D" method="_on_cube_de_calcul_2_collected"]
 
 [editable path="Node3D"]
 [editable path="cube de calcul"]
 [editable path="cube de calcul2"]
+[editable path="feu_follet"]

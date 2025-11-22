@@ -1,4 +1,6 @@
-[gd_scene load_steps=2 format=3 uid="uid://dcj7by5q0xlw5"]
+[gd_scene load_steps=3 format=3 uid="uid://dcj7by5q0xlw5"]
+
+[ext_resource type="Script" path="res://objet_Test/feu_follet.gd" id="1_53eng"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0748f"]
 albedo_color = Color(0.396078, 0.576471, 1, 1)
@@ -9,6 +11,7 @@ backlight = Color(0, 0.215686, 1, 1)
 
 [node name="feu_follet" type="Node3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.27351, 0, 0)
+script = ExtResource("1_53eng")
 
 [node name="CSGSphere3D" type="CSGSphere3D" parent="."]
 material = SubResource("StandardMaterial3D_0748f")
@@ -18,3 +21,8 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.445705, 0)
 light_color = Color(0.168627, 0.694118, 1, 1)
 light_energy = 8.568
 light_size = 0.772
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 2.0
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

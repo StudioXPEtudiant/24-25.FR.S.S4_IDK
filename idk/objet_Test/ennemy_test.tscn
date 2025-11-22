@@ -1,11 +1,11 @@
 [gd_scene load_steps=3 format=3 uid="uid://c54k1xteb66ph"]
 
-[ext_resource type="Script" path="res://script/ennemy_test.gd" id="1_fxngj"]
+[ext_resource type="Script" path="res://script/ennemy_test.gd" id="1_bvnp4"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_pmbq5"]
 
 [node name="ennemy_test" type="CharacterBody3D"]
-script = ExtResource("1_fxngj")
+script = ExtResource("1_bvnp4")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 shape = SubResource("BoxShape3D_pmbq5")
