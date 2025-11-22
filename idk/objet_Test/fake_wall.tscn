@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://h6oq4nd4fxra"]
 
-[ext_resource type="Script" path="res://fake_wall.gd" id="1_mmbf5"]
-[ext_resource type="Material" path="res://texture/mur.tres" id="3_ert5i"]
+[ext_resource type="Script" path="res://script/fake_wall.gd" id="1_mmbf5"]
+[ext_resource type="Material" uid="uid://gm3vdwsdqpl3" path="res://texture/mur.tres" id="3_ert5i"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_0edxl"]
 size = Vector3(3.16724, 1.96387, 0.42627)
