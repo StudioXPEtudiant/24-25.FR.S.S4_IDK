@@ -7081,6 +7081,188 @@ light_energy = 300.0
 light_size = 0.316
 omni_range = 18.4103
 
+[node name="torche183" parent="lumiere" instance=ExtResource("4_7ufu0")]
+transform = Transform3D(1.19249e-08, -0.483282, -0.875465, 0, 0.875465, -0.483282, 1, 5.76309e-09, 1.04398e-08, 63.7876, 3.22792, 445.34)
+
+[node name="OmniLight3D" parent="lumiere/torche183" index="1"]
+light_energy = 300.0
+omni_range = 18.4103
+
+[node name="OmniLight3D2" type="OmniLight3D" parent="lumiere/torche183"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.015851, 0.725642, 0.0616509)
+light_color = Color(0.780392, 0.462745, 0.117647, 1)
+light_energy = 300.0
+light_size = 0.316
+omni_range = 18.4103
+
+[node name="torche184" parent="lumiere" instance=ExtResource("4_7ufu0")]
+transform = Transform3D(1.19249e-08, -0.483282, -0.875465, 0, 0.875465, -0.483282, 1, 5.76309e-09, 1.04398e-08, 63.7876, 3.22792, 511.833)
+
+[node name="OmniLight3D" parent="lumiere/torche184" index="1"]
+light_energy = 300.0
+omni_range = 18.4103
+
+[node name="OmniLight3D2" type="OmniLight3D" parent="lumiere/torche184"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.015851, 0.725642, 0.0616509)
+light_color = Color(0.780392, 0.462745, 0.117647, 1)
+light_energy = 300.0
+light_size = 0.316
+omni_range = 18.4103
+
+[node name="torche185" parent="lumiere" instance=ExtResource("4_7ufu0")]
+transform = Transform3D(-4.37114e-08, 0.483282, 0.875465, 0, 0.875465, -0.483282, -1, -2.11249e-08, -3.82678e-08, 57.165, 3.22792, 478.775)
+
+[node name="OmniLight3D" parent="lumiere/torche185" index="1"]
+light_energy = 300.0
+omni_range = 18.4103
+
+[node name="OmniLight3D2" type="OmniLight3D" parent="lumiere/torche185"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.015851, 0.725642, 0.0616509)
+light_color = Color(0.780392, 0.462745, 0.117647, 1)
+light_energy = 300.0
+light_size = 0.316
+omni_range = 18.4103
+
+[node name="torche186" parent="lumiere" instance=ExtResource("4_7ufu0")]
+transform = Transform3D(-4.37114e-08, 0.483282, 0.875465, 0, 0.875465, -0.483282, -1, -2.11249e-08, -3.82678e-08, 57.165, 3.22792, 536.515)
+
+[node name="OmniLight3D" parent="lumiere/torche186" index="1"]
+light_energy = 300.0
+omni_range = 18.4103
+
+[node name="OmniLight3D2" type="OmniLight3D" parent="lumiere/torche186"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.015851, 0.725642, 0.0616509)
+light_color = Color(0.780392, 0.462745, 0.117647, 1)
+light_energy = 300.0
+light_size = 0.316
+omni_range = 18.4103
+
+[node name="torche187" parent="lumiere" instance=ExtResource("4_7ufu0")]
+transform = Transform3D(-1, 4.22499e-08, 7.65356e-08, 0, 0.875465, -0.483282, -8.74228e-08, -0.483282, -0.875465, 80.1528, 3.22792, 537.999)
+
+[node name="OmniLight3D" parent="lumiere/torche187" index="1"]
+light_energy = 300.0
+omni_range = 18.4103
+
+[node name="OmniLight3D2" type="OmniLight3D" parent="lumiere/torche187"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.015851, 0.725642, 0.0616509)
+light_color = Color(0.780392, 0.462745, 0.117647, 1)
+light_energy = 300.0
+light_size = 0.316
+omni_range = 18.4103
+
+[node name="torche188" parent="lumiere" instance=ExtResource("4_7ufu0")]
+transform = Transform3D(-1, 4.22499e-08, 7.65356e-08, 0, 0.875465, -0.483282, -8.74228e-08, -0.483282, -0.875465, 127.078, 3.22792, 537.999)
+
+[node name="OmniLight3D" parent="lumiere/torche188" index="1"]
+light_energy = 300.0
+omni_range = 18.4103
+
+[node name="OmniLight3D2" type="OmniLight3D" parent="lumiere/torche188"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.015851, 0.725642, 0.0616509)
+light_color = Color(0.780392, 0.462745, 0.117647, 1)
+light_energy = 300.0
+light_size = 0.316
+omni_range = 18.4103
+
+[node name="torche189" parent="lumiere" instance=ExtResource("4_7ufu0")]
+transform = Transform3D(1, 0, 0, 0, 0.875465, -0.483282, 0, 0.483282, 0.875465, 103.973, 3.22792, 531.613)
+
+[node name="OmniLight3D" parent="lumiere/torche189" index="1"]
+light_energy = 300.0
+omni_range = 18.4103
+
+[node name="OmniLight3D2" type="OmniLight3D" parent="lumiere/torche189"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.015851, 0.725642, 0.0616509)
+light_color = Color(0.780392, 0.462745, 0.117647, 1)
+light_energy = 300.0
+light_size = 0.316
+omni_range = 18.4103
+
+[node name="torche190" parent="lumiere" instance=ExtResource("4_7ufu0")]
+transform = Transform3D(-4.37114e-08, 0.483282, 0.875465, 0, 0.875465, -0.483283, -1, -2.11249e-08, -3.82678e-08, 142.833, 3.22792, 527.094)
+
+[node name="OmniLight3D" parent="lumiere/torche190" index="1"]
+light_energy = 300.0
+omni_range = 18.4103
+
+[node name="OmniLight3D2" type="OmniLight3D" parent="lumiere/torche190"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.015851, 0.725642, 0.0616509)
+light_color = Color(0.780392, 0.462745, 0.117647, 1)
+light_energy = 300.0
+light_size = 0.316
+omni_range = 18.4103
+
+[node name="torche191" parent="lumiere" instance=ExtResource("4_7ufu0")]
+transform = Transform3D(-4.37114e-08, 0.483282, 0.875465, 0, 0.875465, -0.483283, -1, -2.11249e-08, -3.82678e-08, 142.833, 3.22792, 490.62)
+
+[node name="OmniLight3D" parent="lumiere/torche191" index="1"]
+light_energy = 300.0
+omni_range = 18.4103
+
+[node name="OmniLight3D2" type="OmniLight3D" parent="lumiere/torche191"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.015851, 0.725642, 0.0616509)
+light_color = Color(0.780392, 0.462745, 0.117647, 1)
+light_energy = 300.0
+light_size = 0.316
+omni_range = 18.4103
+
+[node name="torche193" parent="lumiere" instance=ExtResource("4_7ufu0")]
+transform = Transform3D(-1, 4.22499e-08, 7.65356e-08, 0, 0.875465, -0.483282, -8.74228e-08, -0.483282, -0.875465, 124.155, 3.22792, 485.512)
+
+[node name="OmniLight3D" parent="lumiere/torche193" index="1"]
+light_energy = 300.0
+omni_range = 18.4103
+
+[node name="OmniLight3D2" type="OmniLight3D" parent="lumiere/torche193"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.015851, 0.725642, 0.0616509)
+light_color = Color(0.780392, 0.462745, 0.117647, 1)
+light_energy = 300.0
+light_size = 0.316
+omni_range = 18.4103
+
+[node name="torche194" parent="lumiere" instance=ExtResource("4_7ufu0")]
+transform = Transform3D(1.19249e-08, -0.483282, -0.875465, 0, 0.875465, -0.483282, 1, 5.76309e-09, 1.04398e-08, 107.24, 3.22792, 499.273)
+
+[node name="OmniLight3D" parent="lumiere/torche194" index="1"]
+light_energy = 300.0
+omni_range = 18.4103
+
+[node name="OmniLight3D2" type="OmniLight3D" parent="lumiere/torche194"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.015851, 0.725642, 0.0616509)
+light_color = Color(0.780392, 0.462745, 0.117647, 1)
+light_energy = 300.0
+light_size = 0.316
+omni_range = 18.4103
+
+[node name="torche195" parent="lumiere" instance=ExtResource("4_7ufu0")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 104.443, 0.542911, 520.671)
+
+[node name="OmniLight3D" parent="lumiere/torche195" index="1"]
+light_energy = 300.0
+omni_range = 18.4103
+
+[node name="OmniLight3D2" type="OmniLight3D" parent="lumiere/torche195"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.015851, 0.725642, 0.0616509)
+light_color = Color(0.780392, 0.462745, 0.117647, 1)
+light_energy = 300.0
+light_size = 0.316
+omni_range = 18.4103
+
+[node name="torche192" parent="lumiere" instance=ExtResource("4_7ufu0")]
+transform = Transform3D(1.19249e-08, -0.483282, -0.875465, 0, 0.875465, -0.483283, 1, 5.76309e-09, 1.04398e-08, 149.544, 3.22792, 508.452)
+
+[node name="OmniLight3D" parent="lumiere/torche192" index="1"]
+light_energy = 300.0
+omni_range = 18.4103
+
+[node name="OmniLight3D2" type="OmniLight3D" parent="lumiere/torche192"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.015851, 0.725642, 0.0616509)
+light_color = Color(0.780392, 0.462745, 0.117647, 1)
+light_energy = 300.0
+light_size = 0.316
+omni_range = 18.4103
+
 [node name="torche134" parent="lumiere" instance=ExtResource("4_7ufu0")]
 transform = Transform3D(-1, -4.22499e-08, -7.65356e-08, 0, 0.875465, -0.483282, 8.74228e-08, -0.483282, -0.875465, 46.1895, 3.22792, 432.725)
 
@@ -7928,6 +8110,139 @@ transform = Transform3D(1.19249e-08, -0.483282, -0.875464, 0, 0.875465, -0.48328
 light_energy = 300.0
 omni_range = 18.4103
 
+[node name="torche164" parent="lumiere" instance=ExtResource("4_7ufu0")]
+transform = Transform3D(1.19249e-08, -0.483282, -0.875464, 0, 0.875465, -0.483282, 1, 5.76309e-09, 1.04398e-08, 124.213, 3.22792, 160.777)
+
+[node name="OmniLight3D" parent="lumiere/torche164" index="1"]
+light_energy = 300.0
+omni_range = 18.4103
+
+[node name="torche165" parent="lumiere" instance=ExtResource("4_7ufu0")]
+transform = Transform3D(1.19249e-08, -0.483282, -0.875464, 0, 0.875465, -0.483282, 1, 5.76309e-09, 1.04398e-08, 124.213, 3.22792, 181.387)
+
+[node name="OmniLight3D" parent="lumiere/torche165" index="1"]
+light_energy = 300.0
+omni_range = 18.4103
+
+[node name="torche166" parent="lumiere" instance=ExtResource("4_7ufu0")]
+transform = Transform3D(1.19249e-08, -0.483282, -0.875464, 0, 0.875465, -0.483282, 1, 5.76309e-09, 1.04398e-08, 124.213, 3.22792, 198.348)
+
+[node name="OmniLight3D" parent="lumiere/torche166" index="1"]
+light_energy = 300.0
+omni_range = 18.4103
+
+[node name="torche167" parent="lumiere" instance=ExtResource("4_7ufu0")]
+transform = Transform3D(-4.37114e-08, 0.483282, 0.875464, 0, 0.875465, -0.483282, -1, -2.11249e-08, -3.82677e-08, 108.291, 3.22792, 198.348)
+
+[node name="OmniLight3D" parent="lumiere/torche167" index="1"]
+light_energy = 300.0
+omni_range = 18.4103
+
+[node name="torche169" parent="lumiere" instance=ExtResource("4_7ufu0")]
+transform = Transform3D(1, 0, 0, 0, 0.875465, -0.483282, 0, 0.483282, 0.875464, 101.891, 3.22792, 205.722)
+
+[node name="OmniLight3D" parent="lumiere/torche169" index="1"]
+light_energy = 300.0
+omni_range = 18.4103
+
+[node name="torche173" parent="lumiere" instance=ExtResource("4_7ufu0")]
+transform = Transform3D(1, 0, 0, 0, 0.875465, -0.483282, 0, 0.483282, 0.875464, 127.941, 3.22792, 205.389)
+
+[node name="OmniLight3D" parent="lumiere/torche173" index="1"]
+light_energy = 300.0
+omni_range = 18.4103
+
+[node name="torche174" parent="lumiere" instance=ExtResource("4_7ufu0")]
+transform = Transform3D(1, 0, 0, 0, 0.875465, -0.483282, 0, 0.483282, 0.875464, 150.827, 3.22792, 205.389)
+
+[node name="OmniLight3D" parent="lumiere/torche174" index="1"]
+light_energy = 300.0
+omni_range = 18.4103
+
+[node name="torche175" parent="lumiere" instance=ExtResource("4_7ufu0")]
+transform = Transform3D(1, 0, 0, 0, 0.875465, -0.483282, 0, 0.483282, 0.875464, 171.245, 3.22792, 205.389)
+
+[node name="OmniLight3D" parent="lumiere/torche175" index="1"]
+light_energy = 300.0
+omni_range = 18.4103
+
+[node name="torche176" parent="lumiere" instance=ExtResource("4_7ufu0")]
+transform = Transform3D(-4.37114e-08, 0.483283, 0.875464, 0, 0.875465, -0.483282, -1, -2.1125e-08, -3.82677e-08, 184.785, 3.22792, 199.502)
+
+[node name="OmniLight3D" parent="lumiere/torche176" index="1"]
+light_energy = 300.0
+omni_range = 18.4103
+
+[node name="torche177" parent="lumiere" instance=ExtResource("4_7ufu0")]
+transform = Transform3D(-4.37114e-08, 0.483283, 0.875464, 0, 0.875465, -0.483282, -1, -2.1125e-08, -3.82677e-08, 184.785, 3.22792, 176.892)
+
+[node name="OmniLight3D" parent="lumiere/torche177" index="1"]
+light_energy = 300.0
+omni_range = 18.4103
+
+[node name="torche178" parent="lumiere" instance=ExtResource("4_7ufu0")]
+transform = Transform3D(-4.37114e-08, 0.483283, 0.875464, 0, 0.875465, -0.483282, -1, -2.1125e-08, -3.82677e-08, 184.785, 3.22792, 153.112)
+
+[node name="OmniLight3D" parent="lumiere/torche178" index="1"]
+light_energy = 300.0
+omni_range = 18.4103
+
+[node name="torche179" parent="lumiere" instance=ExtResource("4_7ufu0")]
+transform = Transform3D(-4.37114e-08, 0.483283, 0.875464, 0, 0.875465, -0.483282, -1, -2.1125e-08, -3.82677e-08, 184.785, 3.22792, 132.683)
+
+[node name="OmniLight3D" parent="lumiere/torche179" index="1"]
+light_energy = 300.0
+omni_range = 18.4103
+
+[node name="torche180" parent="lumiere" instance=ExtResource("4_7ufu0")]
+transform = Transform3D(-1, -4.22499e-08, -7.65355e-08, 0, 0.875465, -0.483282, 8.74228e-08, -0.483283, -0.875464, 180.278, 3.22792, 117.556)
+
+[node name="OmniLight3D" parent="lumiere/torche180" index="1"]
+light_energy = 300.0
+omni_range = 18.4103
+
+[node name="torche181" parent="lumiere" instance=ExtResource("4_7ufu0")]
+transform = Transform3D(-1, -4.22499e-08, -7.65355e-08, 0, 0.875465, -0.483282, 8.74228e-08, -0.483283, -0.875464, 158.286, 3.22792, 117.556)
+
+[node name="OmniLight3D" parent="lumiere/torche181" index="1"]
+light_energy = 300.0
+omni_range = 18.4103
+
+[node name="torche182" parent="lumiere" instance=ExtResource("4_7ufu0")]
+transform = Transform3D(-1, -4.22499e-08, -7.65355e-08, 0, 0.875465, -0.483282, 8.74228e-08, -0.483283, -0.875464, 139.418, 3.22792, 117.556)
+
+[node name="OmniLight3D" parent="lumiere/torche182" index="1"]
+light_energy = 300.0
+omni_range = 18.4103
+
+[node name="torche170" parent="lumiere" instance=ExtResource("4_7ufu0")]
+transform = Transform3D(1, 0, 0, 0, 0.875465, -0.483282, 0, 0.483282, 0.875464, 88.7532, 3.22792, 205.722)
+
+[node name="OmniLight3D" parent="lumiere/torche170" index="1"]
+light_energy = 300.0
+omni_range = 18.4103
+
+[node name="torche171" parent="lumiere" instance=ExtResource("4_7ufu0")]
+transform = Transform3D(-4.37114e-08, 0.483283, 0.875464, 0, 0.875465, -0.483282, -1, -2.1125e-08, -3.82677e-08, 83.0135, 3.22792, 247.065)
+
+[node name="OmniLight3D" parent="lumiere/torche171" index="1"]
+light_energy = 300.0
+omni_range = 18.4103
+
+[node name="torche172" parent="lumiere" instance=ExtResource("4_7ufu0")]
+transform = Transform3D(-4.37114e-08, 0.483283, 0.875464, 0, 0.875465, -0.483282, -1, -2.1125e-08, -3.82677e-08, 83.0135, 3.22792, 228.22)
+
+[node name="OmniLight3D" parent="lumiere/torche172" index="1"]
+light_energy = 300.0
+omni_range = 18.4103
+
+[node name="torche168" parent="lumiere" instance=ExtResource("4_7ufu0")]
+transform = Transform3D(-4.37114e-08, 0.483282, 0.875464, 0, 0.875465, -0.483282, -1, -2.11249e-08, -3.82677e-08, 108.291, 3.22792, 180.442)
+
+[node name="OmniLight3D" parent="lumiere/torche168" index="1"]
+light_energy = 300.0
+omni_range = 18.4103
+
 [node name="torche69" parent="lumiere" instance=ExtResource("4_7ufu0")]
 transform = Transform3D(1.19249e-08, -0.483282, -0.875464, 0, 0.875465, -0.483282, 1, 5.76309e-09, 1.04398e-08, 124.213, 3.22792, 127.844)
 
@@ -7946,6 +8261,55 @@ omni_range = 18.4103
 transform = Transform3D(1, 0, 0, 0, 0.875465, -0.483282, 0, 0.483282, 0.875464, 83.0114, 3.22792, 153.891)
 
 [node name="OmniLight3D" parent="lumiere/torche23" index="1"]
+light_energy = 300.0
+omni_range = 18.4103
+
+[node name="torche157" parent="lumiere" instance=ExtResource("4_7ufu0")]
+transform = Transform3D(1, 0, 0, 0, 0.875465, -0.483282, 0, 0.483282, 0.875464, 65.4474, 3.22792, 153.891)
+
+[node name="OmniLight3D" parent="lumiere/torche157" index="1"]
+light_energy = 300.0
+omni_range = 18.4103
+
+[node name="torche158" parent="lumiere" instance=ExtResource("4_7ufu0")]
+transform = Transform3D(-4.37114e-08, 0.483282, 0.875464, 0, 0.875465, -0.483282, -1, -2.11249e-08, -3.82677e-08, 56.6297, 3.22792, 179.262)
+
+[node name="OmniLight3D" parent="lumiere/torche158" index="1"]
+light_energy = 300.0
+omni_range = 18.4103
+
+[node name="torche159" parent="lumiere" instance=ExtResource("4_7ufu0")]
+transform = Transform3D(-4.37114e-08, 0.483282, 0.875464, 0, 0.875465, -0.483282, -1, -2.11249e-08, -3.82677e-08, 56.6297, 3.22792, 195.84)
+
+[node name="OmniLight3D" parent="lumiere/torche159" index="1"]
+light_energy = 300.0
+omni_range = 18.4103
+
+[node name="torche160" parent="lumiere" instance=ExtResource("4_7ufu0")]
+transform = Transform3D(-4.37114e-08, 0.483282, 0.875464, 0, 0.875465, -0.483282, -1, -2.11249e-08, -3.82677e-08, 56.6297, 3.22792, 209.88)
+
+[node name="OmniLight3D" parent="lumiere/torche160" index="1"]
+light_energy = 300.0
+omni_range = 18.4103
+
+[node name="torche161" parent="lumiere" instance=ExtResource("4_7ufu0")]
+transform = Transform3D(-1, -4.22499e-08, -7.65355e-08, 0, 0.875465, -0.483282, 8.74228e-08, -0.483282, -0.875464, 67.9882, 3.22792, 220.249)
+
+[node name="OmniLight3D" parent="lumiere/torche161" index="1"]
+light_energy = 300.0
+omni_range = 18.4103
+
+[node name="torche162" parent="lumiere" instance=ExtResource("4_7ufu0")]
+transform = Transform3D(1.19249e-08, -0.483282, -0.875464, 0, 0.875465, -0.483282, 1, 5.76309e-09, 1.04398e-08, 80.3053, 3.22792, 203.504)
+
+[node name="OmniLight3D" parent="lumiere/torche162" index="1"]
+light_energy = 300.0
+omni_range = 18.4103
+
+[node name="torche163" parent="lumiere" instance=ExtResource("4_7ufu0")]
+transform = Transform3D(1.19249e-08, -0.483282, -0.875464, 0, 0.875465, -0.483282, 1, 5.76309e-09, 1.04398e-08, 80.3053, 3.22792, 182.812)
+
+[node name="OmniLight3D" parent="lumiere/torche163" index="1"]
 light_energy = 300.0
 omni_range = 18.4103
 
@@ -8035,6 +8399,19 @@ omni_range = 18.4103
 [editable path="lumiere/torche131"]
 [editable path="lumiere/torche132"]
 [editable path="lumiere/torche133"]
+[editable path="lumiere/torche183"]
+[editable path="lumiere/torche184"]
+[editable path="lumiere/torche185"]
+[editable path="lumiere/torche186"]
+[editable path="lumiere/torche187"]
+[editable path="lumiere/torche188"]
+[editable path="lumiere/torche189"]
+[editable path="lumiere/torche190"]
+[editable path="lumiere/torche191"]
+[editable path="lumiere/torche193"]
+[editable path="lumiere/torche194"]
+[editable path="lumiere/torche195"]
+[editable path="lumiere/torche192"]
 [editable path="lumiere/torche134"]
 [editable path="lumiere/torche135"]
 [editable path="lumiere/torche136"]
@@ -8133,9 +8510,35 @@ omni_range = 18.4103
 [editable path="lumiere/torche20"]
 [editable path="lumiere/torche21"]
 [editable path="lumiere/torche68"]
+[editable path="lumiere/torche164"]
+[editable path="lumiere/torche165"]
+[editable path="lumiere/torche166"]
+[editable path="lumiere/torche167"]
+[editable path="lumiere/torche169"]
+[editable path="lumiere/torche173"]
+[editable path="lumiere/torche174"]
+[editable path="lumiere/torche175"]
+[editable path="lumiere/torche176"]
+[editable path="lumiere/torche177"]
+[editable path="lumiere/torche178"]
+[editable path="lumiere/torche179"]
+[editable path="lumiere/torche180"]
+[editable path="lumiere/torche181"]
+[editable path="lumiere/torche182"]
+[editable path="lumiere/torche170"]
+[editable path="lumiere/torche171"]
+[editable path="lumiere/torche172"]
+[editable path="lumiere/torche168"]
 [editable path="lumiere/torche69"]
 [editable path="lumiere/torche22"]
 [editable path="lumiere/torche23"]
+[editable path="lumiere/torche157"]
+[editable path="lumiere/torche158"]
+[editable path="lumiere/torche159"]
+[editable path="lumiere/torche160"]
+[editable path="lumiere/torche161"]
+[editable path="lumiere/torche162"]
+[editable path="lumiere/torche163"]
 [editable path="lumiere/torche24"]
 [editable path="lumiere/torche25"]
 [editable path="lumiere/torche26"]
