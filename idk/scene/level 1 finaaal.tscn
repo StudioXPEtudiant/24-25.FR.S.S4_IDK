@@ -1,9 +1,11 @@
-[gd_scene load_steps=10 format=3 uid="uid://dswq7a487kdsg"]
+[gd_scene load_steps=12 format=3 uid="uid://dswq7a487kdsg"]
 
 [ext_resource type="PackedScene" uid="uid://53cievrl3uqw" path="res://scene/sol .tscn" id="1_jfppt"]
 [ext_resource type="Material" uid="uid://gm3vdwsdqpl3" path="res://texture/mur.tres" id="2_dqicq"]
 [ext_resource type="PackedScene" uid="uid://b7xuoun7064o0" path="res://scene/player_test.tscn" id="2_tyi85"]
 [ext_resource type="PackedScene" uid="uid://kx427xsa6ja1" path="res://scene/torche.tscn" id="4_7ufu0"]
+[ext_resource type="PackedScene" uid="uid://blvapknkib3gq" path="res://scene/mur.tscn" id="5_nntks"]
+[ext_resource type="PackedScene" uid="uid://c18yo6cmr01kb" path="res://scene/Porte_texture.tscn" id="6_4tluy"]
 
 [sub_resource type="Curve3D" id="Curve3D_dew2i"]
 _data = {
@@ -8347,6 +8349,62 @@ transform = Transform3D(-1, -4.22499e-08, -7.65355e-08, 0, 0.875465, -0.483282, 
 [node name="OmniLight3D" parent="lumiere/torche28" index="1"]
 light_energy = 300.0
 omni_range = 18.4103
+
+[node name="mur prison" type="Node3D" parent="."]
+
+[node name="mur2" parent="mur prison" instance=ExtResource("5_nntks")]
+transform = Transform3D(2.5, 0, 0, 0, 2.5, 0, 0, 0, 2.5, -9.21631, 2.54196, 118.197)
+
+[node name="mur3" parent="mur prison" instance=ExtResource("5_nntks")]
+transform = Transform3D(2.5, 0, 0, 0, 2.5, 0, 0, 0, 2.5, -9.21631, 2.54196, 129.506)
+
+[node name="mur4" parent="mur prison" instance=ExtResource("5_nntks")]
+transform = Transform3D(2.5, 0, 0, 0, 2.5, 0, 0, 0, 2.5, -9.21631, 2.54196, 142.03)
+
+[node name="mur5" parent="mur prison" instance=ExtResource("5_nntks")]
+transform = Transform3D(2.5, 0, 0, 0, 2.5, 0, 0, 0, 2.5, -9.21631, 2.54196, 152.888)
+
+[node name="mur6" parent="mur prison" instance=ExtResource("5_nntks")]
+transform = Transform3D(2.5, 0, 0, 0, 2.5, 0, 0, 0, 2.5, -9.21631, 2.54196, 162.973)
+
+[node name="mur7" parent="mur prison" instance=ExtResource("5_nntks")]
+transform = Transform3D(2.5, 0, 0, 0, 2.5, 0, 0, 0, 2.5, -33.8882, 2.54196, 162.973)
+
+[node name="mur8" parent="mur prison" instance=ExtResource("5_nntks")]
+transform = Transform3D(2.5, 0, 0, 0, 2.5, 0, 0, 0, 2.5, -33.8882, 2.54196, 152.892)
+
+[node name="mur9" parent="mur prison" instance=ExtResource("5_nntks")]
+transform = Transform3D(2.5, 0, 0, 0, 2.5, 0, 0, 0, 2.5, -33.8882, 2.54196, 142.005)
+
+[node name="mur10" parent="mur prison" instance=ExtResource("5_nntks")]
+transform = Transform3D(2.5, 0, 0, 0, 2.5, 0, 0, 0, 2.5, -33.8882, 2.54196, 129.455)
+
+[node name="mur11" parent="mur prison" instance=ExtResource("5_nntks")]
+transform = Transform3D(2.5, 0, 0, 0, 2.5, 0, 0, 0, 2.5, -33.8882, 2.54196, 118.335)
+
+[node name="Node3D2" parent="mur prison" instance=ExtResource("6_4tluy")]
+transform = Transform3D(0.0133623, 0, 0.494173, 0, 0.250996, 0, -1.0113, 0, 0.00652947, -29.8476, 0.0725098, 153.817)
+
+[node name="Node3D6" parent="mur prison" instance=ExtResource("6_4tluy")]
+transform = Transform3D(-4.42093e-08, 0, -0.494216, 0, 0.250996, 0, 1.01139, 0, -2.16029e-08, -13.0141, 0.0725098, 162.102)
+
+[node name="Node3D7" parent="mur prison" instance=ExtResource("6_4tluy")]
+transform = Transform3D(-4.42093e-08, 0, -0.494216, 0, 0.250996, 0, 1.01139, 0, -2.16029e-08, -13.0141, 0.0725098, 151.396)
+
+[node name="Node3D8" parent="mur prison" instance=ExtResource("6_4tluy")]
+transform = Transform3D(-5.48288e-08, 0, -0.494216, 0, 0.250996, 0, 1.25434, 0, -2.16029e-08, -13.0141, 0.0725098, 140.492)
+
+[node name="Node3D9" parent="mur prison" instance=ExtResource("6_4tluy")]
+transform = Transform3D(-4.90142e-08, 0, -0.494216, 0, 0.250996, 0, 1.12131, 0, -2.16029e-08, -13.0141, 0.0725098, 127.979)
+
+[node name="Node3D3" parent="mur prison" instance=ExtResource("6_4tluy")]
+transform = Transform3D(0.0133623, 0, 0.494173, 0, 0.250996, 0, -1.0113, 0, 0.00652947, -29.8476, 0.0725098, 143.285)
+
+[node name="Node3D4" parent="mur prison" instance=ExtResource("6_4tluy")]
+transform = Transform3D(0.0169743, 0, 0.492408, 0, 0.250996, 0, -1.28467, 0, 0.00650615, -30.0126, 0.0725098, 130.37)
+
+[node name="Node3D5" parent="mur prison" instance=ExtResource("6_4tluy")]
+transform = Transform3D(0.0146241, 0, 0.493014, 0, 0.250996, 0, -1.1068, 0, 0.00651416, -29.7979, -0.0802917, 118.879)
 
 [editable path="Node3D"]
 [editable path="lumiere/torche"]
