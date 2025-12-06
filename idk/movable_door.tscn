@@ -1,0 +1,29 @@
+[gd_scene load_steps=5 format=3 uid="uid://dklfy56pmwmma"]
+
+[ext_resource type="Script" path="res://movable_door.gd" id="1_ceg3k"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_5grxf"]
+size = Vector3(1.35706, 1.96387, 0.0720217)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_bwnll"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_d823f"]
+size = Vector3(1.1185, 1.75684, 0.439457)
+
+[node name="Node3D" type="StaticBody3D"]
+script = ExtResource("1_ceg3k")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0595094, 0, -0.177124)
+shape = SubResource("BoxShape3D_5grxf")
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0660789, 0, -0.180786)
+size = Vector3(1.32959, 1.95801, 0.0637207)
+material = SubResource("StandardMaterial3D_bwnll")
+
+[node name="Area3D" type="Area3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0315042, -0.0288086, -0.183737)
+shape = SubResource("BoxShape3D_d823f")
