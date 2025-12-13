@@ -1,0 +1,87 @@
+[gd_scene load_steps=4 format=3 uid="uid://j45bp0h1knjc"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_s57dy"]
+albedo_color = Color(0.136826, 0.136826, 0.136826, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_r70v8"]
+albedo_color = Color(0, 0, 0, 0.635294)
+metallic = 1.0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_b83vc"]
+albedo_color = Color(0.099986, 0.099986, 0.099986, 1)
+
+[node name="Node3D" type="Node3D"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0, 0, 0)
+
+[node name="CSGBox3D" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.000901766, 0.486926, 0.00445026)
+size = Vector3(0.0563354, 0.0798187, 0.0434418)
+material = SubResource("StandardMaterial3D_s57dy")
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="CSGBox3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000282288, -0.00818634, -0.00249432)
+operation = 2
+size = Vector3(0.0502167, 0.169174, 0.0353928)
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="CSGBox3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00119415, 0, -0.0450025)
+operation = 2
+size = Vector3(0.0426483, 0.0798187, 0.0522423)
+material = SubResource("StandardMaterial3D_s57dy")
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="CSGBox3D/CSGBox3D3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000282288, -0.00818634, -0.00249432)
+operation = 2
+size = Vector3(0.0502167, 0.169174, 0.0353928)
+
+[node name="CSGBox3D4" type="CSGBox3D" parent="CSGBox3D"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -0.048477, 0, -0.00150879)
+operation = 2
+size = Vector3(0.0426483, 0.0798187, 0.0522423)
+material = SubResource("StandardMaterial3D_s57dy")
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="CSGBox3D/CSGBox3D4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000282288, -0.00818634, -0.00249432)
+operation = 2
+size = Vector3(0.0502167, 0.169174, 0.0353928)
+
+[node name="CSGBox3D5" type="CSGBox3D" parent="CSGBox3D"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -0.00153877, 0, 0.0403271)
+operation = 2
+size = Vector3(0.0426483, 0.0798187, 0.0522423)
+material = SubResource("StandardMaterial3D_s57dy")
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="CSGBox3D/CSGBox3D5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000282288, -0.00818634, -0.00249432)
+operation = 2
+size = Vector3(0.0502167, 0.169174, 0.0353928)
+
+[node name="CSGBox3D6" type="CSGBox3D" parent="CSGBox3D"]
+transform = Transform3D(1.19249e-08, 0, -1, 0, 1, 0, 1, 0, 1.19249e-08, 0.0450929, 0, 0.000202246)
+operation = 2
+size = Vector3(0.0426483, 0.0798187, 0.0522423)
+material = SubResource("StandardMaterial3D_s57dy")
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="CSGBox3D/CSGBox3D6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000282288, -0.00818634, -0.00249432)
+operation = 2
+size = Vector3(0.0502167, 0.169174, 0.0353928)
+
+[node name="CSGCylinder3D" type="CSGCylinder3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0005925, 0.557228, 0.00506539)
+radius = 0.0225454
+height = 0.0888833
+material = SubResource("StandardMaterial3D_r70v8")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.491856, 0.0056974)
+light_color = Color(0.359595, 0.0940776, 1.2514e-06, 1)
+light_energy = 100.0
+light_indirect_energy = 0.0
+light_volumetric_fog_energy = 0.0
+omni_range = 4.764
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00266005, 0.452507, 0.00530747)
+size = Vector3(0.0499372, 0.001, 0.0435195)
+material = SubResource("StandardMaterial3D_b83vc")
