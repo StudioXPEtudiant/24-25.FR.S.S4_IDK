@@ -47,7 +47,7 @@ _data = {
 &"door_1": SubResource("Animation_v08il")
 }
 
-[node name="Node3D" type="StaticBody3D"]
+[node name="movable_door" type="StaticBody3D"]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 0, 0, 0)
 script = ExtResource("1_ceg3k")
 
@@ -61,6 +61,7 @@ size = Vector3(1.32959, 1.95801, 0.0637207)
 material = SubResource("StandardMaterial3D_bwnll")
 
 [node name="Area3D" type="Area3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.14442974, 0.0047017336)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0315042, -0.0288086, -0.183737)
@@ -70,3 +71,5 @@ shape = SubResource("BoxShape3D_d823f")
 libraries = {
 &"": SubResource("AnimationLibrary_0604v")
 }
+
+[connection signal="body_entered" from="Area3D" to="." method="_on_area_3d_body_entered"]
