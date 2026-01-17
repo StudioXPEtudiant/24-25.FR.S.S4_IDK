@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=3 uid="uid://b7xuoun7064o0"]
 
-[ext_resource type="Script" path="res://script/player_test.gd" id="1_7hnxt"]
-[ext_resource type="Script" path="res://script/camera_Player.gd" id="2_lf6oo"]
+[ext_resource type="Script" uid="uid://cek3khius6h4w" path="res://script/player_test.gd" id="1_7hnxt"]
+[ext_resource type="Script" uid="uid://dsy5wfaqo5lof" path="res://script/camera_Player.gd" id="2_lf6oo"]
 [ext_resource type="PackedScene" uid="uid://c7ar0cb7xydwk" path="res://scene/king.blend" id="3_ru6yr"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_0wxnf"]
@@ -39,6 +39,10 @@ transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
 [node name="Timer" type="Timer" parent="."]
 wait_time = 0.5
 one_shot = true
+
+[node name="OmniLight3D" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.4620123, 0.71960974, 0)
+light_energy = 16.0
 
 [connection signal="body_entered" from="Area3D" to="." method="_on_area_3d_body_entered"]
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

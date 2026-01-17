@@ -1,6 +1,6 @@
-[gd_scene load_steps=5 format=3 uid="uid://dklfy56pmwmma"]
+[gd_scene load_steps=8 format=3 uid="uid://dklfy56pmwmma"]
 
-[ext_resource type="Script" path="res://movable_door.gd" id="1_ceg3k"]
+[ext_resource type="Script" uid="uid://dfyq7ambbc1il" path="res://movable_door.gd" id="1_ceg3k"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_5grxf"]
 size = Vector3(1.35706, 1.96387, 0.0720217)
@@ -10,7 +10,45 @@ size = Vector3(1.35706, 1.96387, 0.0720217)
 [sub_resource type="BoxShape3D" id="BoxShape3D_d823f"]
 size = Vector3(1.1185, 1.75684, 0.439457)
 
-[node name="Node3D" type="StaticBody3D"]
+[sub_resource type="Animation" id="Animation_v08il"]
+resource_name = "door_1"
+length = 3.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.13333333, 1.3666668),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(0, 0, 0), Vector3(0, 1.5707964, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_jtwt4"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 1.5707964, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_0604v"]
+_data = {
+&"RESET": SubResource("Animation_jtwt4"),
+&"door_1": SubResource("Animation_v08il")
+}
+
+[node name="movable_door" type="StaticBody3D"]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 0, 0, 0)
 script = ExtResource("1_ceg3k")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
@@ -23,7 +61,15 @@ size = Vector3(1.32959, 1.95801, 0.0637207)
 material = SubResource("StandardMaterial3D_bwnll")
 
 [node name="Area3D" type="Area3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.14442974, 0.0047017336)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0315042, -0.0288086, -0.183737)
 shape = SubResource("BoxShape3D_d823f")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_0604v")
+}
+
+[connection signal="body_entered" from="Area3D" to="." method="_on_area_3d_body_entered"]

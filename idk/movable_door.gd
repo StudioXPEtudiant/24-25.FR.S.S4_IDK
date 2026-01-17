@@ -16,4 +16,4 @@ func on_body_entered(body):
 
 func _on_area_3d_body_entered(body):
 	if body is CharacterBody3D:
-		queue_free()
+		$AnimationPlayer.play("door_1")
