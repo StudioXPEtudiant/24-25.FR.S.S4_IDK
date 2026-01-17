@@ -1,6 +1,6 @@
 extends Node3D
 signal collected
-@export var joueur:CharacterBody3D
+@export var porte:CharacterBody3D
 var move : Vector3
 
 # Called when the node enters the scene tree for the first time.
@@ -16,5 +16,5 @@ func _process(delta):
 	
 func _on_body_entered(body):
 	collected.emit()
-	joueur.queue_free()
+	porte.queue_free()
 	queue_free()
