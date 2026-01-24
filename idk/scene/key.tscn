@@ -1,4 +1,6 @@
-[gd_scene load_steps=4 format=3 uid="uid://dpl5s6xlefiop"]
+[gd_scene load_steps=6 format=3 uid="uid://dpl5s6xlefiop"]
+
+[ext_resource type="Script" uid="uid://d8l4rax0igdn" path="res://script/reponse_juste.gd" id="1_6s3tr"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ftgqe"]
 albedo_color = Color(0.993368, 0.993367, 1.46317e-05, 1)
@@ -10,8 +12,12 @@ albedo_color = Color(0.72666, 0.72666, 0, 1)
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_tqrrl"]
 albedo_color = Color(0.440504, 0.285539, 4.81308e-08, 1)
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_kro4p"]
+size = Vector3(7.663574, 4.242676, 4.8786316)
+
 [node name="Key" type="Node3D"]
 transform = Transform3D(0.1624, 0, 0, 0, 0.0596881, 0, 0, 0, 0.101677, -1.43051e-06, -9.05115e-05, 1.46031e-05)
+script = ExtResource("1_6s3tr")
 
 [node name="CSGCylinder3D" type="CSGCylinder3D" parent="."]
 transform = Transform3D(50.2004, 0, 0, 0, 37.0317, 0, 0, 0, 27.9123, 0.938389, 0.588801, 0.00781181)
@@ -36,3 +42,11 @@ radius = 0.0835024
 transform = Transform3D(50.2004, 0, 0, 0, 37.0301, 0, 0, 0, 27.9123, 1.46624, -1.22662, -0.0189451)
 size = Vector3(0.0522461, 0.0736084, 0.0401611)
 material = SubResource("StandardMaterial3D_tqrrl")
+
+[node name="Area3D" type="Area3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1.0000046, -0.14233398, 1.6213387, 0.22950897)
+shape = SubResource("BoxShape3D_kro4p")
+
+[connection signal="body_entered" from="Area3D" to="." method="_on_area_3d_body_entered"]
