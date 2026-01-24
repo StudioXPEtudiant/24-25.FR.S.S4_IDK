@@ -5,7 +5,7 @@ var height : Vector3
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	height = Vector3(0,3,6)
+	height = Vector3(0,3,3)
 	pass # Replace with function body.
 
 
