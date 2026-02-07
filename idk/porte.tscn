@@ -1,7 +1,14 @@
 [gd_scene load_steps=0 format=3 uid="uid://cavvy7pw2ydm5"]
+[gd_scene load_steps=3 format=3 uid="uid://cavvy7pw2ydm5"]
+
+[ext_resource type="Texture2D" uid="uid://dpab8miiap0xt" path="res://texture/porte.png" id="1_vg72e"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_h0nra"]
+albedo_texture = ExtResource("1_vg72e")
 
 [node name="porte" type="Node3D"]
 
 [node name="CSGBox3D" type="CSGBox3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.50381154, 0.8213047, 0.022271972)
+material_override = SubResource("StandardMaterial3D_h0nra")
 size = Vector3(1, 1.6776733, 0.045543946)
