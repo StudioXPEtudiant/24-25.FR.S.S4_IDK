@@ -1,0 +1,25 @@
+[gd_scene load_steps=4 format=3 uid="uid://hppbgeynm05l"]
+
+[ext_resource type="Script" uid="uid://c8pr8ooeovc0q" path="res://ladder.gd" id="1_cq4ai"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_lqhsa"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_efw3x"]
+
+[node name="ladder" type="StaticBody3D"]
+script = ExtResource("1_cq4ai")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="."]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0, 0, 0)
+shape = SubResource("BoxShape3D_lqhsa")
+
+[node name="Area3D" type="Area3D" parent="."]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D"]
+shape = SubResource("BoxShape3D_efw3x")
+
+[connection signal="body_entered" from="Area3D" to="." method="_on_area_3d_body_entered"]
