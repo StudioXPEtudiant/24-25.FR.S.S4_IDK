@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://sq5uvg56os11"]
+
+[ext_resource type="Texture2D" uid="uid://y8ql3sisih11" path="res://texture/In the boitz.png" id="1_ip8uc"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_q6ur5"]
+albedo_texture = ExtResource("1_ip8uc")
+
+[node name="Node3D" type="Node3D"]
+
+[node name="CSGBox3D" type="CSGBox3D" parent="."]
+material_override = SubResource("StandardMaterial3D_q6ur5")
