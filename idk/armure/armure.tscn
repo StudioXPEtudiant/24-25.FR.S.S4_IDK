@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://cxda0qtcmtfqu"]
 
-[ext_resource type="Material" uid="uid://ba83gdlh3tj0a" path="res://metal.tres" id="1_l5gmc"]
+[ext_resource type="Material" uid="uid://ba83gdlh3tj0a" path="res://texture/metal.tres" id="1_l5gmc"]
 
 [node name="Node3D" type="Node3D"]
 transform = Transform3D(6.48489, 0, 0, 0, 9.36909, 0, 0, 0, 6.48149, 0, 0, 0)

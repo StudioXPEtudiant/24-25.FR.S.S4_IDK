@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://cv0v3w4pkr2pg"]
 
-[ext_resource type="Material" uid="uid://ba83gdlh3tj0a" path="res://metal.tres" id="1_u0i8b"]
+[ext_resource type="Material" uid="uid://ba83gdlh3tj0a" path="res://texture/metal.tres" id="1_u0i8b"]
 
 [node name="Node3D" type="Node3D"]
 

@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://hppbgeynm05l"]
 
-[ext_resource type="Script" uid="uid://c8pr8ooeovc0q" path="res://ladder.gd" id="1_cq4ai"]
+[ext_resource type="Script" uid="uid://c8pr8ooeovc0q" path="res://script/ladder.gd" id="1_cq4ai"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_lqhsa"]
 

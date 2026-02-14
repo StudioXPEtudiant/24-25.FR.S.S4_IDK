@@ -1,127 +1,19 @@
-[gd_scene load_steps=10 format=3 uid="uid://cdyrnitn7ncwb"]
+[gd_scene load_steps=4 format=3 uid="uid://cavvy7pw2ydm5"]
 
-[ext_resource type="Script" path="res://script/PorteScripts/porte.gd" id="1_qhcnc"]
+[ext_resource type="Texture2D" uid="uid://dpab8miiap0xt" path="res://texture/porte.png" id="1_67bf1"]
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_jd6um"]
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_h0nra"]
+albedo_texture = ExtResource("1_67bf1")
 
-[sub_resource type="BoxMesh" id="BoxMesh_lbpjl"]
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_vg72e"]
+data = PackedVector3Array(-0.4281006, -0.8793335, 0.031288147, -0.4281006, -0.8793335, -0.031288147, -0.4281006, 0.8793335, -0.031288147, 0.4281006, -0.8793335, -0.031288147, -0.4281006, -0.8793335, -0.031288147, -0.4281006, -0.8793335, 0.031288147, -0.4281006, 0.8793335, -0.031288147, -0.4281006, -0.8793335, -0.031288147, 0.4281006, -0.8793335, -0.031288147, -0.4281006, 0.8793335, -0.031288147, -0.4281006, 0.8793335, 0.031288147, -0.4281006, -0.8793335, 0.031288147, -0.4281006, -0.8793335, 0.031288147, -0.4281006, 0.8793335, 0.031288147, 0.4281006, 0.8793335, 0.031288147, 0.4281006, 0.8793335, 0.031288147, -0.4281006, 0.8793335, 0.031288147, -0.4281006, 0.8793335, -0.031288147, -0.4281006, -0.8793335, 0.031288147, 0.4281006, -0.8793335, 0.031288147, 0.4281006, -0.8793335, -0.031288147, 0.4281006, 0.8793335, 0.031288147, 0.4281006, -0.8793335, 0.031288147, -0.4281006, -0.8793335, 0.031288147, 0.4281006, -0.8793335, -0.031288147, 0.4281006, -0.8793335, 0.031288147, 0.4281006, 0.8793335, 0.031288147, 0.4281006, -0.8793335, -0.031288147, 0.4281006, 0.8793335, -0.031288147, -0.4281006, 0.8793335, -0.031288147, -0.4281006, 0.8793335, -0.031288147, 0.4281006, 0.8793335, -0.031288147, 0.4281006, 0.8793335, 0.031288147, 0.4281006, 0.8793335, 0.031288147, 0.4281006, 0.8793335, -0.031288147, 0.4281006, -0.8793335, -0.031288147)
 
-[sub_resource type="Animation" id="Animation_8w8ge"]
-resource_name = "Fermeture"
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("CentreDeRotation:rotation")
-tracks/0/interp = 2
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 1),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector3(0, 1.5708, 0), Vector3(0, 0, 0)]
-}
+[node name="Node3D" type="Node3D"]
 
-[sub_resource type="Animation" id="Animation_ead00"]
-resource_name = "FermetureVerticale"
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("CentreDeRotation/StaticBody3D:position")
-tracks/0/interp = 2
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 1),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector3(1, 3, 0), Vector3(1, 0, 0)]
-}
+[node name="CSGBox3D" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0076361895, 0.3793335, -0.014961243)
+material_override = SubResource("StandardMaterial3D_h0nra")
+size = Vector3(0.8562012, 1.758667, 0.062576294)
 
-[sub_resource type="Animation" id="Animation_cn0s8"]
-resource_name = "Ouverture"
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("CentreDeRotation:rotation")
-tracks/0/interp = 2
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 1),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector3(0, 0, 0), Vector3(0, 1.5708, 0)]
-}
-
-[sub_resource type="Animation" id="Animation_bqajx"]
-resource_name = "OuvertureVerticale"
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("CentreDeRotation/StaticBody3D:position")
-tracks/0/interp = 2
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 1),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector3(1, 0, 0), Vector3(1, 3, 0)]
-}
-
-[sub_resource type="Animation" id="Animation_aj3mq"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("CentreDeRotation:rotation")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector3(0, 0, 0)]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("CentreDeRotation/StaticBody3D:position")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector3(1, 0, 0)]
-}
-
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_um6n0"]
-_data = {
-"Fermeture": SubResource("Animation_8w8ge"),
-"FermetureVerticale": SubResource("Animation_ead00"),
-"Ouverture": SubResource("Animation_cn0s8"),
-"OuvertureVerticale": SubResource("Animation_bqajx"),
-"RESET": SubResource("Animation_aj3mq")
-}
-
-[node name="Porte" type="Node3D"]
-
-[node name="Porte" type="Node3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, 0)
-
-[node name="CentreDeRotation" type="Node3D" parent="Porte"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 0)
-
-[node name="StaticBody3D" type="StaticBody3D" parent="Porte/CentreDeRotation" node_paths=PackedStringArray("animation_player")]
-transform = Transform3D(2, 0, 0, 0, 3, 0, 0, 0, 0.25, 1, 0, 0)
-script = ExtResource("1_qhcnc")
-animation_player = NodePath("../../Animation")
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Porte/CentreDeRotation/StaticBody3D"]
-shape = SubResource("BoxShape3D_jd6um")
-
-[node name="MeshInstance3D" type="MeshInstance3D" parent="Porte/CentreDeRotation/StaticBody3D"]
-mesh = SubResource("BoxMesh_lbpjl")
-
-[node name="Animation" type="AnimationPlayer" parent="Porte"]
-libraries = {
-"": SubResource("AnimationLibrary_um6n0")
-}
+[node name="CSGBakedCollisionShape3D" type="CollisionShape3D" parent="CSGBox3D"]
+shape = SubResource("ConcavePolygonShape3D_vg72e")
