@@ -49,4 +49,8 @@ material = SubResource("StandardMaterial3D_tqrrl")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1.0000046, -0.14233398, 1.6213387, 0.22950897)
 shape = SubResource("BoxShape3D_kro4p")
 
+[node name="Timer" type="Timer" parent="."]
+wait_time = 2.0
+
 [connection signal="body_entered" from="Area3D" to="." method="_on_area_3d_body_entered"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
