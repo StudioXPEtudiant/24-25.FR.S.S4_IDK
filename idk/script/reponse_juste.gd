@@ -18,9 +18,10 @@ func _process(delta):
 func _on_area_3d_body_entered(body):
 	if body is CharacterBody3D:
 		assigned_door.queue_free()
-		text.hide()
+		text.show()
 		queue_free()
 
+# faire apparaitre ou disparaitre un objet
 func disable_and_hide_node(node:Node) -> void:
 	node.process_mode = 4 # = Mode: Disabled
 	node.hide()
