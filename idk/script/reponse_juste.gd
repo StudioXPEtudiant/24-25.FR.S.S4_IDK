@@ -20,13 +20,12 @@ func _on_area_3d_body_entered(body):
 	if body is CharacterBody3D:
 		assigned_door.queue_free()
 		text.show()
-		timer_text.start()
+		await Wait(4)
+		text.hide()
 		queue_free()
-		_on_timer_timeout()
-		pass
 
-func _on_timer_timeout():
-	text.queue_free()
+func Wait(WaitTime):
+	await get_tree().create_timer(WaitTime).timeout
 
 # faire apparaitre ou disparaitre un objet
 func disable_and_hide_node(node:Node) -> void:
