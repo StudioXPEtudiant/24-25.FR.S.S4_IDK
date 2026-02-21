@@ -104,3 +104,10 @@ func _on_cube_de_calcul_2_collected():
 func _on_timer_timeout():
 	speed -=35
 	pass # Replace with function body.
+
+#mettre le joueur en pause
+func pause():
+	process_mode = PROCESS_MODE_DISABLED
+
+func unpause():
+	process_mode = PROCESS_MODE_INHERIT

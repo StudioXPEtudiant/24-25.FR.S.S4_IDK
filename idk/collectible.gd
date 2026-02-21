@@ -17,7 +17,7 @@ func _on_area_3d_body_entered(body):
 		hide()
 		collectible_interface.show()
 		assigned_jewels.show()
-		await Wait(4)
+		await Wait(7)
 		collectible_interface.hide()
 		queue_free()
 
