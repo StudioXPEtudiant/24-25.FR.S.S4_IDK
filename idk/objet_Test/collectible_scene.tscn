@@ -1,0 +1,20 @@
+[gd_scene load_steps=2 format=3 uid="uid://b2qe7g72tor16"]
+
+[ext_resource type="PackedScene" uid="uid://dasko5u2npm4q" path="res://objet_Test/collectible_text.tscn" id="1_uy38j"]
+
+[node name="collectible_scene" type="Node2D"]
+
+[node name="Background" type="Polygon2D" parent="."]
+visible = false
+color = Color(1, 0.92156863, 0.99607843, 0.3529412)
+polygon = PackedVector2Array(8, 322, 1144, 319, 1149, 652, 3, 655)
+
+[node name="collectible_prototype" type="Polygon2D" parent="."]
+position = Vector2(-7, -85)
+polygon = PackedVector2Array(1017, 550, 1077, 487, 1134, 548, 1076, 615)
+
+[node name="collectible_text" parent="." instance=ExtResource("1_uy38j")]
+offset_left = 5.0
+offset_top = 103.0
+offset_right = 5.0
+offset_bottom = 103.0
