@@ -1,4 +1,6 @@
-[gd_scene load_steps=4 format=3 uid="uid://ddpjtwyihrk6o"]
+[gd_scene load_steps=5 format=3 uid="uid://ddpjtwyihrk6o"]
+
+[ext_resource type="Texture2D" uid="uid://dpphpf2dn24bd" path="res://texture/feu.png" id="1_jddbr"]
 
 [sub_resource type="Animation" id="Animation_0o3l6"]
 resource_name = "text_door"
@@ -15,6 +17,18 @@ tracks/0/keys = {
 "update": 1,
 "values": [20, 28, 33, 40, 44, 46, 52, 56, 60]
 }
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Sprite2D:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.99, 2.02, 2.98, 3.99),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(11.000015, 200), Vector2(404.00006, 181), Vector2(465.99994, -9.000015), Vector2(-44.00006, -5), Vector2(-45, 222)]
+}
 
 [sub_resource type="Animation" id="Animation_jddbr"]
 length = 0.001
@@ -29,6 +43,18 @@ tracks/0/keys = {
 "transitions": PackedFloat32Array(1),
 "update": 1,
 "values": [20]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Sprite2D:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(11.000015, 200)]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_ec0b6"]
@@ -52,13 +78,19 @@ offset_left = 407.0
 offset_top = 60.0
 offset_right = 862.0
 offset_bottom = 209.0
-theme_override_colors/font_color = Color(0.12941177, 1, 0.08235294, 1)
+theme_override_colors/font_color = Color(1, 0.34117648, 0, 1)
 theme_override_font_sizes/font_size = 20
 text = "la grille est ouverte"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="Label"]
+[node name="Sprite2D" type="Sprite2D" parent="Label"]
+position = Vector2(11.000015, 200)
+scale = Vector2(0.4324219, 0.3689236)
+texture = ExtResource("1_jddbr")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Label/Sprite2D"]
+root_node = NodePath("../..")
 libraries = {
 &"": SubResource("AnimationLibrary_ec0b6")
 }
