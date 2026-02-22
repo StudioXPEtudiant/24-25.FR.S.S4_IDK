@@ -1,10 +1,13 @@
-[gd_scene load_steps=4 format=3 uid="uid://bdoamndm6xfdk"]
+[gd_scene load_steps=5 format=3 uid="uid://bdoamndm6xfdk"]
 
 [ext_resource type="ArrayMesh" uid="uid://blyrgotedb4" path="res://texture/JailGate/gate.obj" id="1_djg32"]
 [ext_resource type="Material" uid="uid://duq7m1uce4mts" path="res://texture/barreau.tres" id="2_i2emy"]
 [ext_resource type="Material" uid="uid://emrd74rclhod" path="res://texture/LA_PORTE.tres" id="3_hmbwa"]
 
-[node name="Node3D" type="Node3D"]
+[sub_resource type="BoxShape3D" id="BoxShape3D_djg32"]
+size = Vector3(10.016113, 20.237366, 0.46241406)
+
+[node name="grille" type="StaticBody3D"]
 
 [node name="Gate" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
@@ -38,3 +41,7 @@ surface_material_override/25 = ExtResource("3_hmbwa")
 surface_material_override/26 = ExtResource("3_hmbwa")
 surface_material_override/27 = ExtResource("3_hmbwa")
 surface_material_override/28 = ExtResource("3_hmbwa")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.5080566, 9.618683, 0.3441018)
+shape = SubResource("BoxShape3D_djg32")
