@@ -1,5 +1,5 @@
 extends StaticBody3D
-
+@export var destination : Vector3
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -13,5 +13,5 @@ func _process(delta):
 
 func _on_area_3d_body_entered(body):
 	if body is CharacterBody3D:
-		body.position = Vector3(294.645, 0.098,350 )
+		body.position = destination
 	pass # Replace with function body.
