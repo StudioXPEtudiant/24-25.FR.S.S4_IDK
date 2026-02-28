@@ -12,6 +12,7 @@ var target_velocity = Vector3.ZERO
 @export var timer : Node
 var life : int
 signal collected
+signal get_money
 
 
 func wait(seconds: float) -> void:
@@ -111,3 +112,6 @@ func pause():
 
 func unpause():
 	process_mode = PROCESS_MODE_INHERIT
+
+func gain_money():
+	get_money.emit()
