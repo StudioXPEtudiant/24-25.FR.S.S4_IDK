@@ -9,5 +9,5 @@ func give_money():
 
 func _on_area_3d_body_entered(body):
 	if body is CharacterBody3D:
-		body.gain_money()
+		body.gain_money_simple()
 		queue_free()

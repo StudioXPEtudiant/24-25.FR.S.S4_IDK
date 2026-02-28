@@ -25,6 +25,12 @@ func loose_money():
 		money -= 1
 
 
-func _on_node_3d_get_money():
+func _on_node_3d_get_money_simple():
 	gain_money()
 	update_money()
+
+
+func _on_node_3d_get_money_green():
+	for i in range(4):
+		gain_money()
+		update_money()
