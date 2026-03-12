@@ -17,90 +17,90 @@ polygon = PackedVector2Array(157, 119, 159, 269, 663, 263, 664, 196, 657, 118, 4
 position = Vector2(25.4314, -160.40623)
 scale = Vector2(0.83801645, 2.3593748)
 
+[node name="Sprite2D17" type="Sprite2D" parent="Polygon2D/life_sprite"]
+position = Vector2(173.99998, 149.99998)
+scale = Vector2(0.04375, 0.12766218)
+texture = ExtResource("4_h5b4h")
+
+[node name="Sprite2D16" type="Sprite2D" parent="Polygon2D/life_sprite"]
+position = Vector2(191.99998, 149.99998)
+scale = Vector2(0.04375, 0.12766218)
+texture = ExtResource("4_h5b4h")
+
+[node name="Sprite2D15" type="Sprite2D" parent="Polygon2D/life_sprite"]
+position = Vector2(222.99998, 149.99998)
+scale = Vector2(0.05236489, 0.12766218)
+texture = ExtResource("3_h2qi6")
+
+[node name="Sprite2D14" type="Sprite2D" parent="Polygon2D/life_sprite"]
+position = Vector2(259.99997, 149.99998)
+scale = Vector2(0.05236489, 0.12766218)
+texture = ExtResource("3_h2qi6")
+
+[node name="Sprite2D13" type="Sprite2D" parent="Polygon2D/life_sprite"]
+position = Vector2(297.99997, 149.99998)
+scale = Vector2(0.05236489, 0.12766218)
+texture = ExtResource("3_h2qi6")
+
+[node name="Sprite2D12" type="Sprite2D" parent="Polygon2D/life_sprite"]
+position = Vector2(335.99997, 149.99998)
+scale = Vector2(0.05236489, 0.12766218)
+texture = ExtResource("2_dxn08")
+
+[node name="Sprite2D11" type="Sprite2D" parent="Polygon2D/life_sprite"]
+position = Vector2(373.99994, 149.99998)
+scale = Vector2(0.05236489, 0.12981741)
+texture = ExtResource("2_dxn08")
+
+[node name="Sprite2D10" type="Sprite2D" parent="Polygon2D/life_sprite"]
+position = Vector2(412, 149.46873)
+scale = Vector2(0.05236489, 0.12766224)
+texture = ExtResource("2_dxn08")
+
+[node name="Sprite2D9" type="Sprite2D" parent="Polygon2D/life_sprite"]
+position = Vector2(446.99994, 149.53123)
+scale = Vector2(0.05236489, 0.12766227)
+texture = ExtResource("2_dxn08")
+
+[node name="Sprite2D8" type="Sprite2D" parent="Polygon2D/life_sprite"]
+position = Vector2(484, 149.53125)
+scale = Vector2(0.05236489, 0.12766224)
+texture = ExtResource("2_dxn08")
+
+[node name="Sprite2D7" type="Sprite2D" parent="Polygon2D/life_sprite"]
+position = Vector2(517.9999, 149.53125)
+scale = Vector2(0.05236489, 0.12766223)
+texture = ExtResource("2_dxn08")
+
+[node name="Sprite2D6" type="Sprite2D" parent="Polygon2D/life_sprite"]
+position = Vector2(557.31244, 149.53123)
+scale = Vector2(0.055912178, 0.12766224)
+texture = ExtResource("2_dxn08")
+
+[node name="Sprite2D5" type="Sprite2D" parent="Polygon2D/life_sprite"]
+position = Vector2(594.99994, 149.53125)
+scale = Vector2(0.05236489, 0.12766223)
+texture = ExtResource("2_dxn08")
+
+[node name="Sprite2D4" type="Sprite2D" parent="Polygon2D/life_sprite"]
+position = Vector2(632.99994, 149.53125)
+scale = Vector2(0.05236489, 0.12766223)
+texture = ExtResource("1_1r8bn")
+
+[node name="Sprite2D3" type="Sprite2D" parent="Polygon2D/life_sprite"]
+position = Vector2(670.99994, 148.99998)
+scale = Vector2(0.05236489, 0.12550703)
+texture = ExtResource("1_1r8bn")
+
+[node name="Sprite2D2" type="Sprite2D" parent="Polygon2D/life_sprite"]
+position = Vector2(707.9999, 148.99994)
+scale = Vector2(0.052364882, 0.12550698)
+texture = ExtResource("1_1r8bn")
+
 [node name="Sprite2D" type="Sprite2D" parent="Polygon2D/life_sprite"]
 position = Vector2(742, 149)
 scale = Vector2(0.052364893, 0.12550704)
 texture = ExtResource("1_1r8bn")
-
-[node name="Sprite2D3" type="Sprite2D" parent="Polygon2D/life_sprite"]
-position = Vector2(708, 149)
-scale = Vector2(0.052364893, 0.12550704)
-texture = ExtResource("1_1r8bn")
-
-[node name="Sprite2D2" type="Sprite2D" parent="Polygon2D/life_sprite"]
-position = Vector2(671, 149)
-scale = Vector2(0.052364893, 0.12550704)
-texture = ExtResource("1_1r8bn")
-
-[node name="Sprite2D4" type="Sprite2D" parent="Polygon2D/life_sprite"]
-position = Vector2(633, 149.53127)
-scale = Vector2(0.052364893, 0.12766224)
-texture = ExtResource("1_1r8bn")
-
-[node name="Sprite2D5" type="Sprite2D" parent="Polygon2D/life_sprite"]
-position = Vector2(595, 149.53127)
-scale = Vector2(0.052364893, 0.12766224)
-texture = ExtResource("2_dxn08")
-
-[node name="Sprite2D6" type="Sprite2D" parent="Polygon2D/life_sprite"]
-position = Vector2(557.3125, 149.53125)
-scale = Vector2(0.05591218, 0.12766226)
-texture = ExtResource("2_dxn08")
-
-[node name="Sprite2D7" type="Sprite2D" parent="Polygon2D/life_sprite"]
-position = Vector2(517.99994, 149.53127)
-scale = Vector2(0.052364893, 0.12766224)
-texture = ExtResource("2_dxn08")
-
-[node name="Sprite2D8" type="Sprite2D" parent="Polygon2D/life_sprite"]
-position = Vector2(484, 149.53127)
-scale = Vector2(0.052364893, 0.12766226)
-texture = ExtResource("2_dxn08")
-
-[node name="Sprite2D9" type="Sprite2D" parent="Polygon2D/life_sprite"]
-position = Vector2(446.99997, 149.53125)
-scale = Vector2(0.052364893, 0.12766229)
-texture = ExtResource("2_dxn08")
-
-[node name="Sprite2D10" type="Sprite2D" parent="Polygon2D/life_sprite"]
-position = Vector2(412, 149.46875)
-scale = Vector2(0.052364893, 0.12766226)
-texture = ExtResource("2_dxn08")
-
-[node name="Sprite2D11" type="Sprite2D" parent="Polygon2D/life_sprite"]
-position = Vector2(373.99997, 150)
-scale = Vector2(0.052364893, 0.12981743)
-texture = ExtResource("2_dxn08")
-
-[node name="Sprite2D12" type="Sprite2D" parent="Polygon2D/life_sprite"]
-position = Vector2(336, 150)
-scale = Vector2(0.052364893, 0.1276622)
-texture = ExtResource("2_dxn08")
-
-[node name="Sprite2D13" type="Sprite2D" parent="Polygon2D/life_sprite"]
-position = Vector2(298, 150)
-scale = Vector2(0.052364893, 0.1276622)
-texture = ExtResource("3_h2qi6")
-
-[node name="Sprite2D14" type="Sprite2D" parent="Polygon2D/life_sprite"]
-position = Vector2(260, 150)
-scale = Vector2(0.052364893, 0.1276622)
-texture = ExtResource("3_h2qi6")
-
-[node name="Sprite2D15" type="Sprite2D" parent="Polygon2D/life_sprite"]
-position = Vector2(223, 150)
-scale = Vector2(0.052364893, 0.1276622)
-texture = ExtResource("3_h2qi6")
-
-[node name="Sprite2D16" type="Sprite2D" parent="Polygon2D/life_sprite"]
-position = Vector2(192, 150)
-scale = Vector2(0.043750003, 0.1276622)
-texture = ExtResource("4_h5b4h")
-
-[node name="Sprite2D17" type="Sprite2D" parent="Polygon2D/life_sprite"]
-position = Vector2(174, 150)
-scale = Vector2(0.043750003, 0.1276622)
-texture = ExtResource("4_h5b4h")
 
 [node name="low_sprite" type="Node2D" parent="."]
 visible = false
