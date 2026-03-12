@@ -14,6 +14,7 @@ var life : int
 signal collected
 signal get_money_simple
 signal get_money_green
+signal basic_hit
 
 
 func wait(seconds: float) -> void:
@@ -86,12 +87,6 @@ func _input(event):
 			camera.rotate_y(-event.relative.x * 0.01)
 
 func _on_area_3d_body_entered(body):
-	if body is RigidBody3D:
-		collected.emit()
-		life -= 1
-		if life == 0:
-			queue_free()
-		porte.queue_free()
 	if body is StaticBody3D:
 		collected.emit()
 		porte.queue_free()
@@ -115,8 +110,11 @@ func unpause():
 	process_mode = PROCESS_MODE_INHERIT
 
 
-
 func gain_money_simple():
 	get_money_simple.emit()
 func gain_money_green():
 	get_money_green.emit()
+
+
+func loose_pv_basic():
+	basic_hit.emit()

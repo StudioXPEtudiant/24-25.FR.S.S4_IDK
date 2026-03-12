@@ -9,8 +9,8 @@ func _ready():
 
 func _on_area_3d_body_entered(body):
 	if body is CharacterBody3D:
-		body.queue_free()
-	pass # Replace with function body.
+		body.loose_pv_basic()
+		queue_free()
 
 
 func _on_timer_timeout():
