@@ -1,6 +1,67 @@
-[gd_scene load_steps=2 format=3 uid="uid://do61vjvnwf8ta"]
+[gd_scene load_steps=5 format=3 uid="uid://do61vjvnwf8ta"]
 
 [ext_resource type="Texture2D" uid="uid://dpphpf2dn24bd" path="res://texture/feu.png" id="1_np6yc"]
+
+[sub_resource type="Animation" id="Animation_np6yc"]
+resource_name = "heal_animation"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("heal_1:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.1, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("heal_2:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.7, 1.1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+
+[sub_resource type="Animation" id="Animation_vm6uo"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("heal_1:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("heal_2:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_qwese"]
+_data = {
+&"RESET": SubResource("Animation_vm6uo"),
+&"heal_animation": SubResource("Animation_np6yc")
+}
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -23,3 +84,126 @@ text = "5"
 position = Vector2(1030, 593)
 scale = Vector2(0.38333333, 0.31666666)
 texture = ExtResource("1_np6yc")
+
+[node name="heal_1" type="Node2D" parent="."]
+
+[node name="heal_symbol" type="Polygon2D" parent="heal_1"]
+position = Vector2(104, 156)
+scale = Vector2(0.2020548, 0.22463769)
+color = Color(1, 0.05882353, 0.019607844, 1)
+polygon = PackedVector2Array(265, 111, 343, 110, 348, 212, 453, 208, 454, 274, 347, 278, 345, 386, 281, 386, 270, 279, 165, 278, 162, 208, 267, 214)
+
+[node name="heal_symbol2" type="Polygon2D" parent="heal_1"]
+position = Vector2(941, 155)
+scale = Vector2(0.2020548, 0.22463769)
+color = Color(1, 0.05882353, 0.019607844, 1)
+polygon = PackedVector2Array(265, 111, 343, 110, 348, 212, 453, 208, 454, 274, 347, 278, 345, 386, 281, 386, 270, 279, 165, 278, 162, 208, 267, 214)
+
+[node name="heal_symbol3" type="Polygon2D" parent="heal_1"]
+position = Vector2(206, 377)
+scale = Vector2(0.2020548, 0.22463769)
+color = Color(1, 0.05882353, 0.019607844, 1)
+polygon = PackedVector2Array(265, 111, 343, 110, 348, 212, 453, 208, 454, 274, 347, 278, 345, 386, 281, 386, 270, 279, 165, 278, 162, 208, 267, 214)
+
+[node name="heal_symbol4" type="Polygon2D" parent="heal_1"]
+position = Vector2(49, 488)
+scale = Vector2(0.2020548, 0.22463769)
+color = Color(1, 0.05882353, 0.019607844, 1)
+polygon = PackedVector2Array(265, 111, 343, 110, 348, 212, 453, 208, 454, 274, 347, 278, 345, 386, 281, 386, 270, 279, 165, 278, 162, 208, 267, 214)
+
+[node name="heal_symbol5" type="Polygon2D" parent="heal_1"]
+position = Vector2(235, 84)
+scale = Vector2(0.2020548, 0.22463769)
+color = Color(1, 0.05882353, 0.019607844, 1)
+polygon = PackedVector2Array(265, 111, 343, 110, 348, 212, 453, 208, 454, 274, 347, 278, 345, 386, 281, 386, 270, 279, 165, 278, 162, 208, 267, 214)
+
+[node name="heal_symbol6" type="Polygon2D" parent="heal_1"]
+position = Vector2(795, 80)
+scale = Vector2(0.2020548, 0.22463769)
+color = Color(1, 0.05882353, 0.019607844, 1)
+polygon = PackedVector2Array(265, 111, 343, 110, 348, 212, 453, 208, 454, 274, 347, 278, 345, 386, 281, 386, 270, 279, 165, 278, 162, 208, 267, 214)
+
+[node name="heal_symbol7" type="Polygon2D" parent="heal_1"]
+position = Vector2(826, 516)
+scale = Vector2(0.2020548, 0.22463769)
+color = Color(1, 0.05882353, 0.019607844, 1)
+polygon = PackedVector2Array(265, 111, 343, 110, 348, 212, 453, 208, 454, 274, 347, 278, 345, 386, 281, 386, 270, 279, 165, 278, 162, 208, 267, 214)
+
+[node name="heal_symbol8" type="Polygon2D" parent="heal_1"]
+position = Vector2(965, 434)
+scale = Vector2(0.2020548, 0.22463769)
+color = Color(1, 0.05882353, 0.019607844, 1)
+polygon = PackedVector2Array(265, 111, 343, 110, 348, 212, 453, 208, 454, 274, 347, 278, 345, 386, 281, 386, 270, 279, 165, 278, 162, 208, 267, 214)
+
+[node name="heal_2" type="Node2D" parent="."]
+
+[node name="heal_symbol_" type="Polygon2D" parent="heal_2"]
+position = Vector2(469, 26.00003)
+scale = Vector2(0.2020548, 0.22463769)
+color = Color(0.30588236, 0.87058824, 0.20392157, 1)
+polygon = PackedVector2Array(265, 111, 343, 110, 348, 212, 453, 208, 454, 274, 347, 278, 345, 386, 281, 386, 270, 279, 165, 278, 162, 208, 267, 214)
+
+[node name="heal_symbol_2" type="Polygon2D" parent="heal_2"]
+position = Vector2(650, 87)
+scale = Vector2(0.2020548, 0.22463769)
+color = Color(0.30588236, 0.87058824, 0.20392157, 1)
+polygon = PackedVector2Array(265, 111, 343, 110, 348, 212, 453, 208, 454, 274, 347, 278, 345, 386, 281, 386, 270, 279, 165, 278, 162, 208, 267, 214)
+
+[node name="heal_symbol_3" type="Polygon2D" parent="heal_2"]
+position = Vector2(1008, 263)
+scale = Vector2(0.2020548, 0.22463769)
+color = Color(0.30588236, 0.87058824, 0.20392157, 1)
+polygon = PackedVector2Array(265, 111, 343, 110, 348, 212, 453, 208, 454, 274, 347, 278, 345, 386, 281, 386, 270, 279, 165, 278, 162, 208, 267, 214)
+
+[node name="heal_symbol_4" type="Polygon2D" parent="heal_2"]
+position = Vector2(946, 354)
+scale = Vector2(0.2020548, 0.22463769)
+color = Color(0.30588236, 0.87058824, 0.20392157, 1)
+polygon = PackedVector2Array(265, 111, 343, 110, 348, 212, 453, 208, 454, 274, 347, 278, 345, 386, 281, 386, 270, 279, 165, 278, 162, 208, 267, 214)
+
+[node name="heal_symbol_5" type="Polygon2D" parent="heal_2"]
+position = Vector2(627.00006, 462)
+scale = Vector2(0.2020548, 0.22463769)
+color = Color(0.30588236, 0.87058824, 0.20392157, 1)
+polygon = PackedVector2Array(265, 111, 343, 110, 348, 212, 453, 208, 454, 274, 347, 278, 345, 386, 281, 386, 270, 279, 165, 278, 162, 208, 267, 214)
+
+[node name="heal_symbol_6" type="Polygon2D" parent="heal_2"]
+position = Vector2(503, 527)
+scale = Vector2(0.2020548, 0.22463769)
+color = Color(0.30588236, 0.87058824, 0.20392157, 1)
+polygon = PackedVector2Array(265, 111, 343, 110, 348, 212, 453, 208, 454, 274, 347, 278, 345, 386, 281, 386, 270, 279, 165, 278, 162, 208, 267, 214)
+
+[node name="heal_symbol_7" type="Polygon2D" parent="heal_2"]
+position = Vector2(335.99997, 490)
+scale = Vector2(0.2020548, 0.22463769)
+color = Color(0.30588236, 0.87058824, 0.20392157, 1)
+polygon = PackedVector2Array(265, 111, 343, 110, 348, 212, 453, 208, 454, 274, 347, 278, 345, 386, 281, 386, 270, 279, 165, 278, 162, 208, 267, 214)
+
+[node name="heal_symbol_8" type="Polygon2D" parent="heal_2"]
+position = Vector2(150, 535.99994)
+scale = Vector2(0.2020548, 0.22463769)
+color = Color(0.30588236, 0.87058824, 0.20392157, 1)
+polygon = PackedVector2Array(265, 111, 343, 110, 348, 212, 453, 208, 454, 274, 347, 278, 345, 386, 281, 386, 270, 279, 165, 278, 162, 208, 267, 214)
+
+[node name="heal_symbol_9" type="Polygon2D" parent="heal_2"]
+position = Vector2(36, 381)
+scale = Vector2(0.2020548, 0.22463769)
+color = Color(0.30588236, 0.87058824, 0.20392157, 1)
+polygon = PackedVector2Array(265, 111, 343, 110, 348, 212, 453, 208, 454, 274, 347, 278, 345, 386, 281, 386, 270, 279, 165, 278, 162, 208, 267, 214)
+
+[node name="heal_symbol_10" type="Polygon2D" parent="heal_2"]
+position = Vector2(129, 284)
+scale = Vector2(0.2020548, 0.22463769)
+color = Color(0.30588236, 0.87058824, 0.20392157, 1)
+polygon = PackedVector2Array(265, 111, 343, 110, 348, 212, 453, 208, 454, 274, 347, 278, 345, 386, 281, 386, 270, 279, 165, 278, 162, 208, 267, 214)
+
+[node name="heal_symbol_11" type="Polygon2D" parent="heal_2"]
+position = Vector2(7, 123.000015)
+scale = Vector2(0.2020548, 0.22463769)
+color = Color(0.30588236, 0.87058824, 0.20392157, 1)
+polygon = PackedVector2Array(265, 111, 343, 110, 348, 212, 453, 208, 454, 274, 347, 278, 345, 386, 281, 386, 270, 279, 165, 278, 162, 208, 267, 214)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_qwese")
+}

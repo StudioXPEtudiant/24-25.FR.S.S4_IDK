@@ -5,7 +5,8 @@ var potion = 5
 @onready var life_container = $health_interface/Polygon2D/life_sprite
 
 func _ready():
-	pass
+	$potion_interface/heal_1.hide()
+	$potion_interface/heal_2.hide()
 func _process(delta):
 	pass
 
@@ -59,6 +60,7 @@ func _on_node_3d_basic_hit():
 func _on_node_3d_potion_basic():
 	if potion >= 1:
 		if pv < 17:
+			$potion_interface/AnimationPlayer.play("heal_animation")
 			life_container.get_child(pv).show()
 			pv += 1
 			potion -= 1
