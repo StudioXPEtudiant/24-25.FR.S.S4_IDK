@@ -15,6 +15,7 @@ signal collected
 signal get_money_simple
 signal get_money_green
 signal basic_hit
+signal potion_basic
 
 
 func wait(seconds: float) -> void:
@@ -45,6 +46,8 @@ func _physics_process(delta):
 		speed += 35
 	if Input.is_action_pressed("Jump"):
 		direction.y = direction.y + 50
+	if Input.is_action_just_pressed("Potion"):
+		heal_basic()
 
 	# Eviter les diagonales
 	if direction != Vector3.ZERO:
@@ -115,6 +118,8 @@ func gain_money_simple():
 func gain_money_green():
 	get_money_green.emit()
 
+func heal_basic():
+	potion_basic.emit()
 
 func loose_pv_basic():
 	basic_hit.emit()
