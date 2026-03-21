@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://bo35f17pmyv22"]
+
+[ext_resource type="Texture2D" uid="uid://mipda6l7blsm" path="res://texture/tonneau_1.png" id="1_7xjo7"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_371fx"]
+albedo_texture = ExtResource("1_7xjo7")
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_mi8gj"]
+height = 1.4550781
+radius = 0.6425781
+
+[node name="tonneau" type="StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.4425925, 0)
+
+[node name="CSGCylinder3D" type="CSGCylinder3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.24898338, 0)
+radius = 0.65966797
+height = 1.4087524
+material = SubResource("StandardMaterial3D_371fx")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.27246094, 0)
+shape = SubResource("CylinderShape3D_mi8gj")
