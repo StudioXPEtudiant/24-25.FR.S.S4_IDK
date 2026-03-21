@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://ccpmj6jim4c1n"]
+
+[ext_resource type="Texture2D" uid="uid://dh2smc4q7kol6" path="res://texture/tapis_1.png" id="1_344gk"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ilr5k"]
+albedo_color = Color(0.38422897, 0.38422897, 0.38422894, 1)
+albedo_texture = ExtResource("1_344gk")
+
+[node name="tapis_rectangle" type="Node3D"]
+
+[node name="CSGBox3D" type="CSGBox3D" parent="."]
+transform = Transform3D(3, 0, 0, 0, 1, 0, 0, 0, 2, 0, -0.46496582, 0)
+size = Vector3(1, 0.014892578, 1)
+material = SubResource("StandardMaterial3D_ilr5k")
