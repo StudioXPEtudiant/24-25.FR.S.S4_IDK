@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://djyj1umvo5y24"
-path="res://.godot/imported/Potion vie.png-0c89821c036e21faf1f0031b609e3725.ctex"
+uid="uid://c1ejadhq8xb6g"
+path="res://.godot/imported/Potion vie moitie.png-2135b08990054d34b6c2763c05a4e80e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://texture/Potion vie.png"
-dest_files=["res://.godot/imported/Potion vie.png-0c89821c036e21faf1f0031b609e3725.ctex"]
+source_file="res://texture/Potion vie moitie.png"
+dest_files=["res://.godot/imported/Potion vie moitie.png-2135b08990054d34b6c2763c05a4e80e.ctex"]
 
 [params]
 
