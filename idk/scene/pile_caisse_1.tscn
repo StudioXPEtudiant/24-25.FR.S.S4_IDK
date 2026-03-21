@@ -1,0 +1,23 @@
+[gd_scene load_steps=3 format=3 uid="uid://bbuueh6fvieft"]
+
+[ext_resource type="PackedScene" uid="uid://cn7xoy2vbebaj" path="res://scene/caisse_bois.tscn" id="1_nmje4"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_cjk7b"]
+size = Vector3(1.640625, 1.2750244, 1)
+
+[node name="pile_caisse1" type="StaticBody3D"]
+
+[node name="caisse_bois" parent="." instance=ExtResource("1_nmje4")]
+
+[node name="caisse_bois2" parent="." instance=ExtResource("1_nmje4")]
+transform = Transform3D(0.5526175, 0, 0.23369624, 0, 0.6, 0, -0.23369624, 0, 0.5526175, 0.24771643, 0.78593934, 0)
+
+[node name="caisse_bois3" parent="." instance=ExtResource("1_nmje4")]
+transform = Transform3D(0.3435485, 0, 0.06689108, 0, 0.35, 0, -0.06689108, 0, 0.3435485, -0.25270104, 0.704628, 0.2534833)
+
+[node name="caisse_bois4" parent="." instance=ExtResource("1_nmje4")]
+transform = Transform3D(0.4087597, 0, 0.18819001, 0, 0.45, 0, -0.18819001, 0, 0.4087597, -0.869, -0.2669735, 0.002)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.3203125, 0.13919711, 0)
+shape = SubResource("BoxShape3D_cjk7b")

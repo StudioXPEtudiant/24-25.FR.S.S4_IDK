@@ -1,0 +1,26 @@
+[gd_scene load_steps=3 format=3 uid="uid://kstnd76wdp0y"]
+
+[ext_resource type="PackedScene" uid="uid://cn7xoy2vbebaj" path="res://scene/caisse_bois.tscn" id="1_um18w"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_cjk7b"]
+size = Vector3(1.640625, 1.024353, 1.2940674)
+
+[node name="pile_caisse2" type="StaticBody3D"]
+
+[node name="caisse_bois" parent="." instance=ExtResource("1_um18w")]
+
+[node name="caisse_bois2" parent="." instance=ExtResource("1_um18w")]
+transform = Transform3D(0.23025727, 0, 0.09737343, 0, 0.25, 0, -0.09737343, 0, 0.23025727, -0.15654826, -0.3625189, 0.6482822)
+
+[node name="caisse_bois5" parent="." instance=ExtResource("1_um18w")]
+transform = Transform3D(0.24718909, 0, -0.037383836, 0, 0.25, 0, 0.037383836, 0, 0.24718909, 0.28050864, -0.37030706, 0.6482822)
+
+[node name="caisse_bois3" parent="." instance=ExtResource("1_um18w")]
+transform = Transform3D(0.41891202, 0, 0.1643554, 0, 0.45, 0, -0.1643554, 0, 0.41891202, -0.7753382, -0.27195737, 0.17587078)
+
+[node name="caisse_bois4" parent="." instance=ExtResource("1_um18w")]
+transform = Transform3D(0.24207574, 0, -0.1771986, 0, 0.3, 0, 0.1771986, 0, 0.24207574, -0.837956, -0.2669735, -0.25158885)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.3203125, 0.013861418, 0.14703369)
+shape = SubResource("BoxShape3D_cjk7b")
