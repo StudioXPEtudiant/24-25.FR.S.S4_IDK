@@ -8,7 +8,7 @@
 [node name="health_interface" type="Node2D"]
 
 [node name="Polygon2D" type="Polygon2D" parent="."]
-position = Vector2(-140.347, 31.119)
+position = Vector2(-160.347, -8.881)
 scale = Vector2(1.1932939, 0.18543042)
 color = Color(0.050510764, 0.050510757, 0.050510757, 1)
 polygon = PackedVector2Array(157, 119, 159, 269, 663, 263, 664, 196, 657, 118, 469.03766, 118.37573)
