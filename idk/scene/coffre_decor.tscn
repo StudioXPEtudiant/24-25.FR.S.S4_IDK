@@ -1,0 +1,31 @@
+[gd_scene load_steps=7 format=3 uid="uid://bbii8lyvepjy3"]
+
+[ext_resource type="Texture2D" uid="uid://sievdmjjk4dd" path="res://texture/chest.png" id="1_12ku8"]
+[ext_resource type="Texture2D" uid="uid://cun0shetmknob" path="res://texture/fer_coffre.png" id="2_aufec"]
+[ext_resource type="Texture2D" uid="uid://dpli34sk3u5fh" path="res://texture/serrure_coffre.png" id="3_ttmrl"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ghyn1"]
+albedo_texture = ExtResource("1_12ku8")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jk5tx"]
+albedo_texture = ExtResource("2_aufec")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xsv67"]
+albedo_texture = ExtResource("3_ttmrl")
+
+[node name="coffre_decor" type="Node3D"]
+
+[node name="chest" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1.3, 0, 0, 0, 1, 0, 0, 0)
+size = Vector3(3, 1, 1)
+material = SubResource("StandardMaterial3D_ghyn1")
+
+[node name="barre_fer" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0016937256, 0.037935793, 0.049161434)
+size = Vector3(3.0142517, 0.06640625, 0.9112549)
+material = SubResource("StandardMaterial3D_jk5tx")
+
+[node name="fermoire" type="CSGPolygon3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 0.2, -0.609994, -0.39130658, 0.55466413)
+polygon = PackedVector2Array(0.5459597, 0.17970109, 0.2645309, 0.4427842, 0.56830144, 0.68644375, 0.84674954, 0.42482728)
+material = SubResource("StandardMaterial3D_xsv67")

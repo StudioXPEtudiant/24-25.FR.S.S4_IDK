@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://ldifiqq0wac5"]
+
+[ext_resource type="Texture2D" uid="uid://berhqh5c2gi2q" path="res://texture/étagère.jpg" id="1_flomp"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_c6t5q"]
+albedo_texture = ExtResource("1_flomp")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_isidu"]
+albedo_texture = ExtResource("1_flomp")
+
+[node name="Etagère" type="Node3D"]
+
+[node name="CSGCombiner3D" type="CSGCombiner3D" parent="."]
+
+[node name="CSGBox3D" type="CSGBox3D" parent="CSGCombiner3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.16918945, 0.5438918, -0.055236816)
+size = Vector3(1.3383789, 0.047851563, 0.88952637)
+material = SubResource("StandardMaterial3D_c6t5q")
+
+[node name="CSGPolygon3D" type="CSGPolygon3D" parent="CSGCombiner3D"]
+transform = Transform3D(-0.59999144, 9.668428e-09, -0.00039924803, -0.0011977202, 0.64891875, 0.02812422, 0.0029609127, 0.26249647, -0.069526024, 0.56525826, -0.09489274, -0.61566937)
+polygon = PackedVector2Array(0.37920165, 0.31124353, 0, 1, 1, 1, 0.6555759, 0.29765105)
+material = SubResource("StandardMaterial3D_isidu")
