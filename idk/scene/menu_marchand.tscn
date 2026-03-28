@@ -1,0 +1,127 @@
+[gd_scene load_steps=3 format=3 uid="uid://dpc7g400sakcj"]
+
+[ext_resource type="Script" uid="uid://doamosae313fl" path="res://scene/menu_marchand.gd" id="1_me61d"]
+[ext_resource type="Texture2D" uid="uid://duqqxh8es3pm2" path="res://texture/black-background.png" id="1_wettp"]
+
+[node name="menu_marchand" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_me61d")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 1153.0
+offset_bottom = 650.0
+texture = ExtResource("1_wettp")
+expand_mode = 1
+
+[node name="merchand\'s name" type="Label" parent="."]
+layout_mode = 0
+offset_left = 445.0
+offset_top = 39.0
+offset_right = 704.0
+offset_bottom = 81.0
+theme_override_font_sizes/font_size = 30
+text = "Merchand's name"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 0
+offset_left = 107.0
+offset_top = 144.0
+offset_right = 686.0
+offset_bottom = 330.0
+theme_override_constants/separation = 40
+
+[node name="item1" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+text = "item1
+
+"
+
+[node name="item2" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+text = "item2
+
+"
+
+[node name="item3" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+text = "item3
+
+"
+
+[node name="BoxContainer" type="BoxContainer" parent="."]
+layout_mode = 0
+offset_left = 711.0
+offset_top = 97.0
+offset_right = 918.0
+offset_bottom = 139.0
+theme_override_constants/separation = 30
+
+[node name="cost" type="Label" parent="BoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "cost"
+
+[node name="Label2" type="Label" parent="BoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "stock"
+
+[node name="VBoxContainer4" type="VBoxContainer" parent="."]
+layout_mode = 0
+offset_left = 727.0
+offset_top = 154.0
+offset_right = 841.0
+offset_bottom = 242.0
+theme_override_constants/separation = 45
+
+[node name="VBoxContainer2" type="HBoxContainer" parent="VBoxContainer4"]
+layout_mode = 2
+theme_override_constants/separation = 80
+
+[node name="Label" type="Label" parent="VBoxContainer4/VBoxContainer2"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "3"
+
+[node name="Label2" type="Label" parent="VBoxContainer4/VBoxContainer2"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "3"
+
+[node name="VBoxContainer4" type="HBoxContainer" parent="VBoxContainer4"]
+layout_mode = 2
+theme_override_constants/separation = 80
+
+[node name="Label" type="Label" parent="VBoxContainer4/VBoxContainer4"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "3"
+
+[node name="Label2" type="Label" parent="VBoxContainer4/VBoxContainer4"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "3"
+
+[node name="VBoxContainer3" type="HBoxContainer" parent="VBoxContainer4"]
+layout_mode = 2
+theme_override_constants/separation = 80
+
+[node name="Label" type="Label" parent="VBoxContainer4/VBoxContainer3"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "3"
+
+[node name="Label2" type="Label" parent="VBoxContainer4/VBoxContainer3"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "3"
+
+[connection signal="pressed" from="VBoxContainer/item1" to="." method="_on_item_1_pressed"]
+[connection signal="pressed" from="VBoxContainer/item2" to="." method="_on_item_2_pressed"]
+[connection signal="pressed" from="VBoxContainer/item3" to="." method="_on_item_3_pressed"]

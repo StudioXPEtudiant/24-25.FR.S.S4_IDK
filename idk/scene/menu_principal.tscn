@@ -1,0 +1,57 @@
+[gd_scene load_steps=3 format=3 uid="uid://cx614r282lnys"]
+
+[ext_resource type="Script" uid="uid://ogey1jqo1lyv" path="res://scene/menu_principal.gd" id="1_5o4ep"]
+[ext_resource type="Texture2D" uid="uid://csaql2w6h76kr" path="res://texture/menu_principal_wallpaper_1.jpg" id="1_fqub8"]
+
+[node name="Menu_Principal" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_5o4ep")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 1148.0
+offset_bottom = 656.0
+texture = ExtResource("1_fqub8")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 495.0
+offset_top = 79.0
+offset_right = 663.0
+offset_bottom = 216.0
+theme_override_font_sizes/font_size = 100
+text = "IDK"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 0
+offset_left = 319.0
+offset_top = 443.0
+offset_right = 850.0
+offset_bottom = 506.0
+theme_override_constants/separation = 250
+
+[node name="start_btn" type="Button" parent="HBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 40
+text = "START"
+
+[node name="quit_btn" type="Button" parent="HBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 40
+text = "QUIT"
+
+[node name="Label2" type="Label" parent="."]
+layout_mode = 0
+offset_left = 858.0
+offset_top = 625.0
+offset_right = 1137.0
+offset_bottom = 648.0
+text = "an original game by Lucas and Hugo"
+
+[connection signal="button_down" from="HBoxContainer/start_btn" to="." method="_on_start_btn_button_down"]
+[connection signal="button_down" from="HBoxContainer/quit_btn" to="." method="_on_quit_btn_button_down"]
