@@ -7,6 +7,7 @@ var potion = 5
 func _ready():
 	$potion_interface/heal_1.hide()
 	$potion_interface/heal_2.hide()
+	$menu_marchand.hide()
 func _process(delta):
 	pass
 
@@ -26,6 +27,14 @@ func loose_money():
 		print ("pas assez de thune frero")
 	else:
 		money -= 1
+		update_money()
+
+func gain_potion():
+	if potion < 5:
+		potion += 1
+		update_potion()
+	else:
+		print("max potion")
 
 func get_hitted():
 	print(pv)

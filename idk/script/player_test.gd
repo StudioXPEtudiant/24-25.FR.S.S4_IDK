@@ -23,7 +23,7 @@ func wait(seconds: float) -> void:
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	life = 1
+	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 	pass
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -80,9 +80,7 @@ func _physics_process(delta):
 	
 	
 func _input(event):
-	if event is InputEventMouseMotion:
-		Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
-	elif event.is_action_pressed("ui_cancel"):
+	if event.is_action_pressed("ui_cancel"):
 		Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
 	if Input.get_mouse_mode() == Input.MOUSE_MODE_CAPTURED:
 		if event is InputEventMouseMotion:

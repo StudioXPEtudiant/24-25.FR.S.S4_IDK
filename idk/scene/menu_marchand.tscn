@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://dpc7g400sakcj"]
+[gd_scene load_steps=4 format=3 uid="uid://dpc7g400sakcj"]
 
 [ext_resource type="Script" uid="uid://doamosae313fl" path="res://scene/menu_marchand.gd" id="1_me61d"]
 [ext_resource type="Texture2D" uid="uid://duqqxh8es3pm2" path="res://texture/black-background.png" id="1_wettp"]
+[ext_resource type="Texture2D" uid="uid://dl02wy1g5t223" path="res://texture/Potion vie pleine.png" id="3_rj42t"]
 
 [node name="menu_marchand" type="Control"]
 layout_mode = 3
@@ -21,12 +22,12 @@ expand_mode = 1
 
 [node name="merchand\'s name" type="Label" parent="."]
 layout_mode = 0
-offset_left = 445.0
-offset_top = 39.0
-offset_right = 704.0
-offset_bottom = 81.0
+offset_left = 493.0
+offset_top = 41.0
+offset_right = 752.0
+offset_bottom = 83.0
 theme_override_font_sizes/font_size = 30
-text = "Merchand's name"
+text = "PasFlorian"
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
 layout_mode = 0
@@ -38,7 +39,7 @@ theme_override_constants/separation = 40
 
 [node name="item1" type="Button" parent="VBoxContainer"]
 layout_mode = 2
-text = "item1
+text = "Life Potion
 
 "
 
@@ -121,6 +122,19 @@ text = "3"
 layout_mode = 2
 theme_override_font_sizes/font_size = 30
 text = "3"
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 2.0
+offset_top = 579.0
+offset_right = 152.0
+offset_bottom = 649.0
+text = "exit"
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(294, 156)
+scale = Vector2(2.378788, 1.6333333)
+texture = ExtResource("3_rj42t")
 
 [connection signal="pressed" from="VBoxContainer/item1" to="." method="_on_item_1_pressed"]
 [connection signal="pressed" from="VBoxContainer/item2" to="." method="_on_item_2_pressed"]
