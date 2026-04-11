@@ -14,4 +14,4 @@ func _process(delta):
 func _on_area_3d_body_entered(body):
 	if body is CharacterBody3D:
 		queue_free()
-		$"../boss1"
+		$"../boss1"._stack_dmg()
