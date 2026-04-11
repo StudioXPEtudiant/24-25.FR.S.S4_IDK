@@ -1,0 +1,63 @@
+[gd_scene load_steps=5 format=3 uid="uid://b47tw7ubjhrwu"]
+
+[ext_resource type="Script" uid="uid://ccco6pkq4fh5s" path="res://scene/inventory.gd" id="1_ccywu"]
+[ext_resource type="Texture2D" uid="uid://duqqxh8es3pm2" path="res://texture/black-background.png" id="2_ccywu"]
+[ext_resource type="Texture2D" uid="uid://dl02wy1g5t223" path="res://texture/Potion vie pleine.png" id="3_n7ocl"]
+[ext_resource type="Texture2D" uid="uid://c1ejadhq8xb6g" path="res://texture/Potion vie moitie.png" id="4_ccywu"]
+
+[node name="inventory" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ccywu")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 1153.0
+offset_bottom = 650.0
+texture = ExtResource("2_ccywu")
+expand_mode = 1
+
+[node name="merchand\'s name" type="Label" parent="."]
+layout_mode = 0
+offset_left = 493.0
+offset_top = 41.0
+offset_right = 752.0
+offset_bottom = 83.0
+theme_override_font_sizes/font_size = 30
+text = "Inventory"
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 2.0
+offset_top = 579.0
+offset_right = 152.0
+offset_bottom = 649.0
+text = "exit"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 0
+offset_left = 60.0
+offset_top = 119.0
+offset_right = 371.0
+offset_bottom = 272.0
+theme_override_constants/separation = 30
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 30
+
+[node name="Button2" type="Button" parent="VBoxContainer/HBoxContainer"]
+layout_mode = 2
+icon = ExtResource("4_ccywu")
+
+[node name="Button3" type="Button" parent="VBoxContainer/HBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+icon = ExtResource("3_n7ocl")
+icon_alignment = 1
+
+[connection signal="button_up" from="Button" to="." method="_on_button_button_up"]
