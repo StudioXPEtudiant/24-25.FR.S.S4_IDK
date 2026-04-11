@@ -1,0 +1,27 @@
+[gd_scene load_steps=4 format=3 uid="uid://dq13rm86ekxe1"]
+
+[ext_resource type="Script" uid="uid://c06tvut71dyf2" path="res://boss_1_dmg.gd" id="1_krr10"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_krr10"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_jn8v0"]
+size = Vector3(1.1086426, 0.99609375, 1.1091309)
+
+[node name="boss1_dmg" type="RigidBody3D"]
+script = ExtResource("1_krr10")
+
+[node name="CSGCylinder3D" type="CSGCylinder3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.6890259, 0)
+height = 0.62194824
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5674293, 0)
+shape = SubResource("BoxShape3D_krr10")
+
+[node name="Area3D" type="Area3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0037841797, -0.54798687, 0.019165039)
+shape = SubResource("BoxShape3D_jn8v0")
+
+[connection signal="body_entered" from="Area3D" to="." method="_on_area_3d_body_entered"]
