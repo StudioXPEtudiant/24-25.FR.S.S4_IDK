@@ -23,7 +23,9 @@ func _on_item_1_pressed():
 		node.gain_potion()
 		update_stock_potion()
 	else:
-		pass
+		$"../enough_money".show()
+		await Wait(2)
+		$"../enough_money".hide()
 
 
 func _on_item_2_pressed():
@@ -34,6 +36,10 @@ func _on_item_2_pressed():
 		$VBoxContainer/item2.hide()
 		$VBoxContainer4/VBoxContainer4.hide()
 		$Sprite2D2.hide()
+	else:
+		$"../enough_money".show()
+		await Wait(2)
+		$"../enough_money".hide()
 
 
 func _on_item_3_pressed():
@@ -48,3 +54,6 @@ func disable_and_hide_node(node:Node) -> void:
 func enable_and_show_node(node:Node) -> void:
 	node.process_mode = 0 # = Mode: Inherit
 	node.show()
+
+func Wait(WaitTime):
+	await get_tree().create_timer(WaitTime).timeout

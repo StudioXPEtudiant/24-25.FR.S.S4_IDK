@@ -1,4 +1,4 @@
-[gd_scene load_steps=48 format=3 uid="uid://dswq7a487kdsg"]
+[gd_scene load_steps=52 format=3 uid="uid://dswq7a487kdsg"]
 
 [ext_resource type="Script" uid="uid://b6kauwdao7lcg" path="res://scene/level_1_finaaal.gd" id="1_2ams2"]
 [ext_resource type="PackedScene" uid="uid://53cievrl3uqw" path="res://scene/sol .tscn" id="1_jfppt"]
@@ -28,8 +28,12 @@
 [ext_resource type="PackedScene" uid="uid://be6s1xugxq7n2" path="res://health_bar.tscn" id="23_ba3l4"]
 [ext_resource type="PackedScene" uid="uid://do61vjvnwf8ta" path="res://potion_interface.tscn" id="24_vjwci"]
 [ext_resource type="PackedScene" uid="uid://dpc7g400sakcj" path="res://scene/menu_marchand.tscn" id="28_4rq10"]
+[ext_resource type="PackedScene" uid="uid://hif2wyxt313o" path="res://scene/enough_money.tscn" id="28_ucj77"]
 [ext_resource type="PackedScene" uid="uid://cktl813o0ghpw" path="res://scene/merchant_1.tscn" id="29_07iw4"]
+[ext_resource type="PackedScene" uid="uid://d4e58ifh8sgky" path="res://scene/salle_caisse.tscn" id="29_tcii7"]
 [ext_resource type="PackedScene" uid="uid://b47tw7ubjhrwu" path="res://scene/Inventory.tscn" id="30_07iw4"]
+[ext_resource type="Script" uid="uid://c22l453ytkhi1" path="res://scene/salle_caisse.gd" id="30_bqprj"]
+[ext_resource type="Script" uid="uid://dlovpybr26wjx" path="res://scene/enough_money.gd" id="30_tu5fe"]
 [ext_resource type="PackedScene" uid="uid://dq13rm86ekxe1" path="res://scene/boss_1_dmg.tscn" id="31_w6b6y"]
 [ext_resource type="PackedScene" uid="uid://b27axmolo1bkx" path="res://scene/boss_1.tscn" id="32_n6mo8"]
 [ext_resource type="Script" uid="uid://g2hmudjj4e5v" path="res://scene/grille_salle_caisse.gd" id="33_n6mo8"]
@@ -9607,13 +9611,26 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 79.099945, 2.5975342, 34.9769
 [node name="potion_interface" parent="." instance=ExtResource("24_vjwci")]
 
 [node name="menu_marchand" parent="." instance=ExtResource("28_4rq10")]
+offset_top = 104.0
+offset_right = 5.0
+
+[node name="enough_money" parent="." instance=ExtResource("28_ucj77")]
+script = ExtResource("30_tu5fe")
+
+[node name="salle_caisse" parent="." instance=ExtResource("29_tcii7")]
 visible = false
+offset_left = 2.0
+offset_top = 38.0
+offset_right = 2.0
+offset_bottom = 38.0
+script = ExtResource("30_bqprj")
 
 [node name="Merchant_1" parent="." node_paths=PackedStringArray("assigned_merchant_screen") instance=ExtResource("29_07iw4")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 142.79178, 1.7198296, 25.6331)
 assigned_merchant_screen = NodePath("../menu_marchand")
 
 [node name="inventory" parent="." instance=ExtResource("30_07iw4")]
+visible = false
 
 [node name="Money" type="Node3D" parent="."]
 
