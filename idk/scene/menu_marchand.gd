@@ -1,6 +1,7 @@
 extends Control
 @onready var node = $".."
 var stock_potion = 3
+var salle_caisse = false
 
 func _ready():
 	hide()
@@ -26,7 +27,13 @@ func _on_item_1_pressed():
 
 
 func _on_item_2_pressed():
-	pass # Replace with function body.
+	if node.money >= 5:
+		for i in range (5):
+			node.loose_money()
+		salle_caisse = true
+		$VBoxContainer/item2.hide()
+		$VBoxContainer4/VBoxContainer4.hide()
+		$Sprite2D2.hide()
 
 
 func _on_item_3_pressed():
