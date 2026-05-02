@@ -8788,6 +8788,9 @@ transform = Transform3D(-1.7484555e-07, 0, 4, 0, 4, 0, -4, 0, -1.7484555e-07, 15
 [node name="pile_caisse4" parent="decor" instance=ExtResource("14_4rq10")]
 transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, 201.33163, 2.0917134, -44.66902)
 
+[node name="mur2" parent="decor" instance=ExtResource("5_nntks")]
+transform = Transform3D(5.3222656, 0, 0, 0, 3.2706234, 0, 0, 0, 1, 64.43468, 3.1512842, 169.93077)
+
 [node name="lit" type="Node3D" parent="."]
 
 [node name="Node3D2" parent="lit" instance=ExtResource("11_jsqer")]
