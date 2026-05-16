@@ -1,0 +1,35 @@
+[gd_scene load_steps=4 format=3 uid="uid://dld3hxv8ly3g7"]
+
+[ext_resource type="Material" uid="uid://ba83gdlh3tj0a" path="res://texture/metal.tres" id="1_jljh4"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_i60cl"]
+size = Vector3(1.8710938, 0.84368896, 0.17919922)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gd544"]
+
+[node name="barreau_metal" type="StaticBody3D"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.013671875, 0.32315063, -0.0031738281)
+shape = SubResource("BoxShape3D_i60cl")
+
+[node name="CSGCylinder3D4" type="CSGCylinder3D" parent="CollisionShape3D"]
+transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, -0.013671875, 0.31369328, 0.0031738281)
+material_override = ExtResource("1_jljh4")
+radius = 0.05517578
+
+[node name="CSGCylinder3D3" type="CSGCylinder3D" parent="CollisionShape3D"]
+transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, -0.013671875, 0.11832297, 0.0031738281)
+material_override = ExtResource("1_jljh4")
+radius = 0.05517578
+
+[node name="CSGCylinder3D2" type="CSGCylinder3D" parent="CollisionShape3D"]
+transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, -0.013671875, -0.104118526, 0.0031738281)
+material_override = ExtResource("1_jljh4")
+radius = 0.05517578
+
+[node name="CSGCylinder3D" type="CSGCylinder3D" parent="CollisionShape3D"]
+transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, -0.013671875, -0.32315063, 0.0031738281)
+material_override = ExtResource("1_jljh4")
+radius = 0.05517578
+material = SubResource("StandardMaterial3D_gd544")
