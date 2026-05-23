@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://cm4jennfwkpr7"]
+
+[node name="tapis_rectangle" type="Node3D"]
+
+[node name="CSGBox3D" type="CSGBox3D" parent="."]
+transform = Transform3D(3, 0, 0, 0, 1, 0, 0, 0, 2, 0, -0.46496582, 0)
+size = Vector3(1, 0.014892578, 1)

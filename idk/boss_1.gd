@@ -1,6 +1,8 @@
-extends Node3D
+extends CharacterBody3D
 var pv = 50
 var stack_dmg = 0
+var speed : int
+@onready var player = $"../Node3D"
 
 func _ready():
 	pass # Replace with function body.
@@ -18,3 +20,8 @@ func _stack_dmg():
 	if stack_dmg == 5:
 		for i in range (20):
 			_loose_pv()
+
+func _physics_process(delta):
+	var charge_direction = player.global_position.ZERO
+	velocity = charge_direction * speed
+	var collision = move_and_collide(velocity * delta)

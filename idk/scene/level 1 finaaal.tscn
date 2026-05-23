@@ -9790,7 +9790,7 @@ transform = Transform3D(-4.3711385e-08, 0, 0.99999994, 0, 1, 0, -0.99999994, 0, 
 destination = Vector3(74, 0.5, 208)
 
 [node name="collectible" parent="." node_paths=PackedStringArray("collectible_interface", "assigned_jewels") instance=ExtResource("39_5520p")]
-transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, 112.01263, 1.7355919, 44.08771)
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, 223.69667, 2.0501337, 519.22174)
 collectible_interface = NodePath("../collectible_scene")
 assigned_jewels = NodePath("../collectible_scene/collectible_prototype")
 
@@ -9804,7 +9804,7 @@ transform = Transform3D(1.9850199, 0, 0.24432772, 0, 2, 0, -0.24432772, 0, 1.985
 transform = Transform3D(1.9998231, 0, 0.026598081, 0, 2, 0, -0.026598081, 0, 1.9998231, 198.91351, 0.8470123, 478.74054)
 
 [node name="grille_collectible_secret1" parent="." instance=ExtResource("41_wy8vy")]
-transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, 220.8533, 2.7055154, 525.81775)
+transform = Transform3D(7.2505713, 0, 0, 0, 4, 0, 0, 0, 4, 219.97205, 2.0782704, 524.7693)
 
 [node name="barreau_metal" parent="." instance=ExtResource("42_gie5c")]
 transform = Transform3D(-2.1855695e-07, 0, 5, 0, 5, 0, -5, 0, -2.1855695e-07, 207, 0.44615078, 475.5316)
