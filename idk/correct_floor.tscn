@@ -1,12 +1,12 @@
-[gd_scene load_steps=3 format=3 uid="uid://cm4jennfwkpr7"]
+[gd_scene load_steps=3 format=3 uid="uid://bsruwdefj6h8p"]
 
-[ext_resource type="Script" uid="uid://cx2n520qj0s3e" path="res://trapped_floor.gd" id="1_607jt"]
+[ext_resource type="Script" uid="uid://n813qw7hnm5e" path="res://correct_floor.gd" id="1_kdpca"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_f8rmc"]
 size = Vector3(2.5769196, 0.057373047, 2.0256348)
 
 [node name="trapped_floor" type="Node3D"]
-script = ExtResource("1_607jt")
+script = ExtResource("1_kdpca")
 
 [node name="CSGBox3D" type="CSGBox3D" parent="."]
 transform = Transform3D(3, 0, 0, 0, 1, 0, 0, 0, 2, 0, -0.46496582, 0)
