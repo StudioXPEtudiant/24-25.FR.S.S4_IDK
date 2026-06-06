@@ -53,5 +53,15 @@ offset_right = 1137.0
 offset_bottom = 648.0
 text = "an original game by Lucas and Hugo"
 
+[node name="start_btn2" type="Button" parent="."]
+layout_mode = 0
+offset_left = 510.0
+offset_top = 537.0
+offset_right = 637.0
+offset_bottom = 600.0
+theme_override_font_sizes/font_size = 40
+text = "Credit"
+
 [connection signal="button_down" from="HBoxContainer/start_btn" to="." method="_on_start_btn_button_down"]
 [connection signal="button_down" from="HBoxContainer/quit_btn" to="." method="_on_quit_btn_button_down"]
+[connection signal="button_down" from="start_btn2" to="." method="_on_start_btn_2_button_down"]
