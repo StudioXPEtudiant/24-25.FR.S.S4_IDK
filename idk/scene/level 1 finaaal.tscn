@@ -6584,7 +6584,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 214.106, 0, 506.212)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 214.106, 0, 514.861)
 
 [node name="Node3D" parent="." node_paths=PackedStringArray("camera") instance=ExtResource("2_tyi85")]
-transform = Transform3D(0.0025655758, 0, 0.9999967, 0, 1, 0, -0.9999967, 0, 0.0025655758, 203.38834, 0.8979225, 403.40237)
+transform = Transform3D(0.0025655758, 0, 0.9999967, 0, 1, 0, -0.9999967, 0, 0.0025655758, 136.92076, 0.8979225, 56.290504)
 speed = 30.0
 camera = NodePath("Head/Camera3D")
 
@@ -9558,7 +9558,7 @@ visible = false
 
 [node name="ladder_Jew1" parent="." instance=ExtResource("18_p4iv3")]
 transform = Transform3D(-0.031498034, 0, -0.9995038, 0, 1, 0, 0.9995038, 0, -0.031498034, -35.98034, 1.5975342, 8.911029)
-destination = Vector3(8.832, 0.5, 220.52)
+destination = Vector3(375, 0.5, 494.13)
 
 [node name="ladder_Jew1_back" parent="." instance=ExtResource("18_p4iv3")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.831877, 1.5975342, 227.52046)
@@ -9846,6 +9846,27 @@ transform = Transform3D(2.8, 0, 0, 0, 0.1, 0, 0, 0, 4.5, 180.37733, 0.5699463, 4
 floor1 = NodePath("../trapped_floor")
 floor2 = NodePath("../trapped_floor3")
 floor3 = NodePath("../trapped_floor4")
+
+[node name="rangée2" type="Node3D" parent="salle_piégée"]
+
+[node name="trapped_floor" parent="salle_piégée/rangée2" instance=ExtResource("43_1ycjc")]
+transform = Transform3D(2.8, 0, 0, 0, 0.1, 0, 0, 0, 4.3, 165.26628, 0.5699463, 411.79492)
+
+[node name="trapped_floor3" parent="salle_piégée/rangée2" instance=ExtResource("43_1ycjc")]
+transform = Transform3D(2.8, 0, 0, 0, 0.1, 0, 0, 0, 4.3, 165.26628, 0.5699463, 394.70123)
+
+[node name="trapped_floor4" parent="salle_piégée/rangée2" instance=ExtResource("43_1ycjc")]
+transform = Transform3D(2.8, 0, 0, 0, 0.1, 0, 0, 0, 4.3, 165.26628, 0.5699463, 403.2686)
+
+[node name="correct_floor1" parent="salle_piégée/rangée2" node_paths=PackedStringArray("floor1", "floor2", "floor3") instance=ExtResource("44_r5jqg")]
+transform = Transform3D(2.8, 0, 0, 0, 0.1, 0, 0, 0, 4.5, 165.34354, 0.5699463, 385.99524)
+floor1 = NodePath("../trapped_floor")
+floor2 = NodePath("../trapped_floor3")
+floor3 = NodePath("../trapped_floor4")
+
+[node name="ladder" parent="." instance=ExtResource("18_p4iv3")]
+transform = Transform3D(-0.04297427, 0, 0.9990762, 0, 1, 0, -0.9990762, 0, -0.04297427, 379.0335, 1.5975342, 494.12997)
+destination = Vector3(243, 0.5, 558.367)
 
 [connection signal="basic_hit" from="Node3D" to="." method="_on_node_3d_basic_hit"]
 [connection signal="get_money_green" from="Node3D" to="." method="_on_node_3d_get_money_green"]
